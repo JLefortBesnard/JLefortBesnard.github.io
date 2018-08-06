@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Jeremy Lefort-Besnard"
-  avatar           : "/images/bio_photo.jpg"
+  avatar           : "/images/bio_photo.png"
   bio              : "Research portfolio"
   location         : "Uniklinik RWTH Aachen university, Germany"
   email            : "jlefort at ukaachen dot de"
