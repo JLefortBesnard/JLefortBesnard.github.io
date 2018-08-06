@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-GE"
+locale                   : "en-US"
 title                    : "Jeremy Lefort-Besnard"
 title_separator          : "-"
 name                     : "Jeremy Lefort-Besnard"
-description              : "Computational neuroscience research portfolio"
+description              : "Research portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,8 +101,8 @@ analytics:
 # Site Author
 author:
   name             : "Jeremy Lefort-Besnard"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computational neuroscience research portfolio"
+  avatar           : "/images/bio_photo.jpg"
+  bio              : "Research portfolio"
   location         : "Uniklinik RWTH Aachen university, Germany"
   email            : "jlefort at ukaachen dot de"
   uri              :
@@ -119,7 +119,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "jeremy-lefort-besnard-a806b26a"
+  linkedin         : "jeremy-lefort-besnard-a806b28a"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
@@ -270,11 +270,10 @@ defaults:
       share: true
       related: true
 
-      # _pages
-      - scope:
-          path: ""
-          type: Pages
-          values:
-            layout: single
-            author_profile: true
-            
+  # _pages
+  - scope:
+      path: ""
+      type: Pages
+    values:
+      layout: single
+      author_profile: true
