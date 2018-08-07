@@ -2,12 +2,7 @@
 layout: single
 permalink: /ShortResume/
 title: "Short resume"
-header:
-  image: "/images/desk.jpg"
 ---
-
-
-
 
 ## EDUCATION
 * 2015-2018 RWTH University, Aachen, Germany
