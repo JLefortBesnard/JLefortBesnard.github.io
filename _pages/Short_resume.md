@@ -1,9 +1,14 @@
 ---
-title: "Short resume"
+layout: single
 permalink: /ShortResume/
+title: "Short resume"
+author_profile: true
 header:
   image: "/images/DSC_0384.jpeg"
 ---
+
+
+
 
 ## EDUCATION
 * 2015-2018 RWTH University, Aachen, Germany
