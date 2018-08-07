@@ -58,7 +58,7 @@ on structural and resting-states functional brain imaging modalities
   * 2016, Autism.
 *"Attitudes of the autism community to early autism research"* Fletcher-Watson et al
 
-## TEACHING EXPERIENCE
+## TEACHING
   * 2017 IRTG 2150, Uniklinik RWTH Aachen, Germany.
 *"Introduction to Python in neuroscience"*
   * 2016-2017 Uniklinik RWTH Aachen, Germany.

@@ -1,5 +1,4 @@
 ---
-layout: post
 permalink: /main-projects/
 title: "Main Projects"
 author_profile: true
@@ -19,7 +18,7 @@ We find that DMN activity does not obey the neuroanatomical boundaries of Brodma
 This systems neuroscience approach reveals that the backbone of the DMN does not drive brain dysfunction in schizophrenia.
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/results.png" alt="Aberrant structural covariation and dysfunctional connectivity across network in schizophrenia">
+<img src="{{ site.url }}{{ site.baseurl }}/images/results.jpg" alt="Aberrant structural covariation and dysfunctional connectivity across network in schizophrenia">
 
 
 Instead, our results highlight dysregulated coupling between the highly associative DMN and the multi-modal dorsal attention (DAN) and saliency (SN) networks. Distinct disease mechanisms were identified by structural covariation analyses emphasizing aberrant DMN-SN coupling, whereas functional covariation analyses emphasized aberrant DMN-DAN coupling. Our computational investigation at increased spatial resolution proposes targeting the DMN in relation to other canonical networks to approach a future of personalized medicine in psychiatry.
@@ -28,14 +27,3 @@ Instead, our results highlight dysregulated coupling between the highly associat
 *"Different shades of the default mode in schizophrenia, subnodal covariance estimation
 in structure and function"* HBM 2018
 [Link](https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23870)
-
-{% include base_path %}
-{% include group-by-array collection=site.posts field="tags" %}
-
-{% for tag in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endfor %}
