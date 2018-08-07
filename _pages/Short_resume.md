@@ -9,24 +9,24 @@ header:
 * 2015-2018 RWTH University, Aachen, Germany
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph.D. student in computational neuroscience and associate doctoral researcher (IRTG 2150) *"Data-driven approaches to structure and function in schizophrenia"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph.D. student in computational neuroscience and associate doctoral researcher (IRTG 2150) *"Data-driven approaches to structure and function in schizophrenia"*
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supervision: Prof. Danilo Bzdok, RWTH University & Prof. Danielle S. Bassett, University of Pennsylvania (UPENN)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supervision: Prof. Danilo Bzdok, RWTH University & Prof. Danielle S. Bassett, University of Pennsylvania (UPENN). Mentor: Prof. Catherine Belzung, INSERM U930 Tours university, France.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scholarship within the International Research Training Group (IRTG) 2150 of the German Research Foundation (DFG)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scholarship within the International Research Training Group (IRTG) 2150 of the German Research Foundation (DFG)
 * 2013-2015 University of Tours, France
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master Research *"Neurosciences, Cognition and Psychology"* (with honours)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master Research *"Neurosciences, Cognition and Psychology"* (with honours)
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Psychologist title, supervision by the Master 2 *"Child psychology"*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Psychologist title, supervision by the Master 2 *"Child psychology"*
 * 2013 Bucknell University, Pennsylvania, USA (senior year) and University of Tours, France
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor’s Degree in Psychology (with honours)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor’s Degree in Psychology (with honours)
 
 ## CURRENT INVESTIGATIONS AND PUBLICATIONS
 
@@ -36,7 +36,7 @@ header:
 questionnaire"*
 
 
-We predicted schizophrenia severity based on the hidden structure of a clinical
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We predicted schizophrenia severity based on the hidden structure of a clinical
 questionnaire (PANSS) using a broad machine learning toolbox including sparse logistic regression and latent-factor approaches
   * 2018, Human Brain Mapping
 *"Different shades of the default mode in schizophrenia, subnodal covariance estimation
@@ -44,12 +44,12 @@ in structure and function"*
 [Link](https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23870)
 
 
-We quantified the importance of the dysfunction of each segregated default mode network
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We quantified the importance of the dysfunction of each segregated default mode network
 subregions in the pathophysiology of schizophrenia using sparse inverse covariance
 on structural and resting-states functional brain imaging modalities
 
 
-OHBM 2018 Singapore poster presentation + DAAD travel grant
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OHBM 2018 Singapore poster presentation + DAAD travel grant
 
 ### Co-author
   * 2017, Autism.
