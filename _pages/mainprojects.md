@@ -1,4 +1,5 @@
 ---
+layout: post
 permalink: /main-projects/
 title: "Main Projects"
 author_profile: true
