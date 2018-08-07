@@ -1,10 +1,9 @@
 ---
 layout: archive
-permalink: /machine-learning/
-title: "Machine Learning Posts"
+permalink: /main-projects/
+title: "Main Projects"
 author_profile: true
-header:
-  image: "/images/ml.jpeg"
+
 ---
 
 # First Ph.D. project
