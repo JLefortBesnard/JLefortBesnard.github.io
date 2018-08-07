@@ -2,7 +2,6 @@
 layout: single
 permalink: /ShortResume/
 title: "Short resume"
-author_profile: true
 header:
   image: "/images/desk.jpg"
 ---
