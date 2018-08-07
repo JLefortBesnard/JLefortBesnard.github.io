@@ -13,7 +13,7 @@ header:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph.D. student in computational neuroscience and associate doctoral researcher (IRTG 2150) *"Data-driven approaches to structure and function in schizophrenia"*
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supervision: Prof. Danilo Bzdok, RWTH University & Prof. Danielle S. Bassett, University of Pennsylvania (UPENN). Mentor: Prof. Catherine Belzung, INSERM U930 Tours university, France.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supervision: Prof. Danilo Bzdok, RWTH University [Link](https://danilobzdok.de) & Prof. Danielle S. Bassett, University of Pennsylvania (UPENN) [Link](https://danisbassett.com). Mentor: Prof. Catherine Belzung, INSERM U930 Tours university, France [Link](https://www.univ-tours.fr/site-de-l-universite/catherine-belzung--845.kjsp).
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scholarship within the International Research Training Group (IRTG) 2150 of the German Research Foundation (DFG)
