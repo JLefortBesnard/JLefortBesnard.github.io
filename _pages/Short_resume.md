@@ -2,7 +2,7 @@
 title: "Short resume"
 permalink: /ShortResume/
 header:
-  image: "/images/desk.png"
+  image: "/images/DSC_0384.jpeg"
 ---
 
 ## EDUCATION
