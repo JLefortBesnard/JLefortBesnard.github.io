@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Jeremy Lefort-Besnard"
-  avatar           : "/images/bio_photo.png"
+  avatar           : "/images/bio_photo.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Research portfolio"
   location         : "Uniklinik RWTH Aachen university, Germany"
   email            : "jlefort at ukaachen dot de"
@@ -119,7 +119,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "jeremy-lefort-besnard-a806b28a"
+  linkedin         : "jeremy-lefort-besnard-a806b28a"  # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
