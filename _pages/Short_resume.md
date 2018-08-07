@@ -4,7 +4,7 @@ permalink: /ShortResume/
 title: "Short resume"
 author_profile: true
 header:
-  image: "/images/DSC_0384.jpeg"
+  image: "/images/desk.jpg"
 ---
 
 
