@@ -103,7 +103,7 @@ author:
   name             : "Jeremy Lefort-Besnard"
   avatar           : "/images/bio_photo.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Research portfolio"
-  location         : "Uniklinik RWTH Aachen university, Germany"
+  location         : "RWTH Aachen, Germany"
   email            : "jlefort at ukaachen dot de"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"

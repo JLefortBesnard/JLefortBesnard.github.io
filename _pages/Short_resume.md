@@ -2,6 +2,8 @@
 layout: single
 permalink: /ShortResume/
 title: "Short resume"
+header:
+  image: "/images/desk.jpeg"
 ---
 
 ## EDUCATION
