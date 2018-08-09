@@ -1,7 +1,8 @@
 ---
 title: "Build a portfolio with GitHub"
 author_profile: true
-tags: [welcome]
+tags: [Portfolio][Github][Page]
+
 ---
 
 ## Hi there,
