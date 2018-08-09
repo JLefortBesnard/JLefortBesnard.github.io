@@ -13,6 +13,7 @@ I did have troubles matching them so here is what worked for me. I found out tha
 
 
 Try to follow these steps and that should be fine:
+
 * Create your GitHub page [link](/githubpage/)
 
 
@@ -40,7 +41,7 @@ But make sure there isn't any update of these GitHub IPs [there](https://help.gi
 Take a look at this [video](https://www.youtube.com/watch?v=dNbZ826ufKE) if you need help at this point.
 
 
-* Still in cheapname.com, add the "CNAME record" with "www", then your GitHub page repository name + a period at the end (jlefortbesnard.github.io. for me). It should finally look like this:
+* Still in namecheap.com, add the "CNAME record" with "www", then your GitHub page repository name + a period at the end (jlefortbesnard.github.io. for me). It should finally look like this:
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/namecheap.png" alt="advanced DNS">
