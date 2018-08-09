@@ -1,7 +1,7 @@
 ---
 title: "Link your GitHub page to a custom domain"
 author_profile: true
-tags: [[Portfolio][Github][Page]
+tags: [Portfolio, Github, Page]
 ---
 
 ## Hi there,
