@@ -4,7 +4,7 @@ main:
     url:  /ShortResume/
   - title: "Main Projects"
     url:  /main-projects/
-  - title: "Per topics"
+  - title: "Per topic"
     url:  /Pertopics/
 
   # - title: "About"
