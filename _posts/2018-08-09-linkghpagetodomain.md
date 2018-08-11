@@ -4,8 +4,6 @@ author_profile: true
 tags: [GitHub Page, Link Custom Name]
 ---
 
-## Hi there,
-
 I recently linked my GitHub page (*jlefortbesnard.github.io*) to a custom domain (*jeremylefortbesnard.de*). I bought it on *namecheap.com* since it is actually quite cheap.
 
 

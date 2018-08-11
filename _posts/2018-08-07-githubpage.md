@@ -4,9 +4,7 @@ author_profile: true
 tags: [Portfolio, GitHub Page]
 ---
 
-## Hi there,
-
-I recently found out that you can easily build your own page using GitHub.
+You can easily build your own page using GitHub.
 Building a GitHub page does not require a lot of time and no need to be highly skilled in programming to do so.
 
 
