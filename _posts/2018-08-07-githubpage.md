@@ -1,7 +1,7 @@
 ---
 title: "Build a portfolio with GitHub"
 author_profile: true
-tags: [Portfolio, GitHub Page]
+tags: [GitHub]
 ---
 
 You can easily build your own page using GitHub.

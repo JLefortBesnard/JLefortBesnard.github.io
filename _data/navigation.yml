@@ -4,6 +4,9 @@ main:
     url:  /ShortResume/
   - title: "Main Projects"
     url:  /main-projects/
+  - title: "Per topics"
+    url:  /Pertopics/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

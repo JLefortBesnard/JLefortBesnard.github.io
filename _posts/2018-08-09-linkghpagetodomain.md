@@ -1,7 +1,7 @@
 ---
 title: "Link your GitHub page to a custom domain"
 author_profile: true
-tags: [GitHub Page, Link Custom Name]
+tags: [GitHub]
 ---
 
 I recently linked my GitHub page (*jlefortbesnard.github.io*) to a custom domain (*jeremylefortbesnard.de*). I bought it on *namecheap.com* since it is actually quite cheap.

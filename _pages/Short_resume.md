@@ -1,195 +1,62 @@
 ---
 layout: single
+classes: wide
 permalink: /ShortResume/
 title: "Short resume"
-header:
-  image: "/images/desk.jpeg"
+author_profile: true
 ---
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 6.0.3.2 (Linux)"/>
-	<meta name="created" content="2018-08-05T10:54:05.529889802"/>
-	<meta name="changed" content="2018-08-05T12:16:51.639003000"/>
-	<style type="text/css">
-		@page { margin: 0.79in }
-		p { margin-bottom: 0.1in; line-height: 115% }
-		a:link { so-language: zxx }
-	</style>
-</head>
-<body lang="en-US" dir="ltr">
-<p align="justify" style="line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>LEFORT-BESNARD
-Jeremy <font color="#000000">-</font><font color="#000000"><span style="text-decoration: none">short
-resume-</span></font></b></font></font></p>
-<p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>Twitter:
-</b></font>@Jlefort_Besnard</font></p>
-<p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>Linked
-in:</b></font><font color="#000000"> </font><font color="#000000">J</font>eremy
-Lefort-Besnard</font></p>
-<p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>C</b></font><font color="#000000"><b>ontact:
-</b></font>jlefort at ukaachen dot de</font></p>
-<p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
-<br/>
+# EDUCATION
 
-</p>
-<p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
-<font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>EDUCATION</b></font></font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2015-2018
-	RWTH University, Aachen, Germany</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">Ph.D. student
-in computational neuroscience and associate doctoral researcher (IRTG
-2150)</font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">&quot;Data-driven
-approaches to structure and function in schizophrenia&quot;</font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">Supervision:
-Prof. Danilo Bzdok, RWTH University &amp; Prof. Danielle S. Bassett,
-University of Pennsylvania (UPENN)</font></p>
-<p align="justify" style="font-weight: normal; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">Scholarship
-within the International Research Training Group (IRTG) 2150 of the
-German Research Foundation (DFG)</font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">201</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">-</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">2015
-	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">University
-	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">of</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">
-	Tours, France</span></span></font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">Master
-Research &quot;Neurosciences, Cognition and Psychology&quot; (with
-honours)</font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">Psychologist
-title, supervision by the Master 2 &quot;Child psychology&quot;</font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">2013
-	Bucknell University, </span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">Pennsylvania,
-	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">USA
-	(senior year) and University </span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">of</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">
-	Tours, France</span></span></font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">Bachelor’s
-Degree in Psychology (with honours)</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+## 2015-2018 RWTH University, Aachen, Germany
 
-</p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
-INVESTIGATIONS AND PUBLICATIONS</b></font></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
-author</b></font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2018, Under
-	review</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;Patterns
-of schizophrenia symptoms: hidden structure underlying the PANSS</i></font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>questionnaire&quot;</i></font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">We predicted
-schizophrenia severity based on the hidden structure of a clinical</font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif">questionnaire
-(PANSS) using a broad machine learning toolbox including sparse
-logistic regression and latent-factor approaches</font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2018, Human
-	Brain Mapping</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;Different
-shades of the default mode in schizophrenia, subnodal covariance
-estimation</i></font></p>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>in
-structure and function&quot;</i></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">We
-quantified the importance of the dysfunction of each segregated
-default mode network</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">subregions
-in the pathophysiology of schizophrenia using sparse inverse
-covariance</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">on
-structural and resting-states functional brain imaging modalities</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">OHBM
-2018 Singapore poster presentation + DAAD travel grant</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>C</b></font><font color="#000000"><b>o-author</b></font></font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2017, Autism</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;What
-do parents of children with autism expect from participation in
-research? A community survey about early autism studies&quot;,</i>
-Fletcher-Watson et al</font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2016, Autism </font>
-	</p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;Attitudes
-of the autism community to early autism research&quot;</i>,
-Fletcher-Watson et al.</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+* Ph.D. student in computational neuroscience and associate doctoral researcher (IRTG 2150). "Data-driven approaches to structure and function in schizophrenia".
 
-</p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>TEACHING
-EXPERIENCE</b></font></font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2017 IRTG
-	2150, Uniklinik RWTH Aachen, </font><font face="Noto Sans Mono CJK TC Regular, sans-serif">Germany</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;Introduction
-to Python in neuroscience&quot;</i></font></p>
-<ul>
-	<li/>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif">2016-2017
-	Uniklinik RWTH Aachen, </font><font face="Noto Sans Mono CJK TC Regular, sans-serif">Germany</font></p>
-</ul>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">Teacher
-assistant: <i>&quot;Machine learning crash course&quot;</i></font></p>
-<p style="margin-bottom: 0in; line-height: 100%"><br/>
+Supervision by Prof. Danilo Bzdok, RWTH University & Prof. Danielle S. Bassett, University of Pennsylvania (UPENN).Mentoring by Prof. Catherine Belzung, INSERM U930 Tours university, France. Scholarship within the International Research Training Group (IRTG) 2150 of the German Research Foundation (DFG)
 
-</p>
-<p style="margin-bottom: 0in; line-height: 100%"><br/>
+## 2013-2015 University of Tours, France
 
-</p>
-<p style="margin-bottom: 0in; line-height: 100%"><br/>
+* Master Research "Neurosciences, Cognition and Psychology" (with honours)
 
-</p>
-<p style="line-height: 100%"><br/>
-<br/>
+* Psychologist title, supervision by the Master 2 "Child psychology"
 
-</p>
-<p style="line-height: 100%"><br/>
-<br/>
+## 2013 Bucknell University, Pennsylvania, USA (senior year) and University of Tours, France
 
-</p>
-</body>
-</html>
+* Bachelor’s Degree in Psychology (with honours)
+
+
+# CURRENT INVESTIGATIONS AND PUBLICATIONS
+
+## First author
+
+* 2018, Under review, "Patterns of schizophrenia symptoms: hidden structure underlying the PANSS questionnaire"
+
+We predicted schizophrenia severity based on the hidden structure of a clinical questionnaire (PANSS) using a broad machine learning toolbox including sparse logistic regression and latent-factor approaches
+
+* 2018, Human Brain Mapping, "Different shades of the default mode in schizophrenia, subnodal covariance estimation in structure and function"
+
+We quantified the importance of the dysfunction of each segregated default mode network subregions in the pathophysiology of schizophrenia using sparse inverse covariance on structural and resting-states functional brain imaging modalities. *OHBM 2018 Singapore poster presentation + DAAD travel grant*
+
+
+## Co-author
+
+* 2017, Autism, "What do parents of children with autism expect from participation in research? A community survey about early autism studies", Fletcher-Watson et al
+
+* 2016, Autism, "Attitudes of the autism community to early autism research", Fletcher-Watson et al.
+
+# TEACHING EXPERIENCE
+
+* 2017 IRTG 2150, Uniklinik RWTH Aachen, Germany. "Introduction to Python in neuroscience"
+
+* 2016-2017 Uniklinik RWTH Aachen, Germany. Teacher assistant: "Machine learning crash course"
+
+# PRESENTATIONS & CONFERENCES
+* 2018 July. PyData conference, Berlin, Germany
+* 2018 June. OHBM conference, Singapore. Conference + poster presentation
+* 2018 May. IRTG 2150 spring school in Aachen. Conference + presentation
+* 2017 December. BrainHack, Max Plank Leipzig, Germany
+* 2017 June. IRTG 2150 spring school in UPENN, USA. Conference + presentation
+* 2017 January. Nilearn Workshop, Liege, Belgium
+* 2016 December. Uniklinik RWTH Aachen, presentation
+* 2016 August. Computational Psychiatry Course, UTH Zurich, Swiss
+* 2016 January. Nilearn Workshop, RWTH Aachen
