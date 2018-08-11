@@ -1,7 +1,6 @@
 ---
 layout: single
 classes: wide
-title: ""
 permalink: /ShortResume/
 author_profile: true
 ---
