@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-permalink: /Pertopics/
-title: "Per topics"
+permalink: /Pertopic/
+title: "Per topic"
 author_profile: true
 ---
 
