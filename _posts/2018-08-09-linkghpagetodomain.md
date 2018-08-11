@@ -50,4 +50,4 @@ Take a look at this [video](https://www.youtube.com/watch?v=dNbZ826ufKE) if you 
 
 * In GitHub, in your GitHub page repository, remove and re-add the CNAME folder: click on "Settings" then "GitHub Pages" and finally "Custom domain".
 
-That's it, well done!
+And that should be it.
