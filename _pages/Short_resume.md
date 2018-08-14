@@ -66,8 +66,6 @@ Degree in Psychology (with honours)</font></p>
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
 INVESTIGATIONS AND PUBLICATIONS</b></font></font></p><br/>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
-
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
 author</b></font></p>
@@ -111,8 +109,7 @@ covariance</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">on
 structural and resting-states functional brain imaging modalities</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">OHBM
-2018 Singapore poster presentation + DAAD travel grant</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+2018 Singapore poster presentation + DAAD travel grant</font></p><br/>
 
 
 </p>
