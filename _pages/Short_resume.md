@@ -4,8 +4,6 @@ classes: wide
 permalink: /Short_resume/
 ---
 
-</head>
-<body lang="en-US" dir="ltr">
 <p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>C</b></font><font color="#000000"><b>ontact:
 </b></font>jlefort at ukaachen dot de</font></p>
 <p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
