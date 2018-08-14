@@ -67,7 +67,6 @@ Degree in Psychology (with honours)</font></p>
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
 INVESTIGATIONS AND PUBLICATIONS</b></font></font></p><br/>
-</p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
 author</b></font></p>
 <ul>
@@ -112,8 +111,6 @@ structural and resting-states functional brain imaging modalities</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">OHBM
 2018 Singapore poster presentation + DAAD travel grant</font></p><br/>
 
-
-</p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Co-author</b></font></p>
 <ul>
 	<li/>
