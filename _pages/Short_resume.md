@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-permalink: /ShortResume/
+permalink: /Short_resume/
 ---
 
 
