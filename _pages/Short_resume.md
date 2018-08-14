@@ -6,27 +6,26 @@ permalink: /Short_resume/
 
 </head>
 <body lang="en-US" dir="ltr">
-<p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>Contact:
+<p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>C</b></font><font color="#000000"><b>ontact:
 </b></font>jlefort at ukaachen dot de</font></p>
 <p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
 <br/>
 
 </p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b><font color="#0066b3"><span style="font-style: normal"><span style="text-decoration: none">EDUCATION</span></span></font></b></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
-
-</p>
+<p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
+<font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>EDUCATION</b></font></font></p>
+<p align="justify" style="margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%; text-decoration: none"></p>
 <ul>
 	<li/>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%">
-	<font face="Noto Sans Mono CJK TC Regular, sans-serif"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-weight: normal">2015-2018
-	RWTH University, Aachen, </span></font><b>Germany</b></font></p>
+	<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-weight: normal">2015-2018
+	RWTH University, Aachen, Germany</span></font></p>
 </ul>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="text-decoration: none"><b>Ph.D.
-student in computational neuroscience</b></span> and associate
-doctoral researcher (IRTG 2150) &quot;<i>Data-driven approaches to
-structure and function in schizophrenia</i>&quot;</font></p>
+<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="text-decoration: none">Ph.D.
+student in computational neuroscience</span> and associate doctoral
+researcher (IRTG 2150) &quot;<i>Data-driven approaches to structure
+and function in schizophrenia</i>&quot;</font></p>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
 <font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="text-decoration: none">Supervision:
 </span>Prof. Danilo Bzdok, RWTH University &amp; Prof. Danielle S.
@@ -41,39 +40,36 @@ German Research Foundation (DFG)</span></font></p>
 <p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">201</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">-</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">2015
 	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">University
 	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">of</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">
-	Tours, </span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><b>France</b></span></font></p>
+	Tours, France</span></span></font></p>
 </ul>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Master</b>
+<font face="Noto Sans Mono CJK TC Regular, sans-serif">Master
 Research &quot;<i>Neurosciences, Cognition and Psychology</i>&quot;
 (with honours)</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-weight: normal">Psychologist
 title, supervision by the Master 2 &quot;</span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><i><span style="font-weight: normal">Child
 psychology</span></i></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-weight: normal">&quot;</span></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
-
-</p>
+<p align="justify" style="margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%"></p>
 <ul>
 	<li/>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%">
 	<font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">2013
 	Bucknell University, </span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">Pennsylvania,
-	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><b>USA</b></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">
+	</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">USA
 	(senior year) and University </span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">of</span></span></font><font face="Noto Sans Mono CJK TC Regular, sans-serif"><span style="font-style: normal"><span style="font-weight: normal">
 	Tours, France</span></span></font></p>
 </ul>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
-<font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Bachelor</b>’s
+<font face="Noto Sans Mono CJK TC Regular, sans-serif">Bachelor’s
 Degree in Psychology (with honours)</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
 
-</p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
 
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
 INVESTIGATIONS AND PUBLICATIONS</b></font></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
 
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
@@ -145,8 +141,7 @@ of the autism community to early autism research&quot;</i>,
 Fletcher-Watson et al.</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
 
-</p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
 
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>TEACHING
@@ -170,10 +165,7 @@ assistant: <i>&quot;Machine learning crash course&quot;</i></font></p>
 <p style="margin-bottom: 0in; line-height: 100%"><br/>
 
 </p>
-<p style="margin-bottom: 0in; line-height: 100%"><br/>
-
-</p>
-<p style="font-style: normal; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#0066b3"><b>PRESENTATIONS
+<p style="font-style: normal; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>PRESENTATIONS
 &amp; CONFERENCES</b></font></font></p>
 <ul>
 	<li/>
