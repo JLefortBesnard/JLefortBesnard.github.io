@@ -62,13 +62,11 @@ title, supervision by the Master 2 &quot;Child psychology&quot;</font></p>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
 <font face="Noto Sans Mono CJK TC Regular, sans-serif">Bachelor’s
 Degree in Psychology (with honours)</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
-</p>
-</p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/></p>
+
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
-INVESTIGATIONS AND PUBLICATIONS</b></font></font></p>
-</p>
-</p>
+INVESTIGATIONS AND PUBLICATIONS</b></font></font></p></p>
+
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
 author</b></font></p>
 <ul>
@@ -191,8 +189,8 @@ assistant: <i>&quot;Machine learning crash course&quot;</i></font></p>
 <p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">2016
 	December. Uniklinik RWTH Aachen, presentation</font></p>
 	<li/>
-<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000">2016
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">2016
 	August. Computational Psychiatry Course, UTH Zurich, Swiss</font></p>
 	<li/>
-<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000">2016
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">2016
 	January. Nilearn Workshop, RWTH Aachen</font></p>
