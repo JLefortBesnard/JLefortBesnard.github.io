@@ -3,9 +3,6 @@ layout: single
 classes: wide
 permalink: /Short_resume/
 ---
-
-</head>
-<body lang="en-US" dir="ltr">
 <p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>C</b></font><font color="#000000"><b>ontact:
 </b></font>jlefort at ukaachen dot de</font></p>
 <p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
@@ -115,12 +112,10 @@ covariance</font></p>
 structural and resting-states functional brain imaging modalities</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">OHBM
 2018 Singapore poster presentation + DAAD travel grant</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%">
 
 </p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>First
-author</b></font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Co-author</b></font></font></p>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Co-author</b></font></p>
 <ul>
 	<li/>
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
