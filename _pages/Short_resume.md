@@ -1,3 +1,8 @@
+---
+layout: single
+classes: wide
+permalink: /ShortResume/
+---
 
 ## EDUCATION
 ### 2015-2018 RWTH University, Aachen, Germany
