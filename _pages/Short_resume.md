@@ -59,13 +59,13 @@ psychology</span></i></font><font face="Noto Sans Mono CJK TC Regular, sans-seri
 <p align="justify" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
 <font face="Noto Sans Mono CJK TC Regular, sans-serif">Bachelor’s
 Degree in Psychology (with honours)</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/><br/>
 
 
 
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>CURRENT
-INVESTIGATIONS AND PUBLICATIONS</b></font></font></p>
+INVESTIGATIONS AND PUBLICATIONS</b></font></font></p><br/>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%">
 
 </p>
@@ -112,7 +112,8 @@ covariance</font></p>
 structural and resting-states functional brain imaging modalities</font></p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">OHBM
 2018 Singapore poster presentation + DAAD travel grant</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%">
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+
 
 </p>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>Co-author</b></font></p>
@@ -136,7 +137,7 @@ Fletcher-Watson et al</font></p>
 <font face="Noto Sans Mono CJK TC Regular, sans-serif"><i>&quot;Attitudes
 of the autism community to early autism research&quot;</i>,
 Fletcher-Watson et al.</font></p>
-<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/>
+<p align="justify" style="margin-bottom: 0in; line-height: 100%"><br/><br/>
 
 
 
@@ -159,7 +160,7 @@ to Python in neuroscience&quot;</i></font></p>
 </ul>
 <p align="justify" style="margin-bottom: 0in; line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif">Teacher
 assistant: <i>&quot;Machine learning crash course&quot;</i></font></p>
-<p style="margin-bottom: 0in; line-height: 100%"><br/>
+<p style="margin-bottom: 0in; line-height: 100%"><br/><br/>
 
 </p>
 <p style="font-style: normal; line-height: 100%"><font color="#0066b3"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><b>PRESENTATIONS
