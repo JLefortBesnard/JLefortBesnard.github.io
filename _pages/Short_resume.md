@@ -5,8 +5,7 @@ permalink: /Short_resume/
 author_profile: true
 ---
 <p align="justify" style="line-height: 100%"><font face="Noto Sans Mono CJK TC Regular, sans-serif"><font color="#000000"><b>Contact:
-</b></font>jlefort at ukaachen dot de</p>
-<p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
+</b></font>jlefort at ukaachen dot de<p align="justify" style="margin-bottom: 0in; font-style: normal; line-height: 100%; text-decoration: none">
 <br/>
 
 </p>
