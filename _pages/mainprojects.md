@@ -6,16 +6,28 @@ author_profile: true
 
 The overwhelming majority of mental disorders show disturbance in the default mode network (DMN). Yet, mental disorders with diverging clinical phenotypes are unlikely to be caused by an identical pathophysiological mechanism. Our study resolves previous inconsistencies on network disruption in schizophrenic patients by delineating aberration of top-level DMN control on subordinate multi-modal networks using meta-analytic atlases and pattern-learning algorithms in a large multi-site dataset (n=325).
 
+
+We find that DMN activity does not obey the neuroanatomical boundaries of Brodmann's 100-year-old cytoarchitectonic atlas. We therefore deploy detailed topographical definitions using a recently completed DMN subnode atlas.
+
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/dmn.png" alt="DMN subregions">
 
 
-We find that DMN activity does not obey the neuroanatomical boundaries of Brodmann's 100-year-old cytoarchitectonic atlas. We therefore deploy detailed topographical definitions using a recently completed DMN subnode atlas. We hypothesized that many prior inconsistencies in DMN findings can be explained by the reliance on simple linear correlations between node pairs. We therefore exploited novel machine-learning techniques that are able to incorporate all node-node relations, thereby accounting for third-party influences on each coupling relation. Our methodology further enabled quantifying the structure-function correspondence by analogous analyses on resting-state connectivity fluctuations and brain volume variability.
+*Figure 1. Target network definitions.*
+The DMN nodes are subdivided into 12 ROIs accounting for the distinct subnodes in the DMN that were recently established. According to this prior work, the functional core of the DMN likely corresponds especially to its blue and red subnodes ("DMN proper").
+
+
+We hypothesized that many prior inconsistencies in DMN findings can be explained by the reliance on simple linear correlations between node pairs. We therefore exploited novel machine-learning techniques that are able to incorporate all node-node relations, thereby accounting for third-party influences on each coupling relation. Our methodology further enabled quantifying the structure-function correspondence by analogous analyses on resting-state connectivity fluctuations and brain volume variability.
 
 
 This systems neuroscience approach reveals that the backbone of the DMN does not drive brain dysfunction in schizophrenia.
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/results.jpg" alt="Aberrant structural covariation and dysfunctional connectivity across network in schizophrenia">
+
+
+*Figure 2. Dysfunctional connectivity and aberrant structural covariation across networks.*
+Depicts the significant increase (red lines) or decrease (blue lines) in functional connectivity (A) or in structural co-occurrence (B) comparing schizophrenic to healthy subjects.
 
 
 Instead, our results highlight dysregulated coupling between the highly associative DMN and the multi-modal dorsal attention (DAN) and saliency (SN) networks. Distinct disease mechanisms were identified by structural covariation analyses emphasizing aberrant DMN-SN coupling, whereas functional covariation analyses emphasized aberrant DMN-DAN coupling. Our computational investigation at increased spatial resolution proposes targeting the DMN in relation to other canonical networks to approach a future of personalized medicine in psychiatry.
