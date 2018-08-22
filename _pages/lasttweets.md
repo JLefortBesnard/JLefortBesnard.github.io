@@ -6,10 +6,4 @@ title: "Last Tweets"
 author_profile: true
 ---
 
-<a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by JLefortBesnard</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<a href="https://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @JLefortBesnard</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by JLefortBesnard</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<a class="twitter-timeline" data-width="250" data-height="500" href="http://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by JLefortBesnard</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
