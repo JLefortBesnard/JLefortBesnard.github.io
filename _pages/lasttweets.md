@@ -6,6 +6,4 @@ title: "Last Tweets"
 author_profile: true
 ---
 
-### Latest tweet on this link:
-
-<a class="twitter-timeline" data-width="250" data-height="500" href="http://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by JLefortBesnard</a> <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-width="250" data-height="500" href="http://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by @JLefortBesnard</a><script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
