@@ -6,6 +6,10 @@ main:
     url:  /main-projects/
   - title: "Per Topic"
     url:  /Pertopic/
+  - title: "Last Tweets"
+    url:  /LastTweets/
+
+
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
