@@ -10,4 +10,4 @@ header:
   caption: "Painting credit: [**Zelie**](http://zeligraff.com/)"
 ---
 
-<a class="twitter-timeline" data-width="250" data-height="500" href="http://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw">Tweets by @JLefortBesnard</a>
+[Tweets](http://twitter.com/JLefortBesnard?ref_src=twsrc%5Etfw)  @JLefortBesnard
