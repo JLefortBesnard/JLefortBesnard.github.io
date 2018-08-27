@@ -5,7 +5,7 @@ permalink: /LastTweets/
 title: "Last Tweets"
 author_profile: true
 header:
-  image: "/images/zelie.png"
+  image: "/images/zelie_br.jpg"
   image_description: "Near Aachen, Germany"
   caption: "Painting credit: [**Zelie**](http://zeligraff.com/)"
 ---
