@@ -12,7 +12,7 @@ Building a GitHub page does not require a lot of time and no need to be highly s
 
 Git is an open-source *version control system*. It allows you to store the modifications you made on local scripts. In short, it lets you know what changed in your scripts.
 
-GitHub is an *web-based hosting service*. It allows you to store your scripts online and other people can make changes on them. Those modifications are also stored and you decide to apply them or not.
+GitHub is a *web-based hosting service*. It allows you to store your scripts online and other people can make changes on them. Those modifications are also stored and you decide to apply them or not.
 
 GitHub also allows you to create a webpage.
 
