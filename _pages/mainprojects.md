@@ -67,4 +67,6 @@ The here isolated more predictive questionnaire items may be useful to make pati
 
 Collectively, our computational investigation proposes targeting subtle item combinations rather than the three long-trusted symptom categories (i.e., positive, negative, or cognitive symptoms) to approach a future of personalized medicine in psychiatry. Our results might lead to procedural streamlining and enhanced clinical and economic effectiveness.
 
+All analysis scripts of this study are readily accessible online [here](https://github.com/JLefortBesnard/Panss2018)
+
 This manuscript is currently under review.
