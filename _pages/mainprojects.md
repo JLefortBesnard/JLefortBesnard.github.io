@@ -69,4 +69,4 @@ Collectively, our computational investigation proposes targeting subtle item com
 
 All analysis scripts of this study are readily accessible online [here](https://github.com/JLefortBesnard/Panss2018)
 
-This manuscript is currently under review.
+This manuscript is in press (Translational Psychiatry)
