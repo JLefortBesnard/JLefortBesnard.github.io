@@ -8,7 +8,7 @@ author_profile: true
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }} Resume_LefortBesnard.pdf ">
+<embed src="images/Resume_LefortBesnard.pdf" />
 
 
 
