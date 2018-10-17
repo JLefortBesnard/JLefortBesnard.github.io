@@ -2,6 +2,10 @@
 layout: single
 classes: wide
 permalink: /Short_resume/
+header:
+  image: "/images/zelie_br.jpg"
+  image_description: "Near Aachen, Germany"
+  caption: "Painting credit: [**Zelie**](http://zeligraff.com/)"
 author_profile: true
 ---
 
