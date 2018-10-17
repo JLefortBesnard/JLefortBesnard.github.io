@@ -7,11 +7,7 @@ author_profile: true
 
 
 
-
-<embed src="images/Resume_LefortBesnard.pdf" />
-
-
-
+<embed src="images/Resume_LefortBesnard.pdf" width="600" height="500" alt="pdf">
 
 
 
