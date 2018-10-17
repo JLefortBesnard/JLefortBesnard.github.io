@@ -1,4 +1,6 @@
 ---
+layout: single
+classes: wide
 permalink: /main-projects/
 title: "Main Projects"
 author_profile: true
