@@ -7,7 +7,7 @@ main:
   - title: "Per Topic"
     url:  /Pertopic/
   - title: "Last Tweets"
-    url:  https://twitter.com/@JLefortBesnard
+    url:  /LastTweets/
 
 
 
