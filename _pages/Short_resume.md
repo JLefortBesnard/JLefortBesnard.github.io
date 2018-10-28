@@ -5,7 +5,7 @@ permalink: /Short_resume/
 header:
   image: "/images/zelie_br.jpg"
   image_description: "Near Aachen, Germany"
-  caption: "Painting credit: [**Zelie**](http://zeligraff.com/)"
+  caption: "Brainhack 2018 in Zürich, Switzerland"
 author_profile: true
 ---
 
