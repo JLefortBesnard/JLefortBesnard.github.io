@@ -3,6 +3,10 @@ layout: single
 classes: wide
 permalink: /main-projects/
 title: "Main Projects"
+header:
+  image: "/images/zelie_br.jpg"
+  image_description: "Near Aachen, Germany"
+  caption: "Painting credit: [**Zelie**](http://zeligraff.com/)"
 author_profile: true
 ---
 ## Different shades of the default mode in schizophrenia
