@@ -13,4 +13,4 @@ author_profile: true
 <img src="{{ site.url }}{{ site.baseurl }}/images/Resume_LefortBesnard-2.png" alt="resume part 2">
 
 
-PDF download : [![pdf](icon/pdf-icon.png)](/Resume_LefortBesnard.pdf)
+Download : [![PDF](icon/pdf-icon.png)](/Resume_LefortBesnard.pdf)
