@@ -5,9 +5,9 @@ permalink: /Pertopic/
 title: "Per Topic"
 author_profile: true
 header:
-  image: "/images/maze.jpg"
-  image_description: "Near Aachen, Germany"
-  caption: "Photo credit: [**Ohcapi**](https://ohcapi.com)"
+  image: "/images/desert.jpg"
+  image_description: "High Fens, Belgium"
+  caption: "Photo credit: [**Juliette Forest**](https://julietteforest.com)"
 ---
 
 
