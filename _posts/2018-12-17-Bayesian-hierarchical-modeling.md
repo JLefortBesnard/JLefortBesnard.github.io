@@ -5,7 +5,7 @@ tags: [StatsJam]
 ---
 
 
-At a rule of thumb, if you have less than 100 observations and not a lot of trials, machine learning is not likely to perform well.
+As a rule of thumb, if you have less than 100 observations and not a lot of trials, machine learning is not likely to perform well.
 If on top, you have a lot of variables (e.g., age, weight, sex, etc...), you are likely to face the multiple comparisons problem if using classical statistics.
 
 
