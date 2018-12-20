@@ -1,5 +1,5 @@
 ---
-title: "Stats jam: Bayesian hierarchical modelling"
+title: "Stats jam: Bayesian hierarchical modeling"
 author_profile: true
 tags: [StatsJam]
 ---
