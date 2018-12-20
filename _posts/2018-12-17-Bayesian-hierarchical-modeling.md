@@ -25,5 +25,5 @@ Using the Bayesian hierarchical modeling improves the parameter estimates and re
 
 
 * Great introduction to hierarchical modeling [here](http://mfviz.com/hierarchical-models/)
-* More infoon multilevel modeling by Andrew Gelman [here](http://www.stat.columbia.edu/~gelman/research/published/multi2.pdf)
+* More info on multilevel modeling by Andrew Gelman [here](http://www.stat.columbia.edu/~gelman/research/published/multi2.pdf)
 * The Bayesian hierarchical modeling page on [Wikipedia](https://en.wikipedia.org/wiki/Bayesian_hierarchical_modeling) is also great.
