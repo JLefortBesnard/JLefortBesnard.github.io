@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Short Resume"
-    url:  /Short_resume/
-  - title: "Main Projects"
-    url:  /main-projects/
+  - title: "CV"
+    url:  /CV/
+  - title: "Publications"
+    url:  /Publications/
   - title: "Per Topic"
     url:  /Pertopic/
   - title: "Last Tweets"
