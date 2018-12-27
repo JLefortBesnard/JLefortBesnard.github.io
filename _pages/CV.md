@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-permalink: /Short_resume/
+permalink: /CV/
 header:
   image: "/images/brainhackzurich.jpg"
   image_description: "Near Aachen, Germany"
