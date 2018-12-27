@@ -2,12 +2,8 @@
 layout: single
 classes: wide
 permalink: /Pertopic/
-title: "Per Topic"
+title: "Posts per topic"
 author_profile: true
-header:
-  image: "/images/desert.jpg"
-  image_description: "High Fens, Belgium"
-  caption: "Photo credit: [**Juliette Forest**](https://julietteforest.com)"
 ---
 
 
