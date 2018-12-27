@@ -1,13 +1,13 @@
 # main links
 main:
-  - title: "CV"
-    url:  /CV/
-  - title: "Publications"
-    url:  /Publications/
-  - title: "Per Topic"
+  - title: "Posts per topic"
     url:  /Pertopic/
   - title: "Last Tweets"
     url:  /LastTweets/
+  - title: "Publications"
+    url:  /Publications/
+  - title: "CV"
+    url:  /CV/
 
 
 
