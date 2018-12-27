@@ -4,7 +4,6 @@ author_profile: true
 tags: [Alternative]
 ---
 
-...To be completed soon...
 
 ### Operating system for your computer
 Instead of Mac and Windows: Linux. The [Ubuntu version](https://www.ubuntu.com/download/desktop) is very easy to handle.
