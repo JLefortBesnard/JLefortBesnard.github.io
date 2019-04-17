@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 locale                   : "en-US"
 title                    : "Dr. Jeremy Lefort-Besnard"
 title_separator          : "-"
-name                     : "Jeremy Lefort-Besnard"
+name                     : "Dr. Jeremy Lefort-Besnard"
 description              : "Research portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
