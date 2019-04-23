@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Dr. Jeremy Lefort-Besnard"
 title_separator          : "-"
 name                     : "Dr. Jeremy Lefort-Besnard"
-description              : "Brain science, data, machine learning"
+description              : "Psychiatry, Neuroimaging, Machine Learning, Data"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Jeremy Lefort-Besnard"
   avatar           : "/images/bio_photo.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Brain science, data, machine learning"
+  bio              : "Psychiatry, Neuroimaging, Machine Learning, Data"
   location         : "NTHU BIIC Lab, Hsinchu, Taiwan"
   email            : "jlefortbesnard@tuta.io"
   uri              :
