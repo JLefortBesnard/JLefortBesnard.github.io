@@ -8,7 +8,7 @@ header:
 author_profile: true
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Resume_LefortBesnard.png" alt="resume">
+<img src="{{ site.url }}{{ site.baseurl }}/images/Resume_LefortBesnard.jpg" alt="resume">
 
 Download : [![PDF](icon/pdf-icon.png)](/Resume_LefortBesnard.pdf)
 
