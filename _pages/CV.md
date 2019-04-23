@@ -4,7 +4,6 @@ classes: wide
 permalink: /CV/
 header:
   image: "/images/brainhackzurich.jpg"
-  image_description: "Near Aachen, Germany"
   caption: "Brainhack 2018 in Zürich, Switzerland"
 author_profile: true
 ---
