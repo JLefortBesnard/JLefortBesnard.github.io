@@ -13,4 +13,4 @@ author_profile: true
 
 Download : [![PDF](icon/pdf-icon.png)](/Resume_LefortBesnard.pdf)
 
-[Linked In](https://www.linkedin.com/in/jeremy-lefort-besnard-a806b28a/)
+Or add me on [Linked In](https://www.linkedin.com/in/jeremy-lefort-besnard-a806b28a/)
