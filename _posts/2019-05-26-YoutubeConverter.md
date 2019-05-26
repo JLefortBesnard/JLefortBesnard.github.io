@@ -5,12 +5,13 @@ tags: [Computer]
 ---
 
 This is a short explanation of how to use this 
-[Python script]("https://github.com/JLefortBesnard/YoutubeConverter/blob/master/youtubemp3.py") 
+[Python script]("https://github.com/JLefortBesnard/YoutubeConverter") 
 to download Youtube videos and convert them into mp3.
 
-First you need to have Python 3 installed. How to install it is beyond the scope of this post but you can find information 
-[there]("https://github.com/JLefortBesnard/Learn-python-and-machine-learning/wiki/Tips-for-learning-Python-and-Machine-Learning").
-Once installed, you need to have a few packages installed. Activate Python and type in you terminal:
+First you need to have ipython 3 installed (Python 3 + ipython). How to install it is beyond the scope of this post but you can find information [there]("http://jeremylefortbesnard.de/LearnPythonandML/").
+Once installed, you need to have a few packages installed. 
+
+To install them, activate ipython (open your terminal and type ipython) and type:
 
 ```
 !pip install pytube
@@ -19,10 +20,10 @@ Once installed, you need to have a few packages installed. Activate Python and t
 !pip install ipython
 ```
 
-The ! before the command is for doing the command outside Python.
-The other packages should already be coming with Python. If not, just follow the same idea: !pip install ...
+The ! before the command is for doing something outside Python.
+The other packages should already be coming with Python. If not, just follow the same idea: !pip install _package-name_
 
-Once this is done, you must create a folder named "music" in you Desktop.You could do this using Python as well.
+Once this is done, you must create a folder named "music" in your Desktop. You could do this using Python as well.
 
 ```
 path = 'Desktop\music' 
@@ -42,4 +43,4 @@ urls = ["https://www.youtube.com/watch?v=NlUQbrlb2iQ",
 ```
 Mind the inverted commas and the squared brackets as well as the indentation. The format is very important in Python.
 
-Once this is all set you can copy paste the rest of the script in your terminal.
+Once this is all set, you can copy paste the rest of the script in your terminal.
