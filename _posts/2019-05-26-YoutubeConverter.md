@@ -5,10 +5,10 @@ tags: [Computer]
 ---
 
 This is a short explanation of how to use this 
-[Python script]("https://github.com/JLefortBesnard/YoutubeConverter") 
+<a href="https://github.com/JLefortBesnard/YoutubeConverter">Python script</a>.
 to download Youtube videos and convert them into mp3.
 
-First you need to have ipython 3 installed (Python 3 + ipython). How to install it is beyond the scope of this post but you can find information [there]("http://jeremylefortbesnard.de/LearnPythonandML/").
+First you need to have ipython 3 installed (Python 3 + ipython). How to install it is beyond the scope of this post but you can find information <a href="http://jeremylefortbesnard.de/LearnPythonandML/">there</a>.
 Once installed, you need to have a few packages installed. 
 
 To install them, activate ipython (open your terminal and type ipython) and type:
