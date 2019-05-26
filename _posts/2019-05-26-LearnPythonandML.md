@@ -73,7 +73,7 @@ Everything you need to know in Python from preprocessing to deep learning. Scrol
 * [realpython](https://realpython.com/) where you can even subscribe to free email series about Python tricks!
 * Siraj Raval [Youtube videos](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A). This guy even made rap songs on machine learning!
 
-**Reminder:** *Programming is a practical skill that is better learned by *doing* rather than *studying*, much like learning foreign languages*
+**Reminder:** *Programming is a practical skill that is better learned by -doing- rather than -studying-, much like learning foreign languages*
 
 # GETTING STARTED WITH MACHINE LEARNING
 
