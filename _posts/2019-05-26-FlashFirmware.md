@@ -22,7 +22,7 @@ Odin is used to flash a custom recovery firmware image to a Samsung Android devi
 <a href="https://en.wikipedia.org/wiki/Odin_(firmware_flashing_software)">More info about ODIN</a>. 
 Extract it and open ODIN3_v3.13.1.EXE. It looks like this:
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/odin.png" alt="odin">
+<img src="{{ site.url }}{{ site.baseurl }}/images/odin.PNG" alt="odin">
 
 I didn't but you might also need Samsung <a href="https://androidmtk.com/download-samsung-usb-drivers">USB drivers</a>.
 
@@ -30,22 +30,22 @@ Ok, you are all set, let's do this.
 
 Boot your tablet into download mode by pressing and holding the power key + the volume down key + the home key until this screen appears:
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/download1.png" alt="download1">
+<img src="{{ site.url }}{{ site.baseurl }}/images/download1.PNG" alt="download1">
 
 Then press the volum up key again to boot into the download mode.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/download2.png" alt="download2">
+<img src="{{ site.url }}{{ site.baseurl }}/images/download2.PNG" alt="download2">
 
 Connect your tablet to your computer.
 
 Get back to ODIN on your computer. On the log windows, "Added!!" should be written.
 Pick the "options" tab and check that only "Auto Reboot " and "F. Reset Time" are selected.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/odin2.png" alt="odin2">
+<img src="{{ site.url }}{{ site.baseurl }}/images/odin2.PNG" alt="odin2">
 
 On the right , click on "AP" and find the Samsung firmware you dowloaded and renamed ("T810XXU2CPK1_T810DBT2CPK1_HOME.tar")
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/odin3.png" alt="odin3">
+<img src="{{ site.url }}{{ site.baseurl }}/images/odin3.PNG" alt="odin3">
 
 Click on Start and wait for the flash to be done.
 
