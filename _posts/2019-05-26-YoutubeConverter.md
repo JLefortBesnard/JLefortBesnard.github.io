@@ -31,7 +31,7 @@ Once this is done, you can download the script "youtubemp3_refactoring.py" <a hr
 Still with ipython activated on your terminal, left click on the file "youtubemp3_refactoring.py" you downloaded and on your terminal, type "run " and paste the selection after the space. The line should look similarly:
 
 ```
-run Desktop/youtubemp3_refactoring.py 
+run Desktop/youtube_converter.py
 ```
 
 The program will ask you to check if you want to create the music folder in the current path or in another path.
