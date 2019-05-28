@@ -49,7 +49,7 @@ Cut and paste it on your Desktop.
 Ok, we are almost done.
 
 <p align="justify">
-In your terminal, still with ipython activated, left click on the file "youtubemp3_refactoring.py" you downloaded and on your terminal, type "run " (mind the space after run) and paste the selection after the space. The line should look similarly:
+In your terminal, still with ipython activated, left click on the file "youtube_converter.py" you downloaded and on your terminal, type "run " (mind the space after run) and paste the selection after the space. The line should look similarly:
 </p>
 ```
 run /Desktop/youtube_converter.py
