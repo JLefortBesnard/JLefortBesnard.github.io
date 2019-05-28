@@ -51,9 +51,11 @@ Ok, we are almost done.
 <p align="justify">
 In your terminal, still with ipython activated, left click on the file "youtube_converter.py" you downloaded and on your terminal, type "run " (mind the space after run) and paste the selection after the space. The line should look similarly:
 </p>
+
 ```
 run /Desktop/youtube_converter.py
 ```
+
 <p align="justify"> 
 The program will ask you to check if you want to create the music folder in the current path or in another path.
 Type 0 and press enter to create the folder music in the current path (the mp3 will be converted there).
