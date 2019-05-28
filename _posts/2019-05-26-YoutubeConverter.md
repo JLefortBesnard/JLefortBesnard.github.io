@@ -4,8 +4,10 @@ author_profile: true
 tags: [Computer]
 ---
 
+<p align="justify"> 
+
 This is a short explanation of how to use this 
-<a href="https://github.com/JLefortBesnard/YoutubeConverter">Python script</a>.
+<a href="https://github.com/JLefortBesnard/YoutubeConverter">Python script</a>
 to download Youtube videos and convert them into mp3.
 
 First you need to have ipython 3 installed (Python 3 + ipython). How to install it is beyond the scope of this post but you can find information <a href="http://jeremylefortbesnard.de/LearnPythonandML/">there</a>.
@@ -17,30 +19,29 @@ To install them, activate ipython (open your terminal and type ipython) and type
 !pip install pytube
 !pip install moviepy
 !pip install subprocess
-!pip install ipython
 ```
 
-The ! before the command is for doing something outside Python.
-The other packages should already be coming with Python. If not, just follow the same idea: !pip install _package-name_
+The ! before the command is to run the command outside Python.
+The other packages should already be coming with Python. If not, just follow the same idea: 
 
-Once this is done, you must create a folder named "music" in your Desktop. You could do this using Python as well.
+!pip install _package-name_
 
-```
-path = 'Desktop\music' 
-if not os.path.exists(path):
-    os.makedirs(path)
-```  
+Once this is done, you can download the script "youtubemp3_refactoring.py" <a href="https://github.com/JLefortBesnard/YoutubeConverter">there</a> on your Desktop.
 
-Then you can paste the first part of the script until os.chdir("Desktop\\music").
-This command directs the terminal into the folder music.
-
-The next step is to copy all the URL inside a list as below:
+Still with ipython activated on your terminal, left click on the file "youtubemp3_refactoring.py" you downloaded and on your terminal, type "run " and paste the selection after the space. The line should look similarly:
 
 ```
-# paste here the Youtube URL you wanna convert
-urls = ["https://www.youtube.com/watch?v=NlUQbrlb2iQ",
-        "https://www.youtube.com/watch?v=3V1VwEKFe0g"]
+run Desktop/youtubemp3_refactoring.py 
 ```
-Mind the inverted commas and the squared brackets as well as the indentation. The format is very important in Python.
 
-Once this is all set, you can copy paste the rest of the script in your terminal.
+The program will ask you to check if you want to create the music folder in the current path or in another path.
+Type 0 and press enter to create the folder music in the current path (the mp3 will be converted there).
+Type 1 and press enter if you want to define another destination for the folder music.
+
+Alright, now, the program asks you to paste the Youtube URL one by one.
+
+Once your done, type 1 and press Enter.
+
+That's it. Go to the music folder to listen to the output!
+
+</p>
