@@ -5,7 +5,7 @@ tags: [Computer]
 ---
 
 <p align="justify"> 
-This is a short explanation of how to use this 
+This is a short explanation of how to use this
 <a href="https://github.com/JLefortBesnard/YoutubeConverter">Python script</a>
 to download Youtube videos and convert them into mp3. The idea is that you run this script while scrolling on Youtube videos and copy-paste the URL of each video you find interesting as you go.
 </p>
@@ -72,4 +72,4 @@ That's it. Now you just have to wait until your computer does the work.
 Go to the music folder to listen to the output!
 </p>
 
-
+Feel free to improve this code (pull request) or to fork it.
