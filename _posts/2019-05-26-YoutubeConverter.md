@@ -7,7 +7,7 @@ tags: [Computer]
 <p align="justify"> 
 This is a short explanation of how to use this 
 <a href="https://github.com/JLefortBesnard/YoutubeConverter">Python script</a>
-to download Youtube videos and convert them into mp3.
+to download Youtube videos and convert them into mp3. The idea is that you run this script while scrolling on Youtube videos and copy-paste the URL of each video you find interesting as you go.
 </p>
 
 
@@ -23,7 +23,6 @@ To install them, activate ipython (open your terminal and type ipython) and type
 ```
 !pip install pytube
 !pip install moviepy
-!pip install subprocess
 ```
 <p align="justify"> 
 The ! before the command is to run the command outside Python.
@@ -39,6 +38,7 @@ Once the installation of ipython and packages is done, you can download the scri
 </p>
 
 Click on "Clone or Download" on the Github page, and select "Download ZIP"
+
 <p align="justify"> 
 Extract the zip and in the extracted folder, you will find the file "Youtube_converter.py".
 Cut and paste it on your Desktop.
@@ -49,20 +49,20 @@ Cut and paste it on your Desktop.
 Ok, we are almost done.
 
 <p align="justify">
-In your terminal, still with ipython activated, left click on the file "youtube_converter.py" you downloaded and on your terminal, type "run " (mind the space after run) and paste the selection after the space. The line should look similarly:
+In your terminal, still with ipython activated, select the file "youtube_converter.py" and drop it on your terminal (this should give you the whole file path), type "run " (mind the space after run) before the conmplete path. The line should look similarly (depending on your OS and path structure):
 </p>
 
 ```
-run /Desktop/youtube_converter.py
+run /User/Desktop/youtube_converter.py
 ```
 
 <p align="justify"> 
 The program will ask you to check if you want to create the music folder in the current path or in another path.
-Type 0 and press enter to create the folder music in the current path (the mp3 will be converted there).
-Type 1 and press enter if you want to define another destination for the folder music.
+Type 0 and press enter to create the folder music in the current path (the mp3 will be converted in there).
+Type 1 and press enter if you want to define another destination for the folder music. You will have to define the whole new path (not including music). For example, it could be something like user/Desktop/personal_stuff. Writing this path would create a folder music in the folder personal_stuff in your Desktop. Mind that depending on your system, you might have to write a longer path.
 </p>
 
-Alright, so now, the program asks you to paste the Youtube URL one by one. Feel free to add as many urls as you like.
+Alright, so now, the program asks you to paste the Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
 
 Once your done, type 1 and press Enter.
 
