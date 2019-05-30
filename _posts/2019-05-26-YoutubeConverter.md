@@ -26,7 +26,7 @@ To install them, activate ipython (open your terminal and type ipython) and type
 ```
 <p align="justify"> 
 The ! before the command is to run the command outside Python.
-The other packages should already be coming with Python. If not, just follow the same idea: 
+The other packages should already be coming with Python. If not, you will have an error message while running the program such as "ModuleNotFoundError: No mudule named [...]". Then, simply follow the same idea to install it: 
 </p>
 
 !pip install _package-name_
