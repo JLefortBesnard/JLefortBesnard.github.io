@@ -13,3 +13,8 @@ author_profile: true
 Download : [![PDF](icon/pdf-icon.png)](/Resume_LefortBesnard.pdf)
 
 Or add me on [Linked In](https://www.linkedin.com/in/jeremy-lefort-besnard-a806b28a/)
+
+PhD thesis: [Report from RWTH university](https://publications.rwth-aachen.de/record/758347)
+
+
+
