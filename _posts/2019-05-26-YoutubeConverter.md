@@ -55,16 +55,19 @@ In your terminal, still with ipython activated, select the file "youtube_convert
 ```
 run /User/Desktop/youtube_converter.py
 ```
+<p align="justify"> 
+Alright, so now, the program will first ask you to paste the Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
+</p>
+
+Once your done, type 1 and press Enter.
 
 <p align="justify"> 
-The program will ask you to check if you want to create the music folder in the current path or in another path.
-Type 0 and press enter to create the folder music in the current path (the mp3 will be converted in there).
+The program will then ask you to check if you want to create the music folder in the current path or in another path.
+Type 0 and press enter to create the folder music in the current path which is writen above the question on your terminal (the mp3 will be converted in there).
 Type 1 and press enter if you want to define another destination for the folder music. You will have to define the whole new path (not including music). For example, it could be something like user/Desktop/personal_stuff. Writing this path would create a folder music in the folder personal_stuff in your Desktop. Mind that depending on your system, you might have to write a longer path.
 </p>
 
-Alright, so now, the program asks you to paste the Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
 
-Once your done, type 1 and press Enter.
 
 ## 4. Enjoy the output!
 <p align="justify"> 
