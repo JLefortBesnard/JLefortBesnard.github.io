@@ -75,4 +75,9 @@ That's it. Now you just have to wait until your computer does the work.
 Go to the music folder to listen to the output!
 </p>
 
-Feel free to improve this code (pull request) or to fork it.
+Feel free to improve the code (pull request) or to fork it.
+
+<p align="justify"> 
+Edit: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path. I suggest you start downloading (type 1 instead of pasting a new url) after copying a few Youtube URLs. It can be frustrating to list a lot of URLs and then find out that they can't be converted or something.
+ </p>
+
