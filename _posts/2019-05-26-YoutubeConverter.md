@@ -49,21 +49,21 @@ Cut and paste it on your Desktop.
 Ok, we are almost done.
 
 <p align="justify">
-In your terminal, still with ipython activated, select the file "youtube_converter.py" and drop it on your terminal (this should give you the whole file path), type "run " (mind the space after run) before the conmplete path. The line should look similarly (depending on your OS and path structure):
+In your terminal, still with ipython activated (see above), select the file "youtube_converter.py" and drop it on your terminal (this should give you the whole file path), type "run " (mind the space after run) before the complete path. The line should look similarly (depending on your OS and path structure):
 </p>
 
 ```
 run /User/Desktop/youtube_converter.py
 ```
 <p align="justify"> 
-Alright, so now, the program will first ask you to paste the Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
+Alright, so now, the program will first ask you to paste Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
 </p>
 
 Once your done, type 1 and press Enter.
 
 <p align="justify"> 
 The program will then ask you to check if you want to create the music folder in the current path or in another path.
-Type 0 and press enter to create the folder music in the current path which is writen above the question on your terminal (the mp3 will be converted in there).
+Type 0 and press enter to create the folder music in the current path (which is writen above the question on your terminal), the mp3 will be converted in there.
 Type 1 and press enter if you want to define another destination for the folder music. You will have to define the whole new path (not including music). For example, it could be something like user/Desktop/personal_stuff. Writing this path would create a folder music in the folder personal_stuff in your Desktop. Mind that depending on your system, you might have to write a longer path.
 </p>
 
@@ -75,9 +75,13 @@ That's it. Now you just have to wait until your computer does the work.
 Go to the music folder to listen to the output!
 </p>
 
+<p align="justify"> 
+The program will ask you if you want to convert more videos, type 0 and press Enter to continue (the program will start again), just press Enter to stop.
+</p>
+
 Feel free to improve the code (pull request) or to fork it.
 
 <p align="justify"> 
-Edit: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path. I suggest you start downloading (type 1 instead of pasting a new url) after copying a few Youtube URLs. It can be frustrating to list a lot of URLs and then find out that they can't be converted or something.
+Edit: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path (play around with the [pwd or cd command](https://www.guru99.com/terminal-file-manager.html) to check it before running the script). I suggest you start downloading (type 1 instead of pasting a new url) after copying a few Youtube URLs. It can be frustrating to list a lot of URLs and then find out that they can't be converted eventually.
  </p>
 
