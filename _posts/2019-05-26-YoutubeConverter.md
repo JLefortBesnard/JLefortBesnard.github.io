@@ -84,6 +84,6 @@ The program will ask you if you want to convert more videos, type 0 and press En
 Feel free to improve the code (pull request) or to fork it.
 
 <p align="justify"> 
-Edit: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path (play around with the  <a href="https://www.guru99.com/terminal-file-manager.html">pwd or cd command</a> to check it before running the script). I suggest you start downloading (type 1 instead of pasting a new url) after copying a few Youtube URLs. It can be frustrating to list a lot of URLs and then find out that they can't be converted eventually.
+Edit: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path (play around with the  <a href="https://www.guru99.com/terminal-file-manager.html">pwd/cd commands</a> to check it before running the script). I suggest you start downloading (type 1 instead of pasting a new url) after copying a few Youtube URLs. It can be frustrating to list a lot of URLs and then find out that they can't be converted eventually.
  </p>
 
