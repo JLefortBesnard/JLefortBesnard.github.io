@@ -18,7 +18,9 @@ First you need to have ipython 3 installed (Python 3 + ipython). How to install 
 
 Once installed, you need to have a few packages installed. 
 
-To install them, activate ipython (open your terminal and type ipython) and type:
+To install them, launch ipython: open your terminal and type ipython, if correctly installed then the terminal should display the version of Python and IPython installed, and the following line should start with "In[1]". 
+
+Once ipython is ready to be used, type the following in your terminal:
 
 ```
 !pip install pytube
