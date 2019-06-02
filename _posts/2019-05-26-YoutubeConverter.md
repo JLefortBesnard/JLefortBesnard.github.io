@@ -58,10 +58,16 @@ In your terminal, still with ipython activated (see above), select the file "you
 run /User/Desktop/youtube_converter.py
 ```
 <p align="justify"> 
-Alright, so now, the program will first ask you to paste Youtube URL one by one. So pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one.
+Alright, so now, the program will first ask you if you want to paste the URL one by one or directly paste a list of URLs. Type 1 and press Enter to paste Youtube URL one by one. Type 2 and press Enter to paste a list of Youtube URLs. 
 </p>
 
-Once your done, type 1 and press Enter.
+<p align="justify"> 
+If you chose to paste URL one by one, pick a Youtube URL, paste it and press Enter. Feel free to add as many urls as you like but always one by one. Once your done, type 1 and press Enter.
+</p>
+
+<p align="justify"> 
+If you chose to paste a list of URLs, make sure each URL is separated by a space, paste the whole selection and press Enter. 
+</p>
 
 <p align="justify"> 
 The program will then ask you to check if you want to create the music folder in the current path or in another path.
