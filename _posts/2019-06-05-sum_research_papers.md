@@ -28,8 +28,9 @@ Now you can download the script Science_paper_sum.py (on the top)
 Put the script into your newly created folder "science_papers_sum".
 Go back into your terminal with python or ipython activated and type:
 </p>
+
 ```
-run Science_paper_sum.py
+run sum_research_papers_keeper.py
 ```
 
 ## 1. Select the name of the topic you wanna read article about
