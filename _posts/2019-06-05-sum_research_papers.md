@@ -62,6 +62,7 @@ It then asks you if you want to add more in title. Type 0 and press Enter if not
 Follow the same procedure for the following columns until it gets back to asking you about what to do next.
 Then type 4 and press Enter to save the Dataframe into the Excel document.
 </p>
+
 ### Modify entry
 
 The program will ask you which index and column to modify. Copy & paste the new value, press Enter. Then type 4 and press Enter to save it.
@@ -75,6 +76,7 @@ This option will print the Dataframe.
 This option will allow you to read what is in each column of a specific index. You just have to specifiy the index.
 If you write *all* or anything else but a number, the program will display all columns of all entries one by one.
 </p>
+
 ### Save data
 
 This option will save the Dataframe into the Excel document.
