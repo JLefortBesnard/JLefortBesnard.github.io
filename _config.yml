@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jeremy Lefort-Besnard"
+title                    : "Dr. Jeremy Lefort-Besnard"
 title_separator          : "-"
-name                     : "Jeremy Lefort-Besnard"
+name                     : "Dr. Jeremy Lefort-Besnard"
 description              : "Psychiatry, Neuroimaging, Machine Learning, Data"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -100,7 +100,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeremy Lefort-Besnard  (Ph.D.)"
+  name             : "Jeremy Lefort-Besnard"
   avatar           : "/images/bio_photo.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Psychiatry, Neuroimaging, Machine Learning, Data"
   location         : "NTHU BIIC Lab, Hsinchu, Taiwan"
