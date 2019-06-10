@@ -56,7 +56,7 @@ self.columns = ["Title", "Authors", "Journal", "Date", "Sample size", "Methods",
                 "Results", "Discussion", "Other"]
 ```
 <p align="justify"> 
-The program first ask you about the title, copy paste the title and press Enter.
+The program first asks you about the title, copy paste the title and press Enter.
 It then asks you if you want to add more in title. Type 0 and press Enter if not. Keep pasting stuff otherwise.
 </p>
 <p align="justify"> 
