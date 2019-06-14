@@ -11,7 +11,7 @@ to paste selected chunks of scientific papers. You end up with an Excel document
 </p>
 
 ## Before running the program
-You need to make sure Python 3 is installed (<a href="http://jeremylefortbesnard.de/LearnPythonandML/">info here</a>) as well as the module pandas. If not installed, activate python (open your terminal and type python or ipython) and type in:
+You need to make sure Python 3 is installed (<a href="http://jeremylefortbesnard.de/LearnPythonandML/">info here</a>) as well as the module pandas. If the module is not installed, activate python (open your terminal and type python or ipython) and type in:
 ```
 !pip install pandas
 ```
