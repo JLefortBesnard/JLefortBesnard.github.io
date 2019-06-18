@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Blog"
+    url:  /Blog/
   - title: "Posts per topic"
     url:  /Pertopic/
   - title: "Last Tweets"
