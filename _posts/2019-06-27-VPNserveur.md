@@ -81,7 +81,9 @@ just type in the name of the already installled app you wanna use (e.g., spyder)
 <p align="justify">
 Okay, great, you are connected to the server, you can still connected to the internet and you can use apps installed on the server. What about transfering files from your local PC to the server and vice et versa?
 </p>
-### filezilla
+
+### Using Filezilla
+
 <p align="justify">
 Filezilla is a great software that allows you to transfer files between your PC and the server. Download and install <a href="https://filezilla-project.org/">Filezilla Server</a>.
 Once installed, open it and enter the server address in Host, your username in the usernam tab, your password and the Port, then click on Quick connect.
@@ -90,7 +92,8 @@ Once installed, open it and enter the server address in Host, your username in t
 That's it, you're connected and you can now exchange file. On the left side are your local Desktop folders, on the right side are the server folders. You just have to click on stuff you want to transfer. The file to copy is the one you are clicking on and the destination folder is the one you are in on the other side.
 </p>
 
-### scp
+### Using the scp command
+
 If you want to transfer files directly from your terminal, use the scp command.
 
 Connect to the VPN, open your terminal, and type in:
