@@ -53,7 +53,7 @@ You type in spyder on your terminal and you got QXcb error...
 
 Okay, let's fix this, open your favorite webbrowser.
 
-Wait, oh nooo, c...
+Wait, oh nooo, there is no more internet connection.
 
 ## Internet connection while using the VPN connection.
 
