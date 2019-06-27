@@ -53,11 +53,11 @@ You type in spyder on your terminal and you got QXcb error...
 
 Okay, let's fix this, open your favorite webbrowser.
 
-Wait, oh nooo, internet is not working anymore...
+Wait, oh nooo, c...
 
-## Having internet while using the VPN connection.
+## Internet connection while using the VPN connection.
 
-That is because the VPN connection is used as default. 
+Internet is not working anymore because the VPN connection is used as default. 
 <p align="justify">
 Open the network&internet settings, click on VPN, you will see the status of your VPN connection.
 Click on Change adapter options. Right click on the VPN you just configured, select properties. Click on the tab Networking, select the line internet Protocol Version 4 (TCP/IPv4) and click on properties.
