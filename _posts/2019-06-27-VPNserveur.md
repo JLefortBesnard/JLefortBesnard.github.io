@@ -74,22 +74,22 @@ In sum, download, install & configure putty as well as Xming. Everything is pret
 
 <p align="justify">
 Once everything is done, remember to save the configuration on putty. Then you just have to load and open a session. A terminal screen will open and ask for your password. Now, 
-just type in the name of the already installled app you wanna use (e.g., spyder) and the app will open on your local computer.
+just type in the name of the already installled app you wanna use (e.g., spyder for me) and the app will open on your local computer.
 </p>
 
 ## Transfering files
 <p align="justify">
-Okay, great, you are connected to the server, you can still connected to the internet and you can use apps installed on the server. What about transfering files from your local PC to the server and vice et versa?
+Okay, great, you are connected to the server, you are also connected to the internet and you can use apps installed on the server. What about transfering files from your local PC to the server and vice et versa?
 </p>
 
 ### Using Filezilla
 
 <p align="justify">
-Filezilla is a great software that allows you to transfer files between your PC and the server. Download and install <a href="https://filezilla-project.org/">Filezilla Server</a>.
-Once installed, open it and enter the server address in Host, your username in the usernam tab, your password and the Port, then click on Quick connect.
+Filezilla is a software that allows you to transfer files between your PC and the server. Download and install <a href="https://filezilla-project.org/">Filezilla Server</a>.
+Once installed, open it and enter the server address in Host, your username, your password and the Port. Then, click on Quick connect.
 </p>
 <p align="justify">
-That's it, you're connected and you can now exchange file. On the left side are your local Desktop folders, on the right side are the server folders. You just have to click on stuff you want to transfer. The file to copy is the one you are clicking on and the destination folder is the one you are in on the other side.
+That's it, you're connected and you can now transfer files. On the left side are your local Desktop folders, on the right side are the server folders. You just have to click on stuff you want to transfer. The file to copy is the one you are clicking on and the destination folder is the one you are in on the other side.
 </p>
 
 ### Using the scp command
@@ -103,7 +103,7 @@ scp file_to_copy_from_local_computer.txt username@serveraddress:/destination_pat
 ```
 for example: scp my_text.txt jeremy@195.225.114.1:/home/helloworld
 
-If the port is not 22, type in you port number after a capital P:
+If the port is not 22, type in your port number after a capital P:
 
 ```
 scp -P port file_to_copy_from_local_computer.txt username@serveraddress:/destination_path
