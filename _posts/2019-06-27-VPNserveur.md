@@ -18,7 +18,7 @@ Once VPN connected, you can remotely connect to the server. A server is basicall
 
 Once connected, it's like having another computer at your disposal.
 
-You might need to transfer files from your local computer to the server or to use app (installed on the server) on your local machine.
+You might need to transfer files from your local computer to the server or to use an app (installed on the server) on your local machine.
 
 If your operating system is Windows (here 10) and you are connecting to a Linux server, this can be tricky.
 
@@ -76,5 +76,51 @@ In sum, download, install & configure putty as well as Xming. Everything is pret
 Once everything is done, remember to save the configuration on putty. Then you just have to load and open a session. A terminal screen will open and ask for your password. Now, 
 just type in the name of the already installled app you wanna use (e.g., spyder) and the app will open on your local computer.
 </p>
+
+## Transfering files
+<p align="justify">
+Okay, great, you are connected to the server, you can still connected to the internet and you can use apps installed on the server. What about transfering files from your local PC to the server and vice et versa?
+</p>
+### filezilla
+<p align="justify">
+Filezilla is a great software that allows you to transfer files between your PC and the server. Download and install <a href="https://filezilla-project.org/">Filezilla Server</a>.
+Once installed, open it and enter the server address in Host, your username in the usernam tab, your password and the Port, then click on Quick connect.
+</p>
+<p align="justify">
+That's it, you're connected and you can now exchange file. On the left side are your local Desktop folders, on the right side are the server folders. You just have to click on stuff you want to transfer. The file to copy is the one you are clicking on and the destination folder is the one you are in on the other side.
+</p>
+
+### scp
+If you want to transfer files directly from your terminal, use the scp command.
+
+Connect to the VPN, open your terminal, and type in:
+
+```
+scp file_to_copy_from_local_computer.txt username@serveraddress:/destination_path
+```
+for example: scp my_text.txt jeremy@195.225.114.1:/home/helloworld
+
+If the port is not 22, type in you port number after a capital P:
+
+```
+scp -P port file_to_copy_from_local_computer.txt username@serveraddress:/destination_path
+```
+
+If you need to copy a folder:
+
+```
+scp -P port -r folder_to_copy_from_local_computer.txt username@serveraddress:/destination_path
+```
+
+The -r stands for recursively, meaning that everything inside the folder will be copied
+
+FYI, to copy from the server to your local machine, use this form:
+```
+scp -P port username@serveraddress:/path_file_to_send /path_where_to_put
+```
+
+Hope this help. 
+
+
 
 
