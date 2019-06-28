@@ -73,8 +73,7 @@ Ok, now that you have internet back, let's fix this QXcb problem. Follow the pro
 In sum, download, install & configure putty as well as Xming. Everything is pretty straightforward if you folow the procedure from the above website.
 
 <p align="justify">
-Once everything is done, remember to save the configuration on putty. Then you just have to load and open a session. A terminal screen will open and ask for your password. Now, 
-just type in the name of the already installled app you wanna use (e.g., spyder for me) and the app will open on your local computer.
+Once everything is done, remember to save the configuration on putty. Now, everytime you want to connect and use app from the server, you just have to i) run the Xlaunch app (and configure it as described in the link above), and ii) load and open the saved session in Putty. A terminal screen will then open and ask for your password. Now that you are connected to the server, just type in the name of the already installled app you wanna use (e.g., spyder for me) and the app will open on your local computer.
 </p>
 
 ## Transfering files
