@@ -27,7 +27,7 @@ Below are some tips I found to make it work.
 ## Configure the VPN
 
 <p align="justify">
-Your lab should give you some information such as VPN ip, VPN name and VPN passport. You will need these informations to VPN connect.
+Your lab should give you some information such as VPN ip, VPN name and VPN password. You will need these informations to VPN connect.
 Open the network & internet settings, click on VPN, add a VPN connection and then fill in the information.
 </p>
 <p align="justify">
@@ -42,7 +42,7 @@ ssh username@serveraddress -p port
 
 <p align="justify">
 Replace username, serveraddress, and port (port is usually 22) with the proper information that your lab should have given to you.
-Then, you will be asked to enter your password. No worries if nothing is happening while you're typing your password in, that's normal, just type it and press enter.
+Then, you will be asked to enter your password. No worries if nothing gets written on the terminal while you're typing your password in, that's normal, just type it and press enter.
 </p>
 That's it, you are now connected to the server!
 
@@ -60,7 +60,7 @@ Wait, oh nooo, there is no more internet connection.
 Internet is not working anymore because the VPN connection is used as default. 
 <p align="justify">
 Open the network&internet settings, click on VPN, you will see the status of your VPN connection.
-Click on Change adapter options. Right click on the VPN you just configured, select properties. Click on the tab Networking, select the line internet Protocol Version 4 (TCP/IPv4) and click on properties.
+Click on Change adapter. Right click on the VPN you just configured, select properties. Click on the tab Networking, select the line internet Protocol Version 4 (TCP/IPv4) and click on properties.
 Then, click on Advanced and unpick the Use default gateway on remote network. Click ok, that's it, your internet connection should be back on track. 
 If not, try disconnect VPN, check that you have internet back and then reconnect VPN.
 </p>
