@@ -31,12 +31,17 @@ and you reach a high accuracy using cross validation, still remind yourself that
 of the hyperparameters and eventually overfitted you sample (including the test set).
 </p>
 
-<p align="justify">
-[Prof. Tibshirani Talk link](https://www.youtube.com/watch?v=qTYDDhGUK10)
-Bzdok, Yeo . Neuroimage, Inference in the age of big data: Future perspectives on neuroscience. 2017
-Hastie T, Tibshirani R, Friedman J: The Elements of Statistical Learning: Data Mining, Inference, and Prediction . 2009, Springer, New York City, USA
-He, T. et al. (2018) Is deep learning better than kernel regression for functional connectivity prediction of fluid 
+
+* Prof. Tibshirani Talk: https://www.youtube.com/watch?v=qTYDDhGUK10
+  
+* Bzdok, Yeo . Neuroimage, Inference in the age of big data: Future perspectives on neuroscience. 2017
+
+* Hastie T, Tibshirani R, Friedman J: The Elements of Statistical Learning: Data Mining, Inference, and Prediction . 2009, Springer, New York City, USA
+
+* He, T. et al. (2018) Is deep learning better than kernel regression for functional connectivity prediction of fluid 
 intelligence? In 2018 International Workshop on Pattern Recognition in Neuroimaging (PRNI), pp. 1–4, IEEE
-M.I. Jordan, T.M. Mitchell. Machine learning: trends, perspectives, and prospects. Science, 349 (2015), pp. 255-260
-Y. LeCun, Y. Bengio, G. Hinton. Deep learning. Nature, 521 (2015), pp. 436-444
-</p>
+
+* M.I. Jordan, T.M. Mitchell. Machine learning: trends, perspectives, and prospects. Science, 349 (2015), pp. 255-260
+
+* Y. LeCun, Y. Bengio, G. Hinton. Deep learning. Nature, 521 (2015), pp. 436-444
+
