@@ -19,10 +19,10 @@ or if you only have a moderate amount of observations (<500) then a simple LASSO
 Deep neural networks (DNNs) usually need large quantity of data to perform well, which is often lacking in neuroimaging. 
 In fact, He and colleagues (2018) have shown that DNNs did not outperform Kernel regression using almost 1000 
 subjects from the Human Connectome Project for predicting the fluid intelligence using functional 
-connectivity (419 x 419 features). In neuroscience, many researchers used a deep neural network (DNN) 
+connectivity (419 x 419 features). In neuroscience, many researchers used a DNN 
 with less than 500 observations, still even more features and claimed a high accuracy. 
 A model on such high dimensional data would face the curse of dimensionality (Hastie et al., 2009), 
-thus not learn but overfit the observations and fail to generalize. As Bdzdok and Yeo (2017) stated: always keep in mind 
+thus not learn but overfit the observations and most likely fail to generalize. As Bzdok and Yeo (2017) stated: always keep in mind 
 that the huge success of DNNs (in many different application domains) is partly due to colossal sample sizes with 
 n > 1,000,000 (LeCun et al., 2015; Jordan et al., 2015). In neuroscience nowadays, the biggest datasets reach about 
 1000 participants (Human Connectome Project) to about 10,000 participants (UK Biobank Imaging). Therefore, despite the 
