@@ -34,14 +34,14 @@ of the hyperparameters and eventually overfitted you sample (including the test 
 
 * Prof. Tibshirani Talk: https://www.youtube.com/watch?v=qTYDDhGUK10
   
-* Bzdok, Yeo . Neuroimage, Inference in the age of big data: Future perspectives on neuroscience. 2017
+* Bzdok, Yeo (2017). Neuroimage, Inference in the age of big data: Future perspectives on neuroscience. 
 
-* Hastie T, Tibshirani R, Friedman J: The Elements of Statistical Learning: Data Mining, Inference, and Prediction . 2009, Springer, New York City, USA
+* Hastie T, Tibshirani R, Friedman J (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction. Springer, New York City, USA
 
-* He, T. et al. (2018) Is deep learning better than kernel regression for functional connectivity prediction of fluid 
+* He, T. et al. (2018). Is deep learning better than kernel regression for functional connectivity prediction of fluid 
 intelligence? In 2018 International Workshop on Pattern Recognition in Neuroimaging (PRNI), pp. 1–4, IEEE
 
-* M.I. Jordan, T.M. Mitchell. Machine learning: trends, perspectives, and prospects. Science, 349 (2015), pp. 255-260
+* M.I. Jordan, T.M. Mitchell (2015). Machine learning: trends, perspectives, and prospects. Science, 349, pp. 255-260
 
-* Y. LeCun, Y. Bengio, G. Hinton. Deep learning. Nature, 521 (2015), pp. 436-444
+* Y. LeCun, Y. Bengio, G. Hinton (2015). Deep learning. Nature, 521, pp. 436-444
 
