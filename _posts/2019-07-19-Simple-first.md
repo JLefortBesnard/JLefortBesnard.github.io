@@ -27,8 +27,8 @@ that the huge success of DNNs (in many different application domains) is partly 
 n > 1,000,000 (LeCun et al., 2015; Jordan et al., 2015). In neuroscience nowadays, the biggest datasets reach about 
 1000 participants (Human Connectome Project) to about 10,000 participants (UK Biobank Imaging). Therefore, despite the 
 growing literature applying DNNs to neuroscience applications, if you have only a few data at hand, 
-and you reach a high accuracy using cross validation, still remind yourself that it might be that you hacked the hell out 
-of the hyperparameters and eventually overfitted you sample (including the test set).
+and you still reach a high accuracy through cross validation, remind yourself that it might be that you hacked the hell out 
+of the hyperparameters and eventually overfitted your sample (including the test set).
 </p>
 
 
