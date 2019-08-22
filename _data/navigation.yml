@@ -2,7 +2,7 @@
 main:
   - title: "Blog perso"
     url:  /Blog/
-  - title: "Blog stats"
+  - title: "Blog stats&computer"
     url:  /Pertopic/
   - title: "Last Tweets"
     url:  /LastTweets/
