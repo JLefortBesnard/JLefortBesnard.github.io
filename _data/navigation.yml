@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Blog"
+  - title: "Blog perso"
     url:  /Blog/
-  - title: "Posts per topic"
+  - title: "Blog stats"
     url:  /Pertopic/
   - title: "Last Tweets"
     url:  /LastTweets/
