@@ -1,8 +1,63 @@
----
-layout: home
-author_profile: true
-header:
-  image: "/images/desk.jpeg"
-  image_description: "Near Aachen, Germany"
-  caption: "Photo credit: [**Ohcapi**](https://www.etsy.com/shop/ohcapiPRINTS?ref=l2-shop-header-avatar)"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ProSite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Structure/CSS_layout.css" media="screen" />
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="Structure/cv.html">CV</a>
+  <a href="https://www.researchgate.net/profile/Jeremy_Lefort-Besnard">Publications</a>
+  <a href="https://losangebleu.gitlab.io/">Blog</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <p><b>Lefort-Besnard Jeremy</b></p>
+    <p>硬杰路</p>
+    <div class="avatar" id="changepic" onmousemove="pic()"><img src='Images/picme1.png' width='200' height='200'  border='3px solid black' alt='Avatar'>
+    </div>
+    <p class="ital">Brain mapping, psychiatry, statistical learning, programming</p>
+    <p><a href="https://github.com/JLefortBesnard">>Github</a></p>
+    <p><a href="https://twitter.com/JLefortBesnard">>Twitter</a></p>
+    <p><a href="https://www.linkedin.com/in/jeremy-lefort-besnard-a806b28a">>LinkedIn</a></p>
+    <p><a href="https://scholar.google.com/citations?hl=en&user=wu-ZESgAAAAJ">>Scholar</a></p>
+    <p>>Email: jlefortbesnard [at] tuta [dot] io</p>
+  </div>
+
+  <div class="main">
+    <h2>Bio</h2>
+    <p align="justify"> After studying psychology at the university of Tours (France) and Bucknell (USA), I pursued a PhD in computational neuroscience supervised by Danilo Bzdok (RWTH Aachen university, Germany) and Danielle Basset (UPENN, USA) and supported by a PhD scholarship of the International Research Training Group (DFG-IRTG 2150). I received intensive training in machine learning and brain imaging working in collaboration with Gaël Varoquaux (INRIA, Paris, France) and Simon Eickhoff (Düsseldorf, Germany). Being supervised by academics from very different fields (medicine, computer science, and physics) really made clear that I have a deep interest for combination of rigorous methodology and innovating approach to investigate psychopathology. Currently working as a postdoc in Chi-Chun Lee's lab in Hsinchu (Taiwan), we are working on learning predictive models based on behaviors, brain-region and brain-network priors using machine-learning tools such as semi-supervision and structured sparsity penalties</p>
+  </div>
+</div>
+
+
+
+<script>
+// change photo on move of mouse
+function pic(){
+  var pics = Array(
+                "<img src='Images/picme1.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme2.jpg' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme3.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme4.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme5.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme6.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme7.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme8.jpg' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme9.jpg' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                )
+
+  var randomIndex = Math.floor(Math.random()*pics.length);
+  var pic = pics[randomIndex];
+  document.getElementById('changepic').innerHTML = pic;
+       }
+</script>
+
+
+</body>
+</html>
