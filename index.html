@@ -33,20 +33,21 @@
     <h2>Bio</h2>
     <p align="justify"> After studying psychology at the university of Tours (France) and
       Bucknell (USA), I pursued a PhD in computational neuroscience supervised by
-      Danilo Bzdok (RWTH Aachen university, Germany) and Danielle Basset (UPENN, USA)
+      <a href="https://scholar.google.co.uk/citations?user=yMLTxlUAAAAJ" style="color: #6E6E6E">Danilo Bzdok</a> (McGill,
+      Canada) and <a href="https://scholar.google.co.uk/citations?user=yMLTxlUAAAAJ" style="color: #6E6E6E">Danielle Basset</a> (UPENN, USA)
       and supported by a PhD scholarship of the International Research Training Group
       (DFG-IRTG 2150). I received intensive training in machine learning and brain imaging
-      working in collaboration with Gaël Varoquaux (INRIA, Paris, France) and Simon Eickhoff
+      working in collaboration with <a href="https://scholar.google.com/citations?user=OGGu384AAAAJ&hl=en" style="color: #6E6E6E">Gaël Varoquaux</a>
+      (INRIA, Paris, France) and <a href="https://scholar.google.com/citations?user=wjpISMAAAAAJ&hl=en" style="color: #6E6E6E">Simon Eickhoff</a>
       (Düsseldorf, Germany). Being supervised by academics from very different fields
       (medicine, computer science, and physics) really made clear that I have a deep
       interest for combination of rigorous methodology and innovating approach to
-      investigate psychopathology. Currently working as a postdoc in Chi-Chun Lee's
-      lab in Hsinchu (Taiwan), we are working on learning predictive models based on
+      investigate psychopathology. Currently working as a postdoc in <a href="https://scholar.google.com/citations?hl=en&user=MGqWqOAAAAAJ" style="color: #6E6E6E">Chi-Chun Lee</a>'s
+      <a href="https://biic.ee.nthu.edu.tw/intro" style="color: #6E6E6E">BIIC lab</a> in Hsinchu (Taiwan), we are working on learning predictive models based on
       behaviors, brain-region and brain-network priors using machine-learning tools
       such as semi-supervision and structured sparsity penalties.</p><br>
-    <p align="center"><img src='Images/result2.png' width='600' height='400' alt='Brain'></p>
-
-
+    <div class="projects" align="center" id="changeproject" onmousemove="project()"><img src='Images/result2.png' width='600' height='500'  alt='Brain'></div><br>
+    <p class="ital" align="center">Click to access the respective article</p>
 
   </div>
 </div>
@@ -72,6 +73,23 @@ function pic(){
   var pic = pics[randomIndex];
   document.getElementById('changepic').innerHTML = pic;
        }
+
+
+// change photo on move of mouse
+function project(){
+         var projects = Array(
+                       "<a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' style='cursor:pointer;'><img src='Images/result1.png' width='600' height='500'  alt='Brain'></a>",
+                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' style='cursor:pointer;'><img src='Images/result2.png' width='600' height='500'  alt='Brain'></a>",
+                       "<a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' style='cursor:pointer;'><img src='Images/result3.png' width='600' height='500'  alt='Brain'></a>",
+                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' style='cursor:pointer;'><img src='Images/result4.png' width='600' height='500'  alt='Brain'></a>",
+                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' style='cursor:pointer;'><img src='Images/result5.png' width='600' height='500'  alt='Brain'></a>",
+                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' style='cursor:pointer;'><img src='Images/result6.png' width='600' height='500'  alt='Brain'></a>",
+                       )
+
+         var randomIndex = Math.floor(Math.random()*projects.length);
+         var project = projects[randomIndex];
+         document.getElementById('changeproject').innerHTML = project;
+              }
 </script>
 
 
