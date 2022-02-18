@@ -38,19 +38,19 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 15%; /* IE10 */
-  flex: 15%;
+  -ms-flex: 10%; /* IE10 */
+  flex: 10%;
   /* background-color: #f1f1f1; */
-  padding: 20px;
+  padding: 10px;
   /* border: 3px solid black; */
 }
 
 /* Main column */
 .main {
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Column container */
