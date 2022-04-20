@@ -20,6 +20,10 @@
       font-size: 14pt;
     }
 
+h3 {
+  text-align: left;
+}
+
 </style>
 </head>
 <body>
@@ -46,8 +50,10 @@
   </div>
 
   <div class="main">
-    <h2>Cours d'apprentissage automatique février-juin 2022 :</h2>
-    
+    <h3>Cours d'apprentissage automatique février-juin 2022 :</h3>
+    <p><button onclick="MLclass()" style="width:250px;height:50px;font-size:12px;background-color:white;color:#00D5FF;"><b>Cliquer ici pour afficher les cours</b></button></p>
+
+    <div id="intro" style='display:none'>
     <p align="justify"> <b>Introduction</b> <br/>
       <a href="https://pod.unicaen.fr/video/3532-cours-intensif-dapprentissage-automatique-1introduction/" style="color: #00D5FF" target="_blank">Vidéo du cours 1</a> 
     + <a href="https://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf" style="color: #00D5FF" target="_blank">à lire</a> + <a href="https://www.assistancescolaire.com/eleve/3e/maths/reviser-une-notion/3mfo03#" style="color: #00D5FF" target="_blank">exercices</a>
@@ -104,10 +110,27 @@
       <a href="https://pod.unicaen.fr/video/3744-cours-intensif-dapprentissage-automatique-10-lalgorithme-de-clustering/" style="color: #00D5FF" target="_blank">Vidéo du cours 10</a> 
       + <a href="https://scikit-learn.org/stable/modules/clustering.html#overview-of-clustering-methods" style="color: #00D5FF" target="_blank">à lire</a>
     </p>
+    </div>
 
-    
+    <script>
+    function MLclass() {
+      var x = document.getElementById("intro");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
     <br/>
-    <h2>Cours d'introduction à Python 2021 :</h2>
+    <h3>Cours sur les bonnes pratiques en statistiques inférentielles (<i>statistiques classiques</i>) :</h3>
+     <p align="justify">
+    <a href="https://pod.unicaen.fr/video/3770-bonnes-pratiques-en-statistiques-inferentielles/" style="color: #00D5FF" target="_blank">Vidéo du cours</a></p>
+
+
+    <br/>
+    <h3>Cours d'introduction à Python 2021 :</h3>
      <p align="justify"> Ce lien vous donne accès aux vidéos, résumés et exercices pour apprendre à programmer sous Python<br/>
     <a href="https://unicloud.unicaen.fr/index.php/s/Qgze52q3oQAioMH" style="color: #00D5FF" target="_blank">Lien vers cours 1 à 9</a>  </p>
   </div>
