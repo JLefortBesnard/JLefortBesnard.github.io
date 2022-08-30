@@ -32,6 +32,68 @@
     text-decoration: none;
   }
 
+.custom-slider { display: none; }
+.slide-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: dodgerblue;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.1);
+    transition: background-color 0.6s ease;
+}
+.prev{ left: 15px; }
+.next { right: 15px; }
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.slide-index {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+}
+.slide-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.slide-dot{ text-align: center; }
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover { background-color: #111111; }
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
 </style>
 </head>
 <body>
@@ -48,7 +110,7 @@
   <div class="side">
     <p><b>Lefort-Besnard Jeremy, PhD</b></p>
     <p>杰瑞米</p>
-    <div class="avatar" id="changepic" onclick="pic()"><img src='Images/picme8.PNG' width='150' height='200'  border='3px solid black' alt='Avatar'>
+    <div class="avatar" id="changepic" onclick="pic()"><img src='Images/picme1.PNG' width='150' height='200'  border='3px solid black' alt='Avatar'>
     </div>
     <p class="ital">Statistical learning | programming | brain mapping | psychiatry</p>
     <p><a href="https://github.com/JLefortBesnard" target="_blank"> ॰ Github</a></p>
@@ -81,8 +143,64 @@
       <a href="https://scholar.google.com/citations?user=IvuCsQ8AAAAJ&hl=fr&oi=ao" style="color: #6E6E6E" target="_blank">Leslie Decker</a> to 
       identify markers that predict transition to Alzheimer's disease or related dementia.</p><br>
       
-    <p class="ital" align="center">Move your mouse to see different figures and click to access the respective article</p>
-    <div class="projects" align="center" id="changeproject" onmousemove="project()"><img src='Images/rls1.png' width='600' height='250'  alt='Brain'></div><br>
+    <p class="ital" align="center">Use the blue arrows to navigate through figures of <a href="https://www.researchgate.net/profile/Jeremy_Lefort-Besnard" target='_blank' style='cursor:pointer;'>publications</a> I co-authored. <br>All figures are built using Python (source code for each on my <a href="https://github.com/JLefortBesnard" target='_blank' style='cursor:pointer;'>Github account</a>) and Gimp.<br>Click on the image to access the respective article.</p>
+
+    <div class="slide-container">
+
+            <div class="custom-slider fade">
+                <a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/tp_schizo1.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/hbm1.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/tp_schizo2.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/hbm2.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/hbm3.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/hbm4.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://www.nature.com/articles/s41398-020-00946-8' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/tp_asd1.jpeg"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://www.nature.com/articles/s41598-021-89360-8' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/rls1.png"></a>
+            </div>
+
+            <div class="custom-slider fade">
+                <a href='https://www.nature.com/articles/s41598-021-89360-8' target='_blank' style='cursor:pointer;'><img class="slide-img" src="Images/rls2.png"></a>
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </div>
     
 
   </div>
@@ -92,41 +210,54 @@
 
 <script>
 // change photo on move of mouse
+var profilpicIndex = 0
 function pic(){
   var pics = Array(
-                "<img src='Images/picme1.jpg' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme1.PNG' width='200' height='200' border='3px solid blue' alt='Avatar'>",
                 "<img src='Images/picme2.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
                 "<img src='Images/picme3.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
                 "<img src='Images/picme4.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
-                "<img src='Images/picme5.jpg' width='200' height='200' border='3px solid blue' alt='Avatar'>",
-                "<img src='Images/picme6.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme5.jpg' width='300' height='250' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme6.png' width='200' height='220' border='3px solid blue' alt='Avatar'>",
                 "<img src='Images/picme7.png' width='200' height='200' border='3px solid blue' alt='Avatar'>",
-                "<img src='Images/picme8.PNG' width='150' height='200' border='3px solid blue' alt='Avatar'>"
+                "<img src='Images/picme8.jpg' width='180' height='200' border='3px solid blue' alt='Avatar'>",
+                "<img src='Images/picme9.PNG' width='180' height='200' border='3px solid blue' alt='Avatar'>"
                 )
-
-  var randomIndex = Math.floor(Math.random()*pics.length);
-  var pic = pics[randomIndex];
+  if (profilpicIndex < 8) {profilpicIndex = profilpicIndex + 1;}
+  else {profilpicIndex = 0;}
+  var pic = pics[profilpicIndex];
   document.getElementById('changepic').innerHTML = pic;
        }
 
 
-// change photo on move of mouse
-function project(){
-         var projects = Array(
-                       "<a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' target='_blank' style='cursor:pointer;'><img src='Images/tp_schizo1.png' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img src='Images/hbm1.png' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://www.nature.com/articles/s41398-018-0294-4.pdf?origin=ppub' target='_blank' style='cursor:pointer;'><img src='Images/tp_schizo2.png' width='600' height='400' alt='Brain'></a>",
-                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img src='Images/hbm2.png' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img src='Images/hbm3.png' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.23870' target='_blank' style='cursor:pointer;'><img src='Images/hbm4.png' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://www.nature.com/articles/s41398-020-00946-8' target='_blank' style='cursor:pointer;'><img src='Images/tp_asd1.jpeg' width='600' height='500' alt='Brain'></a>",
-                       "<a href='https://www.nature.com/articles/s41598-021-89360-8' target='_blank' style='cursor:pointer;'><img src='Images/rls1.png' width='600' height='250' alt='Brain'></a>",
-                       "<a href='https://www.nature.com/articles/s41598-021-89360-8' target='_blank' style='cursor:pointer;'><img src='Images/rls2.png' width='600' height='250' alt='Brain'></a>")
 
-         var randomIndex = Math.floor(Math.random()*projects.length);
-         var project = projects[randomIndex];
-         document.getElementById('changeproject').innerHTML = project;
-              }
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("custom-slider");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
 
 
