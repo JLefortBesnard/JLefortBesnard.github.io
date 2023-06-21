@@ -41,16 +41,16 @@ body {
   -ms-flex: 10%; /* IE10 */
   flex: 10%;
   /* background-color: #f1f1f1; */
-  padding: 10px;
+  padding: 2px;
   /* border: 3px solid black; */
 }
 
 /* Main column */
 .main {
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
   background-color: white;
-  padding: 10px;
+  padding: 2px, 2px, 2px, 2px;
 }
 
 /* Column container */
@@ -59,12 +59,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 2px, 2px, 2px, 2px;
 }
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #ddd;
 }
