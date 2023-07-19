@@ -53,6 +53,8 @@ body {
   padding: 2px, 2px, 2px, 2px;
 }
 
+
+
 /* Column container */
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -87,8 +89,22 @@ body {
 
 a {
      text-decoration: none;
-     color: black;
+     color: #4b4b4b;
     }
 a:hover {
-  color: grey;
+  color: #61c4be;
 }
+
+.abstract {
+      text-align: justify;
+      color: #0099b8;
+      font-size: 12pt;
+      padding: 25px;
+      font-style: italic;
+    }
+.abstract_img {
+      text-align: center;
+      padding: 25px;
+      float:center;
+      height: 300px;
+    }
