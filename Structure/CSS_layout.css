@@ -28,6 +28,15 @@ body {
   text-decoration: none;
 }
 
+.navbar a.left {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
 
 /* Change color on hover */
 .navbar a:hover {
@@ -51,7 +60,19 @@ body {
   flex: 75%;
   background-color: white;
   padding: 2px, 2px, 2px, 2px;
+
 }
+
+.blog {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
 
 
 

@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style>
+
+
+
+section {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+}
+
+
+.race1 {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.race2 {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.race3 {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.race4 {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.race5 {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 800px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 800px;}
+}
+
+</style></head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
+
+
+
+
+
+
+<section>
+<div style="color:brown"> Your cash ($) =&nbsp</div><p id="player_money">10</p>
+<div style="color:brown"> Expected winner =&nbsp</div><p id="bet_winner">Start the race to bet</p>
+</section>
+
+
+
+
+<p><button onclick="start_race()" style="cursor:pointer;">START THE RACE</button>
+&nbsp<button onclick="reset()" style="cursor:pointer;">Get results</button></p>
+
+
+<div id="race1" style="color:black; background-color: yellow; border:1px; text-align: center; ">Amir</div>
+<div id="race2" style="color:black; background-color: blue; border:1px; text-align: center; ">Fred</div>
+<div id="race3" style="color:black; background-color: green; border:1px; text-align: center; ">Amy</div>
+<div id="race4" style="color:black; background-color: red; border:1px; text-align: center; ">Maliha</div>
+<div id="race5" style="color:black; background-color: orange; border:1px; text-align: center; ">Mike</div>
+
+
+<h1> INSTRUCTIONS </h1>
+<p><strong>Note:</strong></p>
+<p>This game is not supported in Internet Explorer 9 and earlier versions.</p>
+<p>On phones, your screen might not be big enough to see the race, pick the "computer version".</p>
+<p><strong>Rule:</strong></p>
+<p>Bet which racer is gonna be first. If you are right, you win 5$, you lost 1$ otherwise. Game is over if you don't get dollars anymore.
+  You win the game when you reach 30$, good luck! </p>
+<p> Click on "START THE RACE" to bet, once the race is over, click on "Get results" to update the game, then click on "START THE RACE" to bet again</p>
+<p><strong>Cheating:</strong></p>
+<p> If you feel like cheating, there is a way to win everytime, will you find the way? </p>
+
+
+<script>
+
+player_money = 10;
+amir = "race1";
+fred = "race2";
+amy = "race3";
+maliha = "race4";
+mike = "race5";
+mise = 1
+bet_winner = 0
+
+
+function start_race() {
+  var player_bet_winner = prompt("Who will win? 1=amir, 2=fred, 3=amy, 4=maliha, 5=mike", " ");
+  bet_winner = parseInt(player_bet_winner)
+  document.getElementById("bet_winner").innerHTML = bet_winner;
+  document.getElementById("race1").className = amir;
+  document.getElementById("race2").className = fred;
+  document.getElementById("race3").className = amy;
+  document.getElementById("race4").className = maliha;
+  document.getElementById("race5").className = mike;
+  }
+
+
+function reset() {
+  winner();
+  document.getElementById("player_money").innerHTML = player_money;
+  var element1 = document.getElementById("race1");
+  element1.classList.remove(amir);
+  var element2 = document.getElementById("race2");
+  element2.classList.remove(fred);
+  var element3 = document.getElementById("race3");
+  element3.classList.remove(amy);
+  var element4 = document.getElementById("race4");
+  element4.classList.remove(maliha);
+  var element5 = document.getElementById("race5");
+  element5.classList.remove(mike);
+  change_speed();
+  if (player_money > 29) {
+        alert("You won the game! CONGRATULATIONS! The page will now refresh");
+        location.reload();
+        }
+  if (player_money < 1) {
+        alert("GAME OVER, sorry... The page will now refresh");
+        location.reload();
+        }
+      }
+
+function winner() {
+    if (amir == "race2") {
+      if (bet_winner == 1) {
+        player_money = player_money + 5;
+        alert("Amir (1) won, congrats 5$ for you!!");
+      } else {
+        player_money = player_money - 1;
+        alert("Amir (1) won, sorry, you lost 1$!!");
+      }
+    }
+
+    if (fred == "race2") {
+      if (bet_winner == 2) {
+        player_money = player_money + 5;
+        alert("Fred (2) won, congrats 5$ for you!!");
+      } else {
+        player_money = player_money - 1;
+        alert("Fred (2) won, sorry, you lost 1$!!");
+      }
+    }
+
+    if (mike == "race2") {
+      if (bet_winner == 5) {
+        player_money = player_money + 5;
+        alert("Mike (5) won, congrats 5$ for you!!");
+      } else {
+        player_money = player_money - 1;
+        alert("Mike (5) won, you lost 1$!!");
+      }
+    }
+
+    if (maliha == "race2") {
+      if (bet_winner == 4) {
+        player_money = player_money + 5;
+        alert("Maliha (4) won, congrat510$ for you!!");
+      } else {
+        player_money = player_money - 1;
+        alert("Maliha (4) won, you lost 1$!!");
+      }
+    }
+
+    if (amy == "race2") {
+      if (bet_winner == 3) {
+        player_money = player_money + 5;
+        alert("Amy (3) won, congrats 15 for you!!");
+      } else {
+        player_money = player_money - 1;
+        alert("Amy (3) won, you lost 1$!!");
+      }
+    }
+  }
+
+
+
+
+function change_speed() {
+  var speed = ['race1', 'race2', 'race3', 'race4', 'race5'];
+  var rdm = Math.floor(Math.random() * speed.length);
+  var race2taken = 0
+  amir = speed[rdm];
+  if (speed[rdm] == 'race2') {
+    speed[rdm] = 'race1';
+    race2taken = 1;}
+  var rdm = Math.floor(Math.random() * speed.length);
+  fred = speed[rdm];
+  if (speed[rdm] == 'race2') {
+    speed[rdm] = 'race1';
+    race2taken = 1;}
+  var rdm = Math.floor(Math.random() * speed.length);
+  amy = speed[rdm];
+  if (speed[rdm] == 'race2') {
+    speed[rdm] = 'race4';
+    race2taken = 1;}
+  var rdm = Math.floor(Math.random() * speed.length);
+  maliha = speed[rdm];
+  if (speed[rdm] == 'race2') {
+    speed[rdm] = 'race3';
+    race2taken = 1;}
+  if (race2taken == 1) {
+    var rdm = Math.floor(Math.random() * speed.length);
+    mike = speed[Math.floor(rdm)];
+  } else {
+    mike = 'race2';}
+  }
+
+
+    
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+document.body.style.backgroundColor = "white";
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  status = document.body.style.backgroundColor;
+  if (status == "white") {
+    document.body.style.backgroundColor = "grey";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
+
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    document.body.style.backgroundColor = "white";
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+
+      }
+    }
+  }
+}
+
+</script>
+
+
+</body>
+</html>

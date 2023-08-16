@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Losange Bleu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="title" content="Losange Bleu">
+    <meta name="description" content="Personal blogpost">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://losangebleu.site/">
+    <meta property="og:title" content="Personal blogpost">
+    <meta property="og:description" content="Personal blogpost welcome page">
+    <meta property="og:image" content="../images/logo.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://losangebleu.site/">
+    <meta property="twitter:title" content="Personal blogpost welcome page">
+    <meta property="twitter:description" content="Personal blogpost welcome page">
+    <meta property="twitter:image" content="../images/logo.png">
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+
+<style>
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  padding: 10px;
+
+}
+.wrapper {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <nav role="navigation" class="primary-navigation">
+    <div class="navbar">
+      <ul class="flex flex-center">
+        <a href="#"><img src="../images/logo.png" alt="Logo" /></a>
+        <li><a href="English_list.html">☛ English</a></li>
+        <li><a href="French_list.html">☛ Français</a></li>
+        <li><a href="#">☛ Plus</a>
+          <ul class="dropdown">
+            <li><a href="Contact.html">☛ Contact</a></li>
+            <li><a href="https://twitter.com/JLefortBesnard" target="_blank">☛ Twitter</a></li>
+            <li><a href="https://jlefortbesnard.github.io" target="_blank">☛ Pro</a></li>
+            <li><a href="../../Logged_Visitors/welcome.php">☛ Login</a></li>
+          </ul>
+        </li>
+    </div>
+  </nav> 
+
+
+<div class="container">
+  <div class="content">
+ 
+
+<p style="color:brown; background-color:lightgrey; margin:10px" align="justify">
+<b>STORY:&nbsp</b> Tu as emprunté 5000 euros en cash à Mme K mais tu as perdu une partie de l'argent... Grosse erreur !
+Elle veut son argent dans 15 jours. Si tu ne retrouves pas l'argent avant, elle aura ta peau !
+Tu peux essayer de te faire de l'argent en faisant de l'achat-vente d'objets anciens.
+Voyage dans différentes villes pour profiter des différents prix du marché.
+Attention par contre, voyager prend du temps: une journee entiere ! Et rappelle toi qu'il y a un
+taux d'intéret de 10% par jour sur ton emprunt. Commence le jeu en cliquant sur la touche "Mise à jour".
+Bonne chance! -- Pour recommencer, rafraichit la page web --</p>
+
+
+<section>
+<h1 style="color:brown"> TABLEAU DE BORD  &nbsp</h1>
+</section>
+
+<section>
+<div style="color:green"> Emprunt ($) =&nbsp</div><p id="loan">Clique sur le bouton "Mise à jour"</p>
+<div style="color:green">&nbsp; Jour =&nbsp</div><p id="day">Clique sur le bouton "Mise à jour"</p>
+<div style="color:green">&nbsp; Cash ($) =&nbsp</div><p id="cash">Clique sur le bouton "Mise à jour"</p>
+<div style="color:green">&nbsp; Objet ancien =&nbsp</div><p id="stuff">Clique sur le bouton "Mise à jour"</p>
+<div style="color:green">&nbsp; Lieu =&nbsp</div><p id="place">Clique sur le bouton "Mise à jour"</p>
+</section>
+
+<section>
+<h1 style="color:brown"> MARCHÉ  &nbsp</h1>
+<p><button onclick="sell()">Vendre</button></p><p>&nbsp</p>
+<p><button onclick="buy()">Acheter</button></p>
+</section>
+
+<div style="color:green"> Prix dans cette ville: &nbsp</div>
+<p id="currentprices"></p>
+
+<section>
+<h1 style="color:brown"> VOYAGER  &nbsp</h1>
+<p><button onclick="newyork()">Aller à NewYork</button></p><p>&nbsp</p>
+<p><button onclick="paris()">Aller à Paris</button></p><p>&nbsp</p>
+<p><button onclick="taipei()">Aller à Taipei</button></p>
+<p><button onclick="casino()">Visiter le casino ٭٭٭</button></p>
+</section>
+<div class="wrapper"><button onclick="update();" style="font-size:larger; height:100px;width:100px; color:yellow; background-color: red; border: 3pt ridge yellow;">Mise à jour</button>
+</div>
+
+
+<script>
+
+// *************** VAR INIT ***************
+var _loan = 5000;
+var _day = 0;
+var _cash = 1000;
+var _stuff = 0;
+var _place = "Paris";
+var _purchase = 50;
+var _sale = _purchase * 3;
+
+// *************** PLAYER INFO ***************
+function update() {
+  if (_day > 15) {
+    alert("PERDU !! Tu n'as pas rendu l'argent à temps. Mme K va te faire la peau...");
+    alert("Le jeu va recommencer");
+    location.reload();
+  }
+  if (_day == 10) {
+    alert("ATTENTION !! Il ne te reste que 5 jours avant que Mme K ne s'énerve...")
+  }
+  if (_cash > _loan) {
+    alert("BRAVO !! TU as assez pour rembourser Mme K !")
+    alert("Le jeu va recommencer");
+    location.reload();
+  }
+  document.getElementById("loan").innerHTML = _loan;
+  document.getElementById("day").innerHTML = _day;
+  document.getElementById("stuff").innerHTML = _stuff;
+  document.getElementById("cash").innerHTML = _cash;
+  document.getElementById("place").innerHTML = _place;
+  document.getElementById("currentprices").innerHTML = "Ici, on achete les objets anciens pour : " + _purchase + " $, On les vend pour : " + _sale + " $";
+}
+
+
+// function to update the current value
+function change_cash(value_cash) {
+  _cash = _cash + value_cash;﻿
+}
+function change_stuff(value_stuff) {
+  _stuff = _stuff + value_stuff;﻿
+}
+function add_day() {
+  _day = _day + 1;
+  _loan = _loan + _loan * 0.1;﻿﻿
+}
+
+
+// *************** MOVING ***************
+function newyork() {
+  if (_place == "New York") {
+    alert("Tu es déjà à New York")
+  } else {
+    alert("Tu viens d'arriver à New York.");
+    alert("Clique sur le bouton Mise à jour");
+    _place = "New York";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function paris() {
+  if (_place == "Paris") {
+    alert("Tu es déjà à Paris")
+  } else {
+    alert("Tu viens d'arriver à Paris.");
+    alert("Clique sur le bouton Mise à jour");
+    _place = "Paris";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function taipei() {
+  if (_place == "Taipei") {
+    alert("Tu es déjà à Taipei")
+  } else {
+    alert("Tu viens d'arriver à Tapei.");
+    alert("Clique sur le bouton Mise à jour");
+    _place = "Tapei";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function market_fluctuation() {
+  var rates_purchase = [2, 0.5, 4, 0.25, 0.2, 5, 0.5, 2];
+  var rates_sale = [2, 1.5, 3, 2.5, 1.2, 1.7, 6];
+  var randomIndex_purchase = Math.floor(Math.random()*rates_purchase.length);
+  var randomIndex_sale = Math.floor(Math.random()*rates_sale.length);
+  _purchase *= rates_purchase[randomIndex_purchase]
+  _sale = _purchase * rates_sale[randomIndex_sale]
+}
+
+// *************** MARKET ***************
+// buy stuff
+function buy() {
+  var _howmuch = prompt("Acheter combien d'objets ?");
+  var _howmuch = parseInt(_howmuch);
+  if (_howmuch*_sale <= _cash) {
+    _cash = _cash - _howmuch*_sale;
+    _stuff = _stuff + _howmuch;
+    alert("Les objets sont achetés !");
+    alert("Clique sur le bouton Mise à jour");
+  } else {
+    alert("Tu n'as pas assez d'argent...");
+  }
+}
+
+// sell stuff
+function sell() {
+  var _howmuch = prompt("Vendre combien d'objets ?");
+  var _howmuch = parseInt(_howmuch);
+  if (_howmuch <= _stuff) {
+    _cash = _cash + _howmuch*_purchase;
+    _stuff = _stuff - _howmuch;
+    alert("Les objets sont vendus !");
+    alert("Clique sur le bouton Mise à jour");
+  } else {
+    alert("Tu n'as pas assez d'objet...");
+  }
+}
+// *************** CASINO ***************
+function casino() {
+  var lot = ["*", "⋄", "٭", "๏"];
+  var randomIndex1 = Math.floor(Math.random()*lot.length);
+  var randomIndex2 = Math.floor(Math.random()*lot.length);
+  var randomIndex3 = Math.floor(Math.random()*lot.length);
+  var mise = prompt("Trois signes similaires = 100 fois la mise", "mise? (nombre entier)");
+  var mise_ = parseInt(mise);
+  var gain = mise_ * 100;
+  alert(lot[randomIndex1] + " " + lot[randomIndex2] + " " + lot[randomIndex3]);
+  if (lot[randomIndex1] == lot[randomIndex2]) {
+    if (lot[randomIndex1] == lot[randomIndex3]) {
+      _cash = _cash + gain;
+      alert(
+        "BRAVO, " + gain + " $ pour toi !!");
+    } else {
+      alert("Perdu, merci pour tes " + mise +"$, reviens vite !");
+      _cash = _cash - mise_}
+  } else {
+    alert("Perdu, merci pour tes " + mise +"$, reviens vite !");
+    _cash = _cash - mise_
+  }
+}
+
+
+
+    
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+document.body.style.backgroundColor = "white";
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  status = document.body.style.backgroundColor;
+  if (status == "white") {
+    document.body.style.backgroundColor = "grey";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
+
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    document.body.style.backgroundColor = "white";
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+
+      }
+    }
+  }
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style>
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  padding: 10px;
+
+}
+.wrapper {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+</style>
+</head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
+
+
+
+
+
+<p style="color:brown; background-color:lightgrey; margin:10px" align="justify">
+<b>STORY:&nbsp</b> Recently, you lent 5000$ in cash to Mrs. K but you lost most of the money... Serious mistake. She wants her money back in 15 days.
+If you don't get the money before, she's gonna make bad stuff happen to you...
+You can try to make money with trading. Travel to different cities to get different market prices.
+Carefull though, moving to these cities take an entire day and remember that there is a 10% interest rate
+per day. Start the game by clicking on the red "Update board" button. Good luck! -- To start over, refresh the page --</p>
+
+
+
+<section>
+<h1 style="color:brown"> BOARD  &nbsp</h1>
+</section>
+
+<section>
+<div style="color:green"> Loan ($) =&nbsp</div><p id="loan">Click the update button</p>
+<div style="color:green">&nbsp; Day =&nbsp</div><p id="day">Click the update button</p>
+<div style="color:green">&nbsp; Cash ($) =&nbsp</div><p id="cash">Click the update button</p>
+<div style="color:green">&nbsp; Stuff =&nbsp</div><p id="stuff">Click the update button</p>
+<div style="color:green">&nbsp; Place =&nbsp</div><p id="place">Click the update button</p>
+</section>
+
+<section>
+<h1 style="color:brown"> MARKET  &nbsp</h1>
+<p><button onclick="sell()">Sell stuff</button></p><p>&nbsp</p>
+<p><button onclick="buy()">Buy stuff</button></p>
+</section>
+
+<div style="color:green"> Prices for the city you currently are in: &nbsp</div>
+<p id="currentprices"></p>
+
+<section>
+<h1 style="color:brown"> MOVING  &nbsp</h1>
+<p><button onclick="newyork()">Go to NewYork</button></p><p>&nbsp</p>
+<p><button onclick="paris()">Go to Paris</button></p><p>&nbsp</p>
+<p><button onclick="taipei()">Go to Taipei</button></p>
+<p><button onclick="casino()">Get crazy and go to the Casino ٭٭٭</button></p>
+</section>
+<div class="wrapper"><button onclick="update();" style="font-size:larger; height:100px;width:100px; color:yellow; background-color: red; border: 3pt ridge yellow;">Update board</button>
+</div>
+
+
+<script>
+
+// *************** VAR INIT ***************
+var _loan = 5000;
+var _day = 0;
+var _cash = 1000;
+var _stuff = 0;
+var _place = "Paris";
+var _purchase = 50;
+var _sale = _purchase * 3;
+
+// *************** PLAYER INFO ***************
+function update() {
+  if (_day > 15) {
+    alert("GAME OVER!! You failed to give the money back in time, Mrs. K will kick your ass...")
+    alert("The page will refresh")
+    location.reload();
+  }
+  if (_day == 10) {
+    alert("CAREFULL!! You just have 5 more days before Mrs. K will kick your ass...")
+  }
+  if (_cash > _loan) {
+    alert("CONGRATS!! You won the game, Mrs. K is happy to have her money back!")
+    alert("The page will refresh")
+    location.reload();
+  }
+  document.getElementById("loan").innerHTML = _loan;
+  document.getElementById("day").innerHTML = _day;
+  document.getElementById("stuff").innerHTML = _stuff;
+  document.getElementById("cash").innerHTML = _cash;
+  document.getElementById("place").innerHTML = _place;
+  document.getElementById("currentprices").innerHTML = "Here, we buy your stuff for: " + _purchase + " $, We sell you stuff for: " + _sale + " $";
+}
+
+
+// function to update the current value
+function change_cash(value_cash) {
+  _cash = _cash + value_cash;﻿
+}
+function change_stuff(value_stuff) {
+  _stuff = _stuff + value_stuff;﻿
+}
+function add_day() {
+  _day = _day + 1;
+  _loan = _loan + _loan * 0.1;﻿﻿
+}
+
+
+// *************** MOVING ***************
+function newyork() {
+  if (_place == "New York") {
+    alert("You already are in New York")
+  } else {
+    alert("You arrived in New York.");
+    alert("Click the update button");
+    _place = "New York";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function paris() {
+  if (_place == "Paris") {
+    alert("You already are in Paris")
+  } else {
+    alert("You arrived in Paris.");
+    alert("Click the update button");
+    _place = "Paris";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function taipei() {
+  if (_place == "Taipei") {
+    alert("You already are in Taipei")
+  } else {
+    alert("You arrived in Tapei.");
+    alert("Click the update button");
+    _place = "Tapei";
+    add_day();
+    market_fluctuation();
+  }
+}
+
+function market_fluctuation() {
+  var rates_purchase = [2, 0.5, 4, 0.25, 0.2, 5, 0.5, 2];
+  var rates_sale = [2, 1.5, 3, 2.5, 1.2, 1.7, 6];
+  var randomIndex_purchase = Math.floor(Math.random()*rates_purchase.length);
+  var randomIndex_sale = Math.floor(Math.random()*rates_sale.length);
+  _purchase *= rates_purchase[randomIndex_purchase]
+  _sale = _purchase * rates_sale[randomIndex_sale]
+}
+
+// *************** MARKET ***************
+// buy stuff
+function buy() {
+  var _howmuch = prompt("How many stuff to buy?", "<value>");
+  var _howmuch = parseInt(_howmuch);
+  if (_howmuch*_sale <= _cash) {
+    _cash = _cash - _howmuch*_sale;
+    _stuff = _stuff + _howmuch;
+    alert("Stuff are bought!");
+    alert("Click the update button");
+  } else {
+    alert("Not enough cash...");
+  }
+}
+
+// sell stuff
+function sell() {
+  var _howmuch = prompt("How many stuff to sell?", "<value>");
+  var _howmuch = parseInt(_howmuch);
+  if (_howmuch <= _stuff) {
+    _cash = _cash + _howmuch*_purchase;
+    _stuff = _stuff - _howmuch;
+    alert("Stuff are sold!");
+    alert("Click the update button");
+  } else {
+    alert("Not enough stuff...");
+  }
+}
+// *************** CASINO ***************
+function casino() {
+  var lot = ["*", "⋄", "٭", "๏"];
+  var randomIndex1 = Math.floor(Math.random()*lot.length);
+  var randomIndex2 = Math.floor(Math.random()*lot.length);
+  var randomIndex3 = Math.floor(Math.random()*lot.length);
+  var mise = prompt("3 same signs = 100 times your bet", "how much to bet? (integer)");
+  var mise_ = parseInt(mise);
+  var gain = mise_ * 100;
+  alert(lot[randomIndex1] + " " + lot[randomIndex2] + " " + lot[randomIndex3]);
+  if (lot[randomIndex1] == lot[randomIndex2]) {
+    if (lot[randomIndex1] == lot[randomIndex3]) {
+      _cash = _cash + gain;
+      alert("YOU WON " + gain + "$ !!");
+    } else {
+      alert("You lost, cost you " + mise + "$, come back soon!");
+      _cash = _cash - mise_}
+  } else {
+    alert("You lost, cost you " + mise + "$, come back soon!");
+    _cash = _cash - mise_
+  }
+}
+
+
+
+    
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+document.body.style.backgroundColor = "white";
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  status = document.body.style.backgroundColor;
+  if (status == "white") {
+    document.body.style.backgroundColor = "grey";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
+
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    document.body.style.backgroundColor = "white";
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+
+      }
+    }
+  }
+}
+</script>
+
+
+
+</body>
+</html>
