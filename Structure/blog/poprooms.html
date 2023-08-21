@@ -1,111 +1,303 @@
-<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style></style></head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
-
-  <h2>Automatically extract and sort apartment available for renting on <i>https://rent.591.com.tw/</i> based on price, closest metro station and distance from the city center using Python.</h2>
-
- <p align="justify">The company <i>https://pop-rooms.com/</i> asked me for a script that would extract daily apartment renting offers in Taipei from the 591 website. They needed to get price, distance from the closest MRT station and from the city center. In this tutorial, we will create such a script.</p>
-
- <p align="justify">First thing that needs to be done is the website source code exploration to find out where is the relevant information. Since the company is interested only in flats with 5 rooms or more, let's go ahead and pick "5 rooms" in the options given on the webpage. Crossing this option leads to this <a href="https://rent.591.com.tw/?kind=0&region=1&pattern=5" target="_blank">URL</a>.</p>
- 
-  <p style="text-align:center"><img src="../../Images/images_blog/591main.png" name="591main" align="bottom" width="50%" border="2"/><legend><i>We will extract information on each apartment listed at the bottom</i></legend>
-</p>
-
- 
-  <p style="text-align:justify">Click right on the website and select <i>Inspect Element</i>. Let's see the div name of each listed flat.</p> 
-
-  <p style="text-align:center"><img src="../../Images/images_blog/591inspectelement.png" name="inspectelement" align="bottom" width="50%" border="2"/><legend><i>Inspect element gives us all the information we need to know what to extract</i></legend>
-</p>
-
- <p align="justify">We need the URL in the div "content"/"h3"/"a href" as in the picture. Actually, all the "h3" divisions are the interesting ones including the URLs we need, thus no need to also make sure we are in "content". Let's just extract the "a href" within each "h3" </p>
-
-
-  <p style="text-align:center"><img src="../../Images/images_blog/listURLflat.png" name="urlflatlist" align="bottom" width="50%" border="2"/><legend><i>This script will extract information for the main URL and extract each URL linking to each specific listed flat</i></legend></p>
-
-
-
- <p align="justify">For this script to run, don't forget to import <i>urllib.request</i>, <i>BeautifulSoup from bs4</i>, <i>asin, cos, sqrt, pi from math</i>, <i>re</i>, <i>time</i>, <i>date from datetime</i>, <i>numpy as np</i>, and <i>pandas as pd</i>.</p> 
-
- <p align="justify">Alright, now we got the list of the URLs leading to information about each listed apartment. Let's explore one of the URLs. </p>
-
-
- <p style="text-align:center"><img src="../../Images/images_blog/591firstlistedflat.png" name="1stflat" align="bottom" width="50%" border="2"/><legend><i>The webpage of the first apartment of the list</i></legend></p>
-
-
- <p align="justify">The map appears at the bottom of the document, the price and information on the right side of the pictures. We also need the id of each flat to make sure the company could easily retrieve each apartment offer on the website. The ids are already on the urls. For example, for this first apartment, the url is <i>https://rent.591.com.tw/rent-detail-9206430.html</i> so we will use Python to extract 9206430. </p>
-  <p align="justify">Let's right click and inspect element on the map (at the bottom) and the price (on the right side). The map stands within the class "map_Box", in an "iframe" while the price stands into the class "priceclearfix". The GPS coordinates are unfortunately not displayed in the source html script. Hopefully, it contains another url leading to the Google map link which contains the latitude and longitude of the flat. Let's extract this URL which is in the div "map_Box"/"iframe"/"src".</p>
-
-
- <p style="text-align:center"><img src="../../Images/images_blog/priceeach.png" name="pricecode" align="bottom" width="50%" border="2"/><legend><i>Where to extract the price</i></legend></p>
-
- <p style="text-align:center"><img src="../../Images/images_blog/mapeach.png" name="mapcode" align="bottom" width="50%" border="2"/><legend><i>Where to extract the map</i></legend></p>
-
- <p align="justify">Let's write a function to extract and store this information for us.</p>
-
-
- <p style="text-align:center"><img src="../../Images/images_blog/store_map_links.png" name="storemaplink" align="bottom" width="50%" border="2"/><legend><i>This function takes our previous urls list as input and stores the map url and price of each apartment in a dictionnary with the apartment id as key</i></legend></p>
-
-
- <p align="justify">Note that the map urls written on the website are not complete. We need to add the website address at the beginning to find the real URL. This is what this line of code is doing: </p>
- 
-  <p align="justify"><i>map_url = "https://rent.591.com.tw/" + soup.findAll("div", { "id":"mapRound" })[0].findAll('iframe')[0].get('src')</i></p>
-
- <p align="justify">Now that we got the map url of each flat, we can use it to extract the GPS coordinates. As we can see on the source html of the map web page, the latitude and longitude are written in the Google maps URL (here: 25.0555378 and 121.5961838). We can define a function to extract it.</p>
-
-
- <p style="text-align:center"><img src="../../Images/images_blog/sourcemap.png" name="storemaplink" align="bottom" width="50%" border="2"/><legend><i>The latitude and longitude are written on the Google maps URL</i></legend></p>
-
-
-<p style="text-align:center"><img src="../../Images/images_blog/extractcoords.png" name="extractcoords" align="bottom" width="50%" border="2"/><legend><i>Function to extract the GPS coordinates from the Google maps link. 1.extract div including the Google maps url, 2.extract coordinates from url</i></legend></p>
-
-<p align="justify">The "try" and "except" parts here are useful because sometimes, the Google maps link differs a little bit and the slicing is not good anymore because another letter or symbole was added into the url. Hopefully, the patterns are recurrent so a slicing is good enough. Note that the last "except" will print an error message to ease the debugging anyway.</p>
-
- <p align="justify">Alright, now we got the GPS coordinates of each apartment. The company needs two metrics to rate the apartment: the distance from the city center as well as the distance from the closest MRT station. We thus need the GPS coordinates of each MRT station of Taipei. This can easily be done with Google maps. We just have to click on each MRT station and the coordinates will be displayed on the screen. We will save them in a txt file. We also need the coordinates of the city center. Using Google maps, I draw a circle around what I would call the city center and take the coordinates of the circle center as Taipei city center. I will consider that every coordinates within 5 km around the circle center is part of the city center.</p>
-
- <p align="justify">Let's define the function to compute the distance between two GPS coordinates.</p>
-
-<p style="text-align:center"><img src="../../Images/images_blog/distancebwcoords.png" name="distancecoords" align="bottom" width="50%" border="2"/><legend><i>Function to compute the distance between two points given the GPS coordinates</i></legend></p>
-
- <p align="justify">Note that I add the city center coordinates as default argument (lat2, lon2) so that I can also use the same function to compute both the distance from an input point and the city center, or the distance between 2 points chosen by the user.</p>
-
- <p align="justify">Now we need to find the closest MRT station to the apartment. We will first define a function to extract the GPS coordinates of each MRT station from the txt document we created earlier and return them as a dictionnary with each MRT station name as key then the Chinese station name and the coordinates as values.</p>
-
-<p style="text-align:center"><img src="../../Images/images_blog/MRTcoordstxt.png" name="MRTlocationtxtfile" align="bottom" width="50%" border="2"/><legend><i>Txt file listing information about MRT station</i></legend></p>
- 
-
-
-<p style="text-align:center"><img src="../../Images/images_blog/mrtcoordsasdic.png" name="MRTlocationasdic" align="bottom" width="50%" border="2"/><legend><i>Function to extract the MRT GPS coordinates from the txt file and return it as a dictionnary more Python friendly</i></legend></p>
-
- <p align="justify">Now we can use this function and the previous one to actually compute the distance between a specific GPS location and each MRT station and thus find the closest one. </p>
-
-<p style="text-align:center"><img src="../../Images/images_blog/closestmrt.png" name="closestMRT" align="bottom" width="50%" border="2"/><legend><i>Function that compute distance between a specific location and each MRT station and return the closest to that location</i></legend></p>
-
- <p align="justify">The next function is going to save the closest MRT station and distance from city center into the dictionnary so that, all information are stored at the same place </p>
-
- <p style="text-align:center"><img src="../../Images/images_blog/savedistances.png" name="savedistances" align="bottom" width="50%" border="2"/><legend><i>Function to compute the distance from the city center and find the closest MRT station, and store the results into the dictionnary created earlier</i></legend></p>
-
-
- <p align="justify">We need a metric to rate the apartment. The price itself is not always a good one. Let's compute a metric related to distances. The rate of the apartment should get higher if the flat is located within 5 km around the city center point and decrease proportionally as it goes further away. Also, the closest MRT should be at maximum 1 km from the apartment. Otherwise, the rate should again decrease proportionally as the distance increases. Finally, the rate should decrease more as we go far away from the city center than as we go far from the closest MRT station. Indeed, the company considers that it's better to be closer to the city center and far from an MRT station rather than the opposite.</p>
-
- <p style="text-align:center"><img src="../../Images/images_blog/metric.png" name="metric" align="bottom" width="50%" border="2"/><legend><i>Function to compute the distance metric to evaluate the quality of an apartment</i></legend></p>
-
-
- <p align="justify">Our next function will compute the metric for each flat, store all the information we got into a dataframe so that we can eventually save it as an Excel document (user friendly). We will sort the value first by metric scores (all apartment with a metric of 100% will be at the beginning of the dataframe) and then by prices (the cheapest first). The reason why I don't compute a metric including both price & distance is that some owners put the price per room, some put the price per meter square, some per apartment. Therefore, the variability is quite huge and it is difficult to automatically define which type of price it is to make prices comparable.</p>
-
-  <p style="text-align:center"><img src="../../Images/images_blog/dataframize.png" name="dtaframize" align="bottom" width="50%" border="2"/><legend><i>Function to compute the metric for each flat and store the final results into a dataframe sorted by metric scores and then prices</i></legend></p>
-
- <p align="justify">That's it, now we just have to run a "for loop" over each URL we want to extract information from, and enjoy the outputs </p>
-
- <p style="text-align:center"><img src="../../Images/images_blog/forloop.png" name="forloop" align="bottom" width="50%" border="2"/><legend><i>Looping through all URLs we want information from and displays sorted results</i></legend></p>
-
- <p align="justify">As you can see, we save it as an Excel document with the date of the day as sheet name so that the script can be ran each day.</p>
- <p align="justify">Output: </p>
- 
-  <p style="text-align:center"><img src="../../Images/images_blog/output.png" name="output" align="bottom" width="50%" border="2"/><legend><i>The final output</i></legend></p>
- 
- <p align="justify"><a href="https://github.com/JLefortBesnard/poprooms_project">Download Source Code</a></p> 
-
-
-
-
-
-
-</div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+   <h2>
+    Automatically extract and sort apartment available for renting on
+    <i>
+     https://rent.591.com.tw/
+    </i>
+    based on price, closest metro station and distance from the city center using Python.
+   </h2>
+   <p align="justify">
+    The company
+    <i>
+     https://pop-rooms.com/
+    </i>
+    asked me for a script that would extract daily apartment renting offers in Taipei from the 591 website. They needed to get price, distance from the closest MRT station and from the city center. In this tutorial, we will create such a script.
+   </p>
+   <p align="justify">
+    First thing that needs to be done is the website source code exploration to find out where is the relevant information. Since the company is interested only in flats with 5 rooms or more, let's go ahead and pick "5 rooms" in the options given on the webpage. Crossing this option leads to this
+    <a href="https://rent.591.com.tw/?kind=0®ion=1&amp;pattern=5" target="_blank">
+     URL
+    </a>
+    .
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="591main" src="../../Images/images_blog/591main.png" width="50%"/>
+    <legend>
+     <i>
+      We will extract information on each apartment listed at the bottom
+     </i>
+    </legend>
+   </p>
+   <p style="text-align:justify">
+    Click right on the website and select
+    <i>
+     Inspect Element
+    </i>
+    . Let's see the div name of each listed flat.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="inspectelement" src="../../Images/images_blog/591inspectelement.png" width="50%"/>
+    <legend>
+     <i>
+      Inspect element gives us all the information we need to know what to extract
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    We need the URL in the div "content"/"h3"/"a href" as in the picture. Actually, all the "h3" divisions are the interesting ones including the URLs we need, thus no need to also make sure we are in "content". Let's just extract the "a href" within each "h3"
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="urlflatlist" src="../../Images/images_blog/listURLflat.png" width="50%"/>
+    <legend>
+     <i>
+      This script will extract information for the main URL and extract each URL linking to each specific listed flat
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    For this script to run, don't forget to import
+    <i>
+     urllib.request
+    </i>
+    ,
+    <i>
+     BeautifulSoup from bs4
+    </i>
+    ,
+    <i>
+     asin, cos, sqrt, pi from math
+    </i>
+    ,
+    <i>
+     re
+    </i>
+    ,
+    <i>
+     time
+    </i>
+    ,
+    <i>
+     date from datetime
+    </i>
+    ,
+    <i>
+     numpy as np
+    </i>
+    , and
+    <i>
+     pandas as pd
+    </i>
+    .
+   </p>
+   <p align="justify">
+    Alright, now we got the list of the URLs leading to information about each listed apartment. Let's explore one of the URLs.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="1stflat" src="../../Images/images_blog/591firstlistedflat.png" width="50%"/>
+    <legend>
+     <i>
+      The webpage of the first apartment of the list
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    The map appears at the bottom of the document, the price and information on the right side of the pictures. We also need the id of each flat to make sure the company could easily retrieve each apartment offer on the website. The ids are already on the urls. For example, for this first apartment, the url is
+    <i>
+     https://rent.591.com.tw/rent-detail-9206430.html
+    </i>
+    so we will use Python to extract 9206430.
+   </p>
+   <p align="justify">
+    Let's right click and inspect element on the map (at the bottom) and the price (on the right side). The map stands within the class "map_Box", in an "iframe" while the price stands into the class "priceclearfix". The GPS coordinates are unfortunately not displayed in the source html script. Hopefully, it contains another url leading to the Google map link which contains the latitude and longitude of the flat. Let's extract this URL which is in the div "map_Box"/"iframe"/"src".
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="pricecode" src="../../Images/images_blog/priceeach.png" width="50%"/>
+    <legend>
+     <i>
+      Where to extract the price
+     </i>
+    </legend>
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="mapcode" src="../../Images/images_blog/mapeach.png" width="50%"/>
+    <legend>
+     <i>
+      Where to extract the map
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    Let's write a function to extract and store this information for us.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="storemaplink" src="../../Images/images_blog/store_map_links.png" width="50%"/>
+    <legend>
+     <i>
+      This function takes our previous urls list as input and stores the map url and price of each apartment in a dictionnary with the apartment id as key
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    Note that the map urls written on the website are not complete. We need to add the website address at the beginning to find the real URL. This is what this line of code is doing:
+   </p>
+   <p align="justify">
+    <i>
+     map_url = "https://rent.591.com.tw/" + soup.findAll("div", { "id":"mapRound" })[0].findAll('iframe')[0].get('src')
+    </i>
+   </p>
+   <p align="justify">
+    Now that we got the map url of each flat, we can use it to extract the GPS coordinates. As we can see on the source html of the map web page, the latitude and longitude are written in the Google maps URL (here: 25.0555378 and 121.5961838). We can define a function to extract it.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="storemaplink" src="../../Images/images_blog/sourcemap.png" width="50%"/>
+    <legend>
+     <i>
+      The latitude and longitude are written on the Google maps URL
+     </i>
+    </legend>
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="extractcoords" src="../../Images/images_blog/extractcoords.png" width="50%"/>
+    <legend>
+     <i>
+      Function to extract the GPS coordinates from the Google maps link. 1.extract div including the Google maps url, 2.extract coordinates from url
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    The "try" and "except" parts here are useful because sometimes, the Google maps link differs a little bit and the slicing is not good anymore because another letter or symbole was added into the url. Hopefully, the patterns are recurrent so a slicing is good enough. Note that the last "except" will print an error message to ease the debugging anyway.
+   </p>
+   <p align="justify">
+    Alright, now we got the GPS coordinates of each apartment. The company needs two metrics to rate the apartment: the distance from the city center as well as the distance from the closest MRT station. We thus need the GPS coordinates of each MRT station of Taipei. This can easily be done with Google maps. We just have to click on each MRT station and the coordinates will be displayed on the screen. We will save them in a txt file. We also need the coordinates of the city center. Using Google maps, I draw a circle around what I would call the city center and take the coordinates of the circle center as Taipei city center. I will consider that every coordinates within 5 km around the circle center is part of the city center.
+   </p>
+   <p align="justify">
+    Let's define the function to compute the distance between two GPS coordinates.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="distancecoords" src="../../Images/images_blog/distancebwcoords.png" width="50%"/>
+    <legend>
+     <i>
+      Function to compute the distance between two points given the GPS coordinates
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    Note that I add the city center coordinates as default argument (lat2, lon2) so that I can also use the same function to compute both the distance from an input point and the city center, or the distance between 2 points chosen by the user.
+   </p>
+   <p align="justify">
+    Now we need to find the closest MRT station to the apartment. We will first define a function to extract the GPS coordinates of each MRT station from the txt document we created earlier and return them as a dictionnary with each MRT station name as key then the Chinese station name and the coordinates as values.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="MRTlocationtxtfile" src="../../Images/images_blog/MRTcoordstxt.png" width="50%"/>
+    <legend>
+     <i>
+      Txt file listing information about MRT station
+     </i>
+    </legend>
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="MRTlocationasdic" src="../../Images/images_blog/mrtcoordsasdic.png" width="50%"/>
+    <legend>
+     <i>
+      Function to extract the MRT GPS coordinates from the txt file and return it as a dictionnary more Python friendly
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    Now we can use this function and the previous one to actually compute the distance between a specific GPS location and each MRT station and thus find the closest one.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="closestMRT" src="../../Images/images_blog/closestmrt.png" width="50%"/>
+    <legend>
+     <i>
+      Function that compute distance between a specific location and each MRT station and return the closest to that location
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    The next function is going to save the closest MRT station and distance from city center into the dictionnary so that, all information are stored at the same place
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="savedistances" src="../../Images/images_blog/savedistances.png" width="50%"/>
+    <legend>
+     <i>
+      Function to compute the distance from the city center and find the closest MRT station, and store the results into the dictionnary created earlier
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    We need a metric to rate the apartment. The price itself is not always a good one. Let's compute a metric related to distances. The rate of the apartment should get higher if the flat is located within 5 km around the city center point and decrease proportionally as it goes further away. Also, the closest MRT should be at maximum 1 km from the apartment. Otherwise, the rate should again decrease proportionally as the distance increases. Finally, the rate should decrease more as we go far away from the city center than as we go far from the closest MRT station. Indeed, the company considers that it's better to be closer to the city center and far from an MRT station rather than the opposite.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="metric" src="../../Images/images_blog/metric.png" width="50%"/>
+    <legend>
+     <i>
+      Function to compute the distance metric to evaluate the quality of an apartment
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    Our next function will compute the metric for each flat, store all the information we got into a dataframe so that we can eventually save it as an Excel document (user friendly). We will sort the value first by metric scores (all apartment with a metric of 100% will be at the beginning of the dataframe) and then by prices (the cheapest first). The reason why I don't compute a metric including both price &amp; distance is that some owners put the price per room, some put the price per meter square, some per apartment. Therefore, the variability is quite huge and it is difficult to automatically define which type of price it is to make prices comparable.
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="dtaframize" src="../../Images/images_blog/dataframize.png" width="50%"/>
+    <legend>
+     <i>
+      Function to compute the metric for each flat and store the final results into a dataframe sorted by metric scores and then prices
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    That's it, now we just have to run a "for loop" over each URL we want to extract information from, and enjoy the outputs
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="forloop" src="../../Images/images_blog/forloop.png" width="50%"/>
+    <legend>
+     <i>
+      Looping through all URLs we want information from and displays sorted results
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    As you can see, we save it as an Excel document with the date of the day as sheet name so that the script can be ran each day.
+   </p>
+   <p align="justify">
+    Output:
+   </p>
+   <p style="text-align:center">
+    <img align="bottom" border="2" name="output" src="../../Images/images_blog/output.png" width="50%"/>
+    <legend>
+     <i>
+      The final output
+     </i>
+    </legend>
+   </p>
+   <p align="justify">
+    <a href="https://github.com/JLefortBesnard/poprooms_project">
+     Download Source Code
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

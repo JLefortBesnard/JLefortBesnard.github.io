@@ -1,62 +1,81 @@
-<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style></style></head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog"><style>
-
-body
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+   <style>
+    body
 {
 
 zoom: 0.95; 
 -moz-transform: scale(0.95); 
 }
-
-
-</style>
-
-</head>
-
-<body>
-
-
-
-<p>Avoid grey wall and red bombs, only get green food ! Careful, gets harder as your score increases. Inspired from <a href="https://www.educative.io/blog/javascript-snake-game-tutorial#display">This website</a>. You need a keyboard and be full screen to play. </p>
-
-<p>Current score : <font color = "green"> <span id="score">0</span></font></p>
-<p><font color = "red"><span id="boum"></span></font></p>
-<p><font color = "red"><span id="crazy"></span></font></p>
-
-
-
-
-
-</div>
-</div>
-
-<br>
-<br>
-<br>
-
-
-
-
-    <canvas id="snakeboard" width="400" height="400">Your browser does not support the HTML5 canvas tag.</canvas>
-
-    <style>
-      #snakeboard {
+   </style>
+   <body>
+    <p>
+     Avoid grey wall and red bombs, only get green food ! Careful, gets harder as your score increases. Inspired from
+     <a href="https://www.educative.io/blog/javascript-snake-game-tutorial#display">
+      This website
+     </a>
+     . You need a keyboard and be full screen to play.
+    </p>
+    <p>
+     Current score :
+     <font color="green">
+      <span id="score">
+       0
+      </span>
+     </font>
+    </p>
+    <p>
+     <font color="red">
+      <span id="boum">
+      </span>
+     </font>
+    </p>
+    <p>
+     <font color="red">
+      <span id="crazy">
+      </span>
+     </font>
+    </p>
+   </body>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <canvas height="400" id="snakeboard" width="400">
+   Your browser does not support the HTML5 canvas tag.
+  </canvas>
+  <style>
+   #snakeboard {
 
         position: absolute;
         top: 65%;
         left: 50%;
 
       }
-
-
-
-    </style>
-    
- 
-    
-    </body>
-
-  <script>
-    const board_border = 'black';
+  </style>
+ </body>
+ <script>
+  const board_border = 'black';
     const board_background = "white";
     
     const snake_col = 'lightblue';
@@ -458,6 +477,5 @@ zoom: 0.95;
     function refresh() {
         location.reload();
     }
-    
-</script>
-</div></body></html>
+ </script>
+</html>

@@ -1,8 +1,14 @@
-<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style>
-
-
-
-section {
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+   section {
     display: -webkit-flex;
     display: flex;
     padding: 10px;
@@ -81,48 +87,91 @@ section {
   from {left: 0px;}
   to {left: 800px;}
 }
-
-</style></head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
-
-
-
-
-
-
-<section>
-<div style="color:brown"> Your cash ($) =&nbsp</div><p id="player_money">10</p>
-<div style="color:brown"> Expected winner =&nbsp</div><p id="bet_winner">Start the race to bet</p>
-</section>
-
-
-
-
-<p><button onclick="start_race()" style="cursor:pointer;">START THE RACE</button>
-&nbsp<button onclick="reset()" style="cursor:pointer;">Get results</button></p>
-
-
-<div id="race1" style="color:black; background-color: yellow; border:1px; text-align: center; ">Amir</div>
-<div id="race2" style="color:black; background-color: blue; border:1px; text-align: center; ">Fred</div>
-<div id="race3" style="color:black; background-color: green; border:1px; text-align: center; ">Amy</div>
-<div id="race4" style="color:black; background-color: red; border:1px; text-align: center; ">Maliha</div>
-<div id="race5" style="color:black; background-color: orange; border:1px; text-align: center; ">Mike</div>
-
-
-<h1> INSTRUCTIONS </h1>
-<p><strong>Note:</strong></p>
-<p>This game is not supported in Internet Explorer 9 and earlier versions.</p>
-<p>On phones, your screen might not be big enough to see the race, pick the "computer version".</p>
-<p><strong>Rule:</strong></p>
-<p>Bet which racer is gonna be first. If you are right, you win 5$, you lost 1$ otherwise. Game is over if you don't get dollars anymore.
-  You win the game when you reach 30$, good luck! </p>
-<p> Click on "START THE RACE" to bet, once the race is over, click on "Get results" to update the game, then click on "START THE RACE" to bet again</p>
-<p><strong>Cheating:</strong></p>
-<p> If you feel like cheating, there is a way to win everytime, will you find the way? </p>
-
-
-<script>
-
-player_money = 10;
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+   <section>
+    <div style="color:brown">
+     Your cash ($) =
+    </div>
+    <p id="player_money">
+     10
+    </p>
+    <div style="color:brown">
+     Expected winner =
+    </div>
+    <p id="bet_winner">
+     Start the race to bet
+    </p>
+   </section>
+   <p>
+    <button onclick="start_race()" style="cursor:pointer;">
+     START THE RACE
+    </button>
+    <button onclick="reset()" style="cursor:pointer;">
+     Get results
+    </button>
+   </p>
+   <div id="race1" style="color:black; background-color: yellow; border:1px; text-align: center; ">
+    Amir
+   </div>
+   <div id="race2" style="color:black; background-color: blue; border:1px; text-align: center; ">
+    Fred
+   </div>
+   <div id="race3" style="color:black; background-color: green; border:1px; text-align: center; ">
+    Amy
+   </div>
+   <div id="race4" style="color:black; background-color: red; border:1px; text-align: center; ">
+    Maliha
+   </div>
+   <div id="race5" style="color:black; background-color: orange; border:1px; text-align: center; ">
+    Mike
+   </div>
+   <h1>
+    INSTRUCTIONS
+   </h1>
+   <p>
+    <strong>
+     Note:
+    </strong>
+   </p>
+   <p>
+    This game is not supported in Internet Explorer 9 and earlier versions.
+   </p>
+   <p>
+    On phones, your screen might not be big enough to see the race, pick the "computer version".
+   </p>
+   <p>
+    <strong>
+     Rule:
+    </strong>
+   </p>
+   <p>
+    Bet which racer is gonna be first. If you are right, you win 5$, you lost 1$ otherwise. Game is over if you don't get dollars anymore.
+  You win the game when you reach 30$, good luck!
+   </p>
+   <p>
+    Click on "START THE RACE" to bet, once the race is over, click on "Get results" to update the game, then click on "START THE RACE" to bet again
+   </p>
+   <p>
+    <strong>
+     Cheating:
+    </strong>
+   </p>
+   <p>
+    If you feel like cheating, there is a way to win everytime, will you find the way?
+   </p>
+   <script>
+    player_money = 10;
 amir = "race1";
 fred = "race2";
 amy = "race3";
@@ -286,9 +335,7 @@ window.onclick = function(event) {
     }
   }
 }
-
-</script>
-
-
-</body>
+   </script>
+  </div>
+ </body>
 </html>

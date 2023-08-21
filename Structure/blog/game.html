@@ -1,6 +1,14 @@
-<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style>
-
-section {
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+   section {
   display: -webkit-flex;
   display: flex;
   padding: 10px;
@@ -16,58 +24,123 @@ section {
     flex-direction: column;
   }
 }
-
-</style>
-</head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
-
-
-
-
-
-<p style="color:brown; background-color:lightgrey; margin:10px" align="justify">
-<b>STORY:&nbsp</b> Recently, you lent 5000$ in cash to Mrs. K but you lost most of the money... Serious mistake. She wants her money back in 15 days.
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+   <p align="justify" style="color:brown; background-color:lightgrey; margin:10px">
+    <b>
+     STORY:
+    </b>
+    Recently, you lent 5000$ in cash to Mrs. K but you lost most of the money... Serious mistake. She wants her money back in 15 days.
 If you don't get the money before, she's gonna make bad stuff happen to you...
 You can try to make money with trading. Travel to different cities to get different market prices.
 Carefull though, moving to these cities take an entire day and remember that there is a 10% interest rate
-per day. Start the game by clicking on the red "Update board" button. Good luck! -- To start over, refresh the page --</p>
-
-
-
-<section>
-<h1 style="color:brown"> BOARD  &nbsp</h1>
-</section>
-
-<section>
-<div style="color:green"> Loan ($) =&nbsp</div><p id="loan">Click the update button</p>
-<div style="color:green">&nbsp; Day =&nbsp</div><p id="day">Click the update button</p>
-<div style="color:green">&nbsp; Cash ($) =&nbsp</div><p id="cash">Click the update button</p>
-<div style="color:green">&nbsp; Stuff =&nbsp</div><p id="stuff">Click the update button</p>
-<div style="color:green">&nbsp; Place =&nbsp</div><p id="place">Click the update button</p>
-</section>
-
-<section>
-<h1 style="color:brown"> MARKET  &nbsp</h1>
-<p><button onclick="sell()">Sell stuff</button></p><p>&nbsp</p>
-<p><button onclick="buy()">Buy stuff</button></p>
-</section>
-
-<div style="color:green"> Prices for the city you currently are in: &nbsp</div>
-<p id="currentprices"></p>
-
-<section>
-<h1 style="color:brown"> MOVING  &nbsp</h1>
-<p><button onclick="newyork()">Go to NewYork</button></p><p>&nbsp</p>
-<p><button onclick="paris()">Go to Paris</button></p><p>&nbsp</p>
-<p><button onclick="taipei()">Go to Taipei</button></p>
-<p><button onclick="casino()">Get crazy and go to the Casino ٭٭٭</button></p>
-</section>
-<div class="wrapper"><button onclick="update();" style="font-size:larger; height:100px;width:100px; color:yellow; background-color: red; border: 3pt ridge yellow;">Update board</button>
-</div>
-
-
-<script>
-
-// *************** VAR INIT ***************
+per day. Start the game by clicking on the red "Update board" button. Good luck! -- To start over, refresh the page --
+   </p>
+   <section>
+    <h1 style="color:brown">
+     BOARD
+    </h1>
+   </section>
+   <section>
+    <div style="color:green">
+     Loan ($) =
+    </div>
+    <p id="loan">
+     Click the update button
+    </p>
+    <div style="color:green">
+     Day =
+    </div>
+    <p id="day">
+     Click the update button
+    </p>
+    <div style="color:green">
+     Cash ($) =
+    </div>
+    <p id="cash">
+     Click the update button
+    </p>
+    <div style="color:green">
+     Stuff =
+    </div>
+    <p id="stuff">
+     Click the update button
+    </p>
+    <div style="color:green">
+     Place =
+    </div>
+    <p id="place">
+     Click the update button
+    </p>
+   </section>
+   <section>
+    <h1 style="color:brown">
+     MARKET
+    </h1>
+    <p>
+     <button onclick="sell()">
+      Sell stuff
+     </button>
+    </p>
+    <p>
+    </p>
+    <p>
+     <button onclick="buy()">
+      Buy stuff
+     </button>
+    </p>
+   </section>
+   <div style="color:green">
+    Prices for the city you currently are in:
+   </div>
+   <p id="currentprices">
+   </p>
+   <section>
+    <h1 style="color:brown">
+     MOVING
+    </h1>
+    <p>
+     <button onclick="newyork()">
+      Go to NewYork
+     </button>
+    </p>
+    <p>
+    </p>
+    <p>
+     <button onclick="paris()">
+      Go to Paris
+     </button>
+    </p>
+    <p>
+    </p>
+    <p>
+     <button onclick="taipei()">
+      Go to Taipei
+     </button>
+    </p>
+    <p>
+     <button onclick="casino()">
+      Get crazy and go to the Casino ٭٭٭
+     </button>
+    </p>
+   </section>
+   <div class="wrapper">
+    <button onclick="update();" style="font-size:larger; height:100px;width:100px; color:yellow; background-color: red; border: 3pt ridge yellow;">
+     Update board
+    </button>
+   </div>
+   <script>
+    // *************** VAR INIT ***************
 var _loan = 5000;
 var _day = 0;
 var _cash = 1000;
@@ -244,9 +317,7 @@ window.onclick = function(event) {
     }
   }
 }
-</script>
-
-
-
-</body>
+   </script>
+  </div>
+ </body>
 </html>

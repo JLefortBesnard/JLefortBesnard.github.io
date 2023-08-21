@@ -1,59 +1,106 @@
-<!DOCTYPE html><html lang="en"><head><title>Blog</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../CSS_layout.css" media="screen" /><style></style></head><body><div class="navbar"><a float=left href="../index.html" class="left">🌿 Home</a><a href="../blog.html">Blog</a></div><div class="blog">
-  <h2>User interface to download and convert Youtube video into mp3</h2>
-  <p align="justify">
-  This is a short explanation of how to use this
-  <a href="https://github.com/JLefortBesnard/YoutubeConverter" target="_blank">Python script</a>
-  to download Youtube videos and convert them into mp3 with the help of a user interface. The idea is that you run this script while scrolling on Youtube videos and copy-paste the URL of each video you find interesting as you go.
-  </p>
-
-
-  <p><b> 1. Python3+ and needed packages installed </b></p>
-  <p align="justify">
-  First you need to have Python installed (Python 3). 
-  How to install it is beyond the scope of this post but you can find information <a href="https://github.com/JLefortBesnard/Learn-python-and-machine-learning/wiki/Tips-for-learning-Python-and-Machine-Learning" target="_blank">there</a>.
-  </p>
-
-  <p align="justify">
-  Once installed, you need to have a few packages installed.
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+  <style>
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+   <h2>
+    User interface to download and convert Youtube video into mp3
+   </h2>
+   <p align="justify">
+    This is a short explanation of how to use this
+    <a href="https://github.com/JLefortBesnard/YoutubeConverter" target="_blank">
+     Python script
+    </a>
+    to download Youtube videos and convert them into mp3 with the help of a user interface. The idea is that you run this script while scrolling on Youtube videos and copy-paste the URL of each video you find interesting as you go.
+   </p>
+   <p>
+    <b>
+     1. Python3+ and needed packages installed
+    </b>
+   </p>
+   <p align="justify">
+    First you need to have Python installed (Python 3). 
+  How to install it is beyond the scope of this post but you can find information
+    <a href="https://github.com/JLefortBesnard/Learn-python-and-machine-learning/wiki/Tips-for-learning-Python-and-Machine-Learning" target="_blank">
+     there
+    </a>
+    .
+   </p>
+   <p align="justify">
+    Once installed, you need to have a few packages installed.
 
   To install them, launch your terminal and run these commands
-
-  </p>
-
-  <code style="background-color:black;color:yellow;">pip install youtube_dl</code><br>
-  <code style="background-color:black;color:yellow;">pip install tkinter</code><br>
- 
-
-  <p><b> 2. Download the youtube converter Python script </b></p>
-  <p align="justify">
-  Once the installation of Python and packages is done, you can download the script "youtube_app.py" <a href="https://github.com/JLefortBesnard/YoutubeConverter" target="_blank">there</a> on your Desktop.
-  </p>
-<p align="justify">
-  Click on "Code" on the Github page, and select "Download ZIP"
-</p>
-  <p align="justify">
-  Extract the zip and in the extracted folder, you will find the file "youtube_app.py".
-  Cut and paste it on your Desktop.
-  </p>
-
-
-  <p><b> 3. Run the program </b></p>
-
-  Ok, we are almost done.
-
-  <p align="justify">
-  Select the file "youtube_app.py" and drop it on your terminal, this should write the whole file path on your terminal. Then, type "python " (mind the space after python) before the complete path. The line should look similarly (depending on your OS and path structure):
-  </p>
-
-  <code style="background-color:black;color:yellow;">python /User/Desktop/youtube_app.py</code><br>
-
-  <p align="justify">
-  Congrats, the program just started! You should see the user interface appearing with a green background. Alright, so now, very simple, just copy the url of the Youtube video you want to download&convert and paste it in the white rectangle, click the 'download and convert' button. That's it, now check your Desktop, the mp3 file should be there. Also maybe a .webm file, you can delete it.
-  </p>
-
-  <p align="justify">
-  Edit1: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path (play around with the  <a href="https://www.guru99.com/terminal-file-manager.html" target="_blank">pwd/cd commands</a> to check it before running the script). 
    </p>
-   <p align="justify">Edit2: Google is frequently changing the code for accessing videos on YouTube. So if you got a Signature error, simply update youtube-dl (pip install --upgrade youtube-dl), close your terminal and start the program again.</p>
-
-</div></body></html>
+   <code style="background-color:black;color:yellow;">
+    pip install youtube_dl
+   </code>
+   <br/>
+   <code style="background-color:black;color:yellow;">
+    pip install tkinter
+   </code>
+   <br/>
+   <p>
+    <b>
+     2. Download the youtube converter Python script
+    </b>
+   </p>
+   <p align="justify">
+    Once the installation of Python and packages is done, you can download the script "youtube_app.py"
+    <a href="https://github.com/JLefortBesnard/YoutubeConverter" target="_blank">
+     there
+    </a>
+    on your Desktop.
+   </p>
+   <p align="justify">
+    Click on "Code" on the Github page, and select "Download ZIP"
+   </p>
+   <p align="justify">
+    Extract the zip and in the extracted folder, you will find the file "youtube_app.py".
+  Cut and paste it on your Desktop.
+   </p>
+   <p>
+    <b>
+     3. Run the program
+    </b>
+   </p>
+   Ok, we are almost done.
+   <p align="justify">
+    Select the file "youtube_app.py" and drop it on your terminal, this should write the whole file path on your terminal. Then, type "python " (mind the space after python) before the complete path. The line should look similarly (depending on your OS and path structure):
+   </p>
+   <code style="background-color:black;color:yellow;">
+    python /User/Desktop/youtube_app.py
+   </code>
+   <br/>
+   <p align="justify">
+    Congrats, the program just started! You should see the user interface appearing with a green background. Alright, so now, very simple, just copy the url of the Youtube video you want to download&amp;convert and paste it in the white rectangle, click the 'download and convert' button. That's it, now check your Desktop, the mp3 file should be there. Also maybe a .webm file, you can delete it.
+   </p>
+   <p align="justify">
+    Edit1: Some Youtube videos won't download. If so, try closing your terminal and running the program again. Make sure you're not messing up with the terminal path (play around with the
+    <a href="https://www.guru99.com/terminal-file-manager.html" target="_blank">
+     pwd/cd commands
+    </a>
+    to check it before running the script).
+   </p>
+   <p align="justify">
+    Edit2: Google is frequently changing the code for accessing videos on YouTube. So if you got a Signature error, simply update youtube-dl (pip install --upgrade youtube-dl), close your terminal and start the program again.
+   </p>
+  </div>
+ </body>
+</html>
