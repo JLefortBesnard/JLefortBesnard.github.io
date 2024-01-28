@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+
+
+<TITLE>
+Lefort-Besnard
+</TITLE>
+
+<meta charset="UTF-8">
+<meta property="twitter:image" content="https://jlefortbesnard.github.io/Images/picme8.PNG">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="title" content="Dr.Lefort-Besnard">
+<meta name="description" content="Dr.Lefort-Besnard website">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jlefortbesnard.github.io/">
+<meta property="og:title" content="Dr.Lefort-Besnard">
+<meta property="og:description" content="Dr.Lefort-Besnard website">
+<meta property="og:image" content="https://jlefortbesnard.github.io/Images/picme8.PNG">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://jlefortbesnard.github.io/">
+<meta property="twitter:title" content="Dr.Lefort-Besnard website">
+<meta property="twitter:description" content="Dr.Lefort-Besnard website">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pontano+Sans">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cousine">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Garamond">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> 
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐧</text></svg>">
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐧</text></svg>">
+
+<!--    font-family: Cousine, monospace; -->
+
+<style>
+
+body {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    target: _blank;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(90deg, #ff0000, #ff9900, #33cc33, #0099cc, #9933cc, #ff0000); /* Define rainbow colors here */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    background-size: 200% 100%;
+    animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0 0; }
+    100% { background-position: 200% 0; }
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.content-container img {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.text-container {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.spacer {
+    margin-top: 110px;
+}
+
+</style>
+
+
+</HEAD>
+
+
+<!--  font-family: 'Pontano Sans', sans-serif;  -->
+
+<BODY>
+    <div style="width:55%; margin:0 auto;">
+        <br /><br /><br />
+            <div style="text-align:justify;">
+                <span style="float:left; font-size:200%">
+                    Dr. Jérémy Lefort-Besnard
+                </span>
+                <span style="float:right; font-size:110%"><br />
+                    <a href="Structure/publications.html">Publications</a>  &middot; 
+                    <a href="Structure/scienceactivities.html">Academic life</a>  &middot; 
+                    <a href="Structure/blog.html">Blog</a>  &middot; 
+                    <a href="https://github.com/JLefortBesnard">Github</a> &middot; 
+                    <a href="https://scholar.google.com/citations?hl=en&user=wu-ZESgAAAAJ">Google Scholar</a>   &middot; 
+                    <a href="Structure/MLclass.html">Cours en ligne</a>
+                </span>
+            </div>
+        <div style="margin-top: 70px;"></div>
+
+        <div class="content-container">
+            <img src="Images/pic2023.jpg" alt="">
+            <div class="text-container">
+                <p>
+                I am currently a postdoctoral researcher within the <a href="https://team.inria.fr/mind/">MIND</a> team at INRIA, working on ML techniques for EEG data,
+                data augmentation and inverse problems. I obtained my PhD from the Biomedical and Astronomical Signal Processing (BASP) laboratory
+                at <a href="https://www.hw.ac.uk/index.htm">Heriot-Watt University</a>, Edinburgh, UK under the supervision
+                of Prof. <a href="https://scholar.google.com/citations?user=pruGOvQAAAAJ&hl=en">Yves Wiaux</a> and Prof. <a href="https://scholar.google.fr/citations?user=0E9plnpntdkC&hl=en">Jean-Christophe Pesquet</a>.
+                Feel free to reach me by email :)
+                <br /><br />
+                Contact: matthieu.terris@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px;"></div>
+
+        <p style="font-size:100%; text-align:justify">
+
+            <h3>Software</h3>
+                <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+                <tbody>
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                <b><a href="https://deepinv.github.io/" class="rainbow-text">DeepInverse</a></b>
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                A torch-based library for solving inverse problems, joint work with <a href="http://dongdongchen.com/">Dongdong</a>, <a href="https://samuelhurault.netlify.app/">Samuel</a> and <a href="https://tachella.github.io/">Julian</a>.
+                    Check it out! <br /> <a href="https://github.com/deepinv/deepinv">[github]</a> <a href="https://deepinv.github.io/">[doc]</a>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </p>
+
+
+            <h3>Preprints</h3>
+                <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+                <tbody>
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b> Equivariant plug-and-play image reconstruction</b>,
+                <u>Matthieu Terris*</u>, Thomas Moreau, Nelly Pustelnik, Julian Tachella<br />
+                <a href=https://arxiv.org/abs/2312.01831>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2312.01831.pdf>PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b> Meta-Prior: Meta learning for Adaptive Inverse Problem Solvers</b>,
+                <u>Matthieu Terris*</u>, Thomas Moreau<br />
+                <a href=https://arxiv.org/abs/2311.18710>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2311.18710.pdf>PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b> Plug-and-play imaging with model uncertainty quantification in radio astronomy</b>,
+                <u>Matthieu Terris*</u>, Chao Tang*, Adrian Jackson, Yves Wiaux<br />
+                <a href=https://arxiv.org/abs/2312.07137>arxiv</a> <br />
+                    [<a href=https://arxiv.org/pdf/2312.07137.pdf>PDF</a>]
+                </td>
+                </tr>
+
+                </tbody>
+                </table>
+            </p>
+
+            <h3>Published or Accepted Journal Articles</h3>
+                <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+                <tbody>
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2023
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Scalable precision wide-field imaging in radio interferometry–II. AIRI validated on ASKAP data</b>,
+                Amanda Wilber*, Arwa Dabbech, <u>Matthieu Terris</u>, Adrian Jackson, Yves Wiaux<br />
+                Monthly Notices of the Royal Astronomy Society, 2023<br />
+                [<a href="https://arxiv.org/pdf/2302.14149.pdf">PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2022
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>First AI for deep super-resolution wide-field imaging in radio astronomy: unveiling structure in ESO 137-006</b>,
+                Arwa Dabbech*, <u>Matthieu Terris</u>, Adrian Jackson, Mpati Ramatsoku, Oleg M Smirnov, Yves Wiaux<br />
+                The Astrophysical Journal Letters, 2023<br />
+                [<a href="https://arxiv.org/pdf/2202.12959.pdf">PDF</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2022
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Image reconstruction algorithms in radio interferometry: from handcrafted to learned regularization denoisers</b>,
+                <u>Matthieu Terris*</u>, Arwa Dabbech, Chao Tang, Yves Wiaux<br />
+                Monthly Notices of the Royal Astronomical Society, 2022<br />
+                [<a href="https://arxiv.org/pdf/2202.12959.pdf">PDF</a>] [<a href="https://github.com/basp-group">Code (coming soon)</a>]
+                </td>
+                </tr>
+
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2021
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Learning Maximally Monotone Operators for Image Recovery</b>,
+                Jean-Christophe Pesquet, Audrey Repetti*, <u>Matthieu Terris*</u>, Yves Wiaux<br />
+                SIAM Journal on Imaging Sciences, 2021<br />
+                [<a href="https://arxiv.org/pdf/2012.13247.pdf">PDF</a>] [<a href="https://github.com/basp-group/PnP-MMO-imaging">Code</a>]
+                </td>
+                </tr>
+        
+                <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2020
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Integrating deep learning CT-scan model, biological and clinical variables to predict severity of COVID-19 patients</b>,
+                Nathalie Lassau, Samy Ammari, Emilie Chouzenoux, ..., Matthieu Terris, ..., <i>et al</i> <br />
+                Nature Communications, 2021 <br />
+                [<a href="https://www.nature.com/articles/s41467-020-20657-4.pdf">PDF</a>] [<a href="https://github.com/owkin/scancovia">Code</a>]
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </p>
+
+        <p style="font-size:100%; text-align:justify">
+            <h3>Conference Proceedings</h3>
+             <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+              <tbody>
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2023
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Investigating Model Robustness Against Sensor Variation</b>,
+                    <u>Matthieu Terris*</u>, Sagar Verma<br />
+                    IGARSS 2023.<br />
+                    [<a href="https://hal.science/hal-04112635/document">PDF</a>]
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2023
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Have Foundational Models Seen Satellite Images?</b>,
+                    Panigrahi<u>Matthieu Terris*</u>, Sagar Verma<br />
+                    IGARSS 2023.<br />
+                    [<a href="https://hal.science/hal-04112634/file/IGARSS2023_ZeroShot.pdf">PDF</a>]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2022
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Deep network series for large-scale high-dynamic range imaging</b>,
+                    Amir Aghabiglou*, <u>Matthieu Terris*</u>, Adrian Jackson, Yves Wiaux<br />
+                    ICASSP 2023.<br />
+                    [<a href="https://arxiv.org/pdf/2210.16060.pdf">PDF</a>]
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2022
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Dual Forward-Backward Unfolded Network for Flexible Plug-and-Play</b>,
+                    Audrey Repetti*, <u>Matthieu Terris</u>, Jean-Christophe Pesquet, Yves Wiaux<br />
+                    EUSIPCO 2022.<br />
+                    [<a href="https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0000957.pdf">PDF</a>] [Code (coming soon!)]
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2021
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Enhanced Convergent PnP Algorithms For Image Restoration</b>,
+                    <u>Matthieu Terris*</u>, Audrey Repetti, Jean-Christophe Pesquet, Yves Wiaux<br />
+                    ICIP 2021<br />
+                    [<a href="https://pure.hw.ac.uk/ws/portalfiles/portal/50518178/main_vf.pdf">PDF</a>]
+                    </td>
+                </tr>
+        
+               <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2020
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Building Firmly Nonexpansive Convolutional Neural Networks</b>,
+                <u>Matthieu Terris*</u>, Audrey Repetti, Jean-Christophe Pesquet, Yves Wiaux<br />
+                ICASSP 2020<br />
+                [<a href="https://pureapps2.hw.ac.uk/ws/portalfiles/portal/41080801/paper_vf.pdf">PDF</a>]
+                </td>
+               </tr>
+     
+               <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2019
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Deep Post Processing for Sparse Image Deconvolution</b>,
+                <u>Matthieu Terris*</u>, Abdullah Abdulaziz, Arwa Dabbech, Ming Jiang, Audrey Repetti, Jean-Christophe Pesquet, Yves Wiaux<br />
+                SPARS 2019<br />
+                [<a href="https://pureapps2.hw.ac.uk/ws/portalfiles/portal/25004731/SPARS_pure_v2.pdf">PDF</a>]
+                </td>
+               </tr>
+
+              <tr>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                2019
+                </td>
+                <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                <b>Stochastic MM Subspace Algorithms</b>,
+                <u>Matthieu Terris</u>, Emilie Chouzenoux<br />
+                BASP 2019<br />
+                [<a href="https://hal.archives-ouvertes.fr/hal-02314411/file/abstract_v1.pdf">PDF</a>]
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </p>
+
+
+        <p style="font-size:100%; text-align:justify">
+            <div style="margin-top: 30px;"></div>
+            <i> * denotes equal contribution/corresponding author.</i>
+            <div style="margin-top: 15px;"></div>
+        </p>
+
+
+        <p style="font-size:100%; text-align:justify">
+            <h3>PhD Thesis</h3>
+             <table style="width:100%; border-collapse:collapse; font-size:100%; text-align:justify">
+              <tbody>
+
+
+                <tr>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 15%; border: 0px;">
+                    2022
+                    </td>
+                    <td style="background-color:white; border-collapse:collapse; padding: 5px; vertical-align: top; width: 85%; border: 0px;">
+                    <b>Learning priors for scalable computational imaging algorithms, from theory to application in radio astronomy</b>
+                    <br />
+                    Heriot-Watt University, 2022.<br />
+                    [<a href="https://drive.google.com/file/d/1PrMOAFjnxza3pv-3hauf7ax581ZBN1s0/view">PDF</a>]
+                    </td>
+                </tr>
+              </tbody>
+             </table>
+        </p>
+
+
+        <div style="margin-top: 50px;"></div>
+
+    </div>
+
+</BODY>
+</HTML>

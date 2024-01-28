@@ -6,304 +6,185 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="CSS_layout.css" media="screen" />
 <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            font-size: 100%;
+            text-align: justify;
+        }
 
+        td {
+            border: 0px;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .blue-text {
+            color: blue;
+        }
 </style>
 </head>
 <body>
 
 <div class="navbar">
   <a float=left href="../index.html" class="left">🌿 Home</a>
-  <a href="cv.html">CV</a>
   <a href="https://www.researchgate.net/profile/Jeremy_Lefort-Besnard" target="_blank">Research gate</a>
-  <a href="scienceactivities.html">Teaching and academic life</a>
+  <a href="scienceactivities.html">Academic tasks</a>
 </div>
 
 <div class="row">
   <div class="side">
     <p><b>Lefort-Besnard Jeremy, PhD</b></p>
     <p>硬杰路</p>
-    <div class="avatar"><img src='../Images/picme9.PNG' width='200' border='2px solid black' alt='Avatar'>
+    <div class="avatar"><img src='../Images/picme3.png' width='200' border='2px solid black' alt='Avatar'>
     </div>
     <p class="ital">Brain mapping, psychiatry, statistical learning, programming</p>
     <p><a href="https://github.com/JLefortBesnard" target="_blank">॰ Github</a></p>
-    <p><a href="https://framapiaf.org/@ohso_X" target="_blank"> ॰ Mastodon</a></p>  
     <p>॰ Bluesky @jlefortbesnard.bsky.social</p> 
     <p><a href="https://scholar.google.com/citations?hl=en&user=wu-ZESgAAAAJ" target="_blank"> ॰ Scholar</a></p>
     <p> ॰ Email: jlefortbesnard [at] tuta [dot] io</p>
   </div>
 
   <div class="main">
-    <h3>Published peer-reviewed scientific contributions</h3>
+    <h2>Published in peer-reviewed journals (Q1)</h2>
+      <table>
+          <tbody>
+          <!-- Reference 8 -->
+            <tr>
+                <td><span class="blue-text">2023</span><br> <b>Lefort-Besnard J</b>, Naveau M, Delcroix N, Decker LM, Cignetti F. <i>Grey matter volume and CSF biomarkers predict neuropsychological subtypes of MCI</i>. <b>Neurobiology of Aging</b>. 2023 Nov 1;131:196–208.<br>
+                <a href="../Images/Lefort-Besnard_et_al_2023_MCI_clusters.pdf" target="_blank">[PDF]</a>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0197458023001471?via%3Dihub" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/MCI_cluster_prediction" target="_blank">[CODES]</a><br></td>
+            </tr>
 
-    <h3>--2023</h3>
-
-    <p><b>Grey matter volume and CSF biomarkers predict neuropsychological subtypes of MCI </b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Naveau M, Delcroix N, Decker L,Cignetti F, for the Alzheimer’s Disease Neuroimaging Initiative<br>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0197458023001471?via%3Dihub" target="_blank">Neurobiology of aging</a><br>
-    <a href="../Images/Lefort-Besnard_et_al_2023_MCI_clusters.pdf" target="_blank">PDF</a><br>
-    <a href="https://github.com/JLefortBesnard/MCI_cluster_prediction" target="_blank">Codes</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:MCI2023()">Quick overview</a></p>
-    <div class="abstract" id="MCI2023" style='display:none'>
-      There is increasing evidence of different subtypes of individuals with mild cognitive impairment (MCI). An important line of research is whether neuropsychologically-defined subtypes have distinct patterns of neurodegeneration and CSF biomarker composition. In our study, we provide evidence that multimodal neuropsychological subtyping is both clinically and neurobiologically meaningful. <br>
-      <img class="abstract_img" src='../Images/MCI2023.png' alt='fig article' ><figcaption>Fig: Brain significant regions of interest predictive of the mixed MCI subgroup and controls, as well as CSF biomarker levels predictive of the mixed MCI and amnestic MCI subgroups.</figcaption>
-    </div>
-      <script>
-      function MCI2023() {
-        var x = document.getElementById("MCI2023");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script--> 
-
-    <h3>--2022</h3>
-    <p><b>Accurate machine learning prediction of sexual orientation based on brain morphology and intrinsic functional connectivity</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Clemens B, Ritter C, Smith E, Votinov M, Derntl B, Habel U & Bzdok D<br>
-    <a href="https://academic.oup.com/cercor/article-abstract/33/7/4013/6698690?redirectedFrom=PDF" target="_blank">Cerebral Cortex</a><br>
-    <a href="../Images/LefortBesnard2022_accurateML.pdf" target="_blank">PDF</a><br>
-    <a href="https://github.com/JLefortBesnard/SexualOrientation_2020" target="_blank">Codes</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:SO2023()">Quick overview</a></p>
-    <div class="abstract" id="SO2023" style='display:none'>
-      Sexual orientation in humans represents a multilevel construct that is grounded in both neurobiological and environmental factors. Here, we bring to bear a machine learning approach to predict sexual orientation from gray matter volumes (GMVs) or resting-state functional connectivity (RSFC). We found an average accuracy of 62% for predicting sexual orientation based on GMV and an average predictive accuracy of 92% using RSFC. Regions in the precentral gyrus, precuneus and the prefrontal cortex were significantly informative for distinguishing heterosexual from homosexual participants in both the GMV and RSFC settings.<br>
-      <img class="abstract_img" src='../Images/pred_so_1.PNG' alt='fig article'><figcaption>Fig: Statistical workflow for the rsfMRI analysis (stacking pipeline with classification models).</figcaption>
-    </div>
-    <script>
-      function SO2023() {
-        var x = document.getElementById("SO2023");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-    <!-- END HIDDEN DIV + script--> 
-
-    <h3>--2021</h3>
-
-    <p><b>Phenotypical predictors of pregnancy-related restless legs syndrome and their association with basal ganglia and the limbic circuits</b><br>
-      Chechko N, <span style="text-decoration: underline;">Lefort-Besnard J</span>, Goecke T, Frensch M, Schnakenberg P, Stickel S, & Bzdok D<br>
-   <a href="https://www.nature.com/articles/s41598-021-89360-8" target="_blank">Nature Scientific Reports</a><br>
-   Open access<br>
-   <a href="https://github.com/JLefortBesnard/RLS_2019" target="_blank">Codes</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:restless2021()">Quick overview</a>
-    </p>
-    <div class="abstract" id="restless2021" style='display:none'>
-      Restless legs syndrome (RLS) in pregnancy is a common disorder with a multifactorial etiology. A multivariate two-window algorithm was employed to systematically chart the relationship between brain structures and phenotypical predictors of RLS. A decreased volume of the parietal, orbitofrontal and frontal areas shortly after delivery was found to be linked to persistent RLS symptoms up to 12 weeks postpartum, the symptoms' severity and intensity in the most recent pregnancy, and a history of RLS in previous pregnancies. The same negative relationship was observed between brain volume and not being married, not receiving any iron supplement and higher numbers of stressful life events. <br>
-      <img class="abstract_img" src='../Images/rls1.png' alt='fig article'><figcaption>Fig: Specific patterns linking the basal ganglia to the phenotypical predictors of RLS.</figcaption>
-
-    </div>
-          <script>
-      function restless2021() {
-        var x = document.getElementById("restless2021");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
-
-    <h3>--2020</h3>
-
-    <p><b>Behavior score-embedded brain encoder network for improved classification of Alzheimer disease using resting state fMRI</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Hsieh W,  Yang H, Kuo L, & Lee C<br>
-    <a href="https://ieeexplore.ieee.org/document/9175312" target="_blank">IEEE EMBC 42th</a><br>
-        <a href="https://arxiv.org/abs/2211.09735" target="_blank">PDF</a><br>
-        <a href="https://github.com/JLefortBesnard/BSEN" target="_blank">Codes</a><br>
-    
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:BSEN2020()">Quick overview</a>
-    </p>
-    <div class="abstract" id="BSEN2020" style='display:none'>
-      In this work using two different datasets, we propose a behavior score-embedded encoder network (BSEN) that integrates regularly administrated psychological tests information into the encoding procedure of representing subject's resting-state fMRI data for automatic classification tasks. Based on a 3D convolutional autoencoder structure with contrastive loss jointly optimized using behavior scores from Mini-Mental State Examination (MMSE) and Clinical Dementia Rating (CDR).<br>
-      <img class="abstract_img" src='../Images/bsen1.png' alt='fig article'><figcaption>Fig: A schematic of the BSEN architecture in classifying HC, MCI and AD. The input of the network is BOLD signal of subjects per time.</figcaption>
-    </div>
-          <script>
-      function BSEN2020() {
-        var x = document.getElementById("BSEN2020");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
-
-        <p><b>Patterns of autism symptoms: hidden structure in the ADOS and ADI-R instruments</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Vogeley K, Schilbach L, Varoquaux G, Thirion B, Dumas G, & Bzdok D<br>
-    <a href="https://www.nature.com/articles/s41398-020-00946-8" target="_blank">Nature Translational Psychiatry</a><br>
-    Open access<br>
-    <a href="https://github.com/JLefortBesnard/ADIR_ADOS2019" target="_blank">Codes</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:ASD2020()">Quick overview</a>
-    </p>
-    <div class="abstract" id="ASD2020" style='display:none'>
-      We simultaneously revisited the Autism Diagnostic Interview-Revised (ADI-R) and Autism Diagnostic Observation Schedule (ADOS) with a comprehensive data-analytics strategy. Here, the combination of pattern-analysis algorithms and extensive data resources (n=266 patients aged 7–49 years) allowed identifying coherent clinical constellations in and across ADI-R and ADOS assessments widespread in clinical practice. The collective results suggest that (i) identifying autism subtypes and severity for a given individual may be most manifested in the ADI-R social and communication domains, (ii) the ADI-R might be a more appropriate tool to accurately capture symptom severity, and (iii) the ADOS domains were more relevant than the ADI-R domains to capture sex differences.<br>
-      <img class="abstract_img" src='../Images/tp_asd1.jpeg' alt='fig article'><figcaption>Fig: Domain scores of the ADI-R and ADOS (social, communication and repetitive behavior) as well as the age, sex and fluid IQ (FIQ) of each patient are showed with their mutual linear relationships.</figcaption>
-
-    </div>
-          <script>
-      function ASD2020() {
-        var x = document.getElementById("ASD2020");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
-
-        <h3>--2018</h3>
-
-    <p><b>Patterns of schizophrenia symptoms: hidden structure in the PANSS questionnaire</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Varoquaux G, Derntl B, Gruber O, Aleman A, Jardri R, ... & Bzdok D<br>
-    <a href="https://www.nature.com/articles/s41398-018-0294-4" target="_blank">Nature Translational Psychiatry</a><br>
-    Open access  in <a href="https://publications.rwth-aachen.de/record/758347" target="_blank">PhD thesis</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:Panss2018()">Quick overview</a>
-    </p>
-    <div class="abstract" id="Panss2018" style='display:none'>
-      The combination of machine learning algorithms and an international multi-site dataset (n=218 patients) identified distinctive patterns underlying schizophrenia from the widespread PANSS questionnaire. Our clustering approach revealed a negative symptom patient group as well as a moderate and a severe group, giving further support for the existence of schizophrenia subtypes. Additionally, emerging regression analyses uncovered the most clinically predictive questionnaire items. Small subsets of PANSS items showed convincing forecasting performance in single patients. Our collective results suggest that identifying best treatment for a given individual may be grounded in subtle item combinations that transcend the long-trusted positive, negative, and cognitive categories.<br>
-      <img class="abstract_img" src='../Images/tp_schizo1.png' alt='fig article'><figcaption>Fig: Performance and behavior of the parsimony-inducing learning algorithm that was used to search through the array of questionnaire items and extract the most parsimonious subsets of items for predicting schizophrenia severity. </figcaption>
-    </div>
-          <script>
-      function Panss2018() {
-        var x = document.getElementById("Panss2018");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
-
-        <p><b>Different shades of default mode disturbance in schizophrenia: Subnodal covariance estimation in structure and function</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Bassett D, Smallwood J, Margulies D, Derntl B, Gruber O, ... & Bzdok D<br>
-    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23870" target="_blank">Human brain mapping</a><br>
-    Open access  in <a href="https://publications.rwth-aachen.de/record/758347" target="_blank">PhD thesis Link</a><br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:covar2018()">Quick overview</a>
-    </p>
-    <div class="abstract" id="covar2018" style='display:none'>
-      This study systematically revisited network disruption in patients with schizophrenia using data-derived network atlases and multivariate pattern-learning algorithms in a multisite dataset (n=325). Resting-state fluctuations in unconstrained brain states were used to estimate functional connectivity, and local volume differences between individuals were used to estimate structural co-occurrence within and between the DMN (default mode network), SN (saliency network), and DAN (dorsal attention network). Evidence did not confirm that the backbone of the DMN was the primary driver of brain dysfunction in schizophrenia. Instead, functional and structural aberrations were frequently located outside of the DMN core, such as in the anterior temporoparietal junction and precuneus. Our findings reframe the role of the DMN core and its relation to canonical networks in schizophrenia. We thus underline the importance of large-scale neural interactions as effective biomarkers and indicators of how to tailor psychiatric care to single patients.<br>
-      <img class="abstract_img" src='../Images/hbm1.png' alt='fig article'><figcaption>Fig: Dysfonctional connectivity across network. </figcaption>
-    </div>
-          <script>
-      function covar2018() {
-        var x = document.getElementById("covar2018");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
+            <!-- Reference 7 -->
+            <tr>
+                <td><span class="blue-text">2022</span><br> <b>Lefort-Besnard J</b>*, Clemens B*, Ritter C, Smith E, Votinov M, Derntl B, et al. <i>Accurate machine learning prediction of sexual orientation based on brain morphology and intrinsic functional connectivity</i>. <b>Cerebral Cortex</b>. 2022;33(7):4013–25.<br>
+                <a href="../Images/LefortBesnard2022_accurateML.pdf" target="_blank">[PDF]</a>
+                <a href="https://academic.oup.com/cercor/article-abstract/33/7/4013/6698690?redirectedFrom=PDF" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/SexualOrientation_2020" target="_blank">[CODES]</a><br></td>
+            </tr>
 
 
-        <h3>--2017</h3>
+            <!-- Reference 6 -->
+            <tr>
+                <td><span class="blue-text">2021</span><br>Chechko N, <b>Lefort-Besnard J</b>, Goecke TW, Frensch M, Schnakenberg P, Stickel S, et al. <i>Phenotypical predictors of pregnancy-related restless legs syndrome and their association with basal ganglia and the limbic circuits</i>. <b>Scientific Reports</b>. 2021;11(1):9996.<br>
+                <a href="../Images/Chechko2021_PhenotypicalRLS.pdf" target="_blank">[PDF]</a>
+                <a href="https://www.nature.com/articles/s41598-021-89360-8" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/RLS_2019" target="_blank">[CODES]</a><br></td>
+            </tr>
 
-    <p><b>What do parents of children with autism expect from participation in research? A community survey about early autism studies</b><br>
-      Fletcher-Watson S, Larsen K, ... <span style="text-decoration: underline;">Lefort-Besnard J</span>, ... & Salomone E.<br>
-    <a href="https://journals.sagepub.com/doi/10.1177/1362361317728436" target="_blank">Autism</a><br>
-    Open access<br>
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:asd2017()">Quick overview</a>
-    </p>
-    <div class="abstract" id="asd2017" style='display:none'>
-      Here, we report on a large survey of parents who have a child on the autism spectrum (n=1040) which specifically probed attitudes to early autism research. The large majority of parents showed positive attitudes overall, and these were associated with greater access to services, higher service quality ratings and higher rates of intellectual disability among their children. Parents valued the scientific goals of research, but half of parents also reported that an intervention component would be an essential prerequisite for them to participate in research.<br>
-    </div>
-          <script>
-      function asd2017() {
-        var x = document.getElementById("asd2017");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
+                        <!-- Reference 5 -->
+            <tr>
+                <td><span class="blue-text">2020</span><br><b>Lefort-Besnard J</b>, Vogeley K, Schilbach L, Varoquaux G, Thirion B, Dumas G, et al. <i>Patterns of autism symptoms: hidden structure in the ADOS and ADI-R instruments</i>. <b>Translational Psychiatry</b>. 2020;10(1):257.<br>
+                <a href="../Images/LefortBesnard2018_ASD.pdf" target="_blank">[PDF]</a>
+                <a href="https://www.nature.com/articles/s41398-020-00946-8" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/ADIR_ADOS2019" target="_blank">[CODES]</a><br></td>
+            </tr>
 
-    <p><b>Attitudes of the autism community to early autism research</b><br>
-      Fletcher-Watson S, Apicella F, Auyeung B, Beranova S, Bonnet-Brilhault F, Canal-Bedia R,... <span style="text-decoration: underline;">Lefort-Besnard J</span>, ... & Yirmiya N.<br>
-    <a href="https://journals.sagepub.com/doi/abs/10.1177/1362361315626577" target="_blank">Autism</a><br>
-    <a href="https://eprints.bbk.ac.uk/id/eprint/14257/9/14257" target="_blank">PDF</a><br>
+                        <!-- Reference 4 -->
+            <tr>
+                <td><span class="blue-text">2019</span><br>Fletcher-Watson S, Larsen K, Salomone E, <b>Groups CEW</b>. <i>What do parents of children with autism expect from participation in research? A community survey about early autism studies</i>. <b>Autism</b>. 2019;23(1):175–86.<br>
+                  <a href="../Images/fletcher-watson-et-al-2017-what-do-parents.pdf" target="_blank">[PDF]</a> 
+                <a href="https://journals.sagepub.com/doi/10.1177/1362361317728436" target="_blank">[DOI]</a><br></td>
+            </tr>
 
-    <!-- HIDDEN DIV + script--> 
-    <a href="Javascript:asd1_2017()">Quick overview</a>
-    </p>
-    <div class="abstract" id="asd1_2017" style='display:none'>
-      Investigation into the earliest signs of autism in infants has become a significant sub-field of autism research. This work invokes specific ethical concerns such as use of ‘at-risk’ language, communicating study findings to parents and the future perspective of enrolled infants when they reach adulthood.<br>
+                        <!-- Reference 3 -->
+            <tr>
+                <td><span class="blue-text">2018</span><br><b>Lefort-Besnard J</b>, Varoquaux G, Derntl B, Gruber O, Aleman A, Jardri R, et al. <i>Patterns of schizophrenia symptoms: hidden structure in the PANSS questionnaire</i>. <b>Translational Psychiatry</b>. 2018;8(1):237.<br>
+                  <a href="../Images/Lefort-Besnard_et_al_2018_Panss.pdf" target="_blank">[PDF]</a>
+                <a href="https://www.nature.com/articles/s41398-018-0294-4" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/Panss2018" target="_blank">[CODES]</a><br></td>
+            </tr>
+            <!-- Reference 2 -->
+            <tr>
+                <td><b>Lefort-Besnard J</b>, Bassett DS, Smallwood J, Margulies DS, Derntl B, Gruber O, et al. <i>Different shades of default mode disturbance in schizophrenia: Subnodal covariance estimation in structure and function</i>. <b>Human Brain Mapping</b>. 2018;39(2):644–61.<br>
+                <a href="../Images/LefortBesnard2018_DMN.pdf" target="_blank">[PDF]</a>
+                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23870" target="_blank">[DOI]</a><br></td>
+            </tr>
 
-    </div>
-          <script>
-      function asd1_2017() {
-        var x = document.getElementById("asd1_2017");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-    <!-- END HIDDEN DIV + script-->
+          <!-- Reference 1 -->
+            <tr>
+                <td><span class="blue-text">2017</span><br>Fletcher-Watson S, Apicella F, Auyeung B, Beranova S, Bonnet-Brilhault F, Canal-Bedia R, … <b>Lefort-Besnard J</b>, … et al. <i>Attitudes of the autism community to early autism research</i>. <b>Autism</b>. 2017;21(1):61–74.<br>
+                <a href="../Images/FletcherWatson_2017_autism.pdf" target="_blank">[PDF]</a>  
+                <a href="https://journals.sagepub.com/doi/abs/10.1177/1362361315626577" target="_blank">[DOI]</a><br></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <br>----<br>
+<h2>Peer-reviewed conference papers (Q1)</h2>
+      <table>
+          <tbody>
+          <!-- Reference 8 -->
+            <tr>
+                <td><span class="blue-text">2020</span><br> <b>Lefort-Besnard J*</b>,  Hsieh WT*, Yang HC, Kuo LW, Lee CC. <i>Behavior score-embedded brain encoder network for improved classification of Alzheimer disease using resting state fMRI</i>. <b>42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</b>. 2020. p. 5486–9<br>
+                <a href="../Images/LefortBesnard2020_BSEN.pdf" target="_blank">[PDF]</a>
+                <a href="https://ieeexplore.ieee.org/document/9175312" target="_blank">[DOI]</a>
+                <a href="https://github.com/JLefortBesnard/BSEN" target="_blank">[CODES]</a><br></td>
+            </tr>
+        </tbody>
+    </table>
 
-    
-  <h3>Peer-reviewed conferences</h3>
-  <h3>--2023</h3>
 
-    <p><b>Narps Open Pipeline: reproducing and sharing 70 pipelines</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Clenet B, Germani E, Maumet Camille.<br>
-    <a href="https://open-neuro.org/" target="_blank">Neuro OpenScience Workshop</a><br>
-    <a href="https://inria.hal.science/hal-04286609" target="_blank">Lien HAL</a><br>
+<H2>Peer reviewed conference: Accepted Posters</H2>
+    <table>
+        <tbody>
+            <tr>
+                <td><span class="blue-text">2024</span><br> <b>OHBM</b> &middot; Poster <i>Systematic review and evaluation of meta-analysis methods for same data test statistics</i>, Seoul, South Korea 🇰🇷</td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2024</span><br> <b>IABM</b> &middot; Poster <i>Revue et évaluation des méthodes de méta-analyse sur données corrélées pour l’analyse multivers</i>, Grenoble <br>
+                  <a href="https://inria.hal.science/hal-04296407" target="_blank">[Lien HAL]</a></td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2023</span><br> <b>Cogbases</b> &middot; Poster <i>Systematic review and benchmark of meta-analysis methods for same data test statistics</i>, Institut Pasteur Paris</td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2022</span><br> <b>OHBM</b> &middot; Poster <i>Grey matter volume and CSF biomarkers predict neuropsychological subtypes of MCI</i>, Glasgow, UK 🇬🇧</td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2019</span><br> <b>42nd EMBC IEEE</b> &middot; Poster <i>Improved Classification of Alzheimer Disease Using Resting State fMRI</i>, Montreal, Canada 🇨🇦</td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2019</span><br> <b>OHBM</b> &middot; Poster <i>Patterns of autism symptoms</i>, Rome, Italy 🇮🇹</td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2018</span><br> <b>OHBM</b> &middot; Poster <i>Patterns of Schizophrenia Symptoms in the PANSS Questionnaire</i>, Singapore 🇸🇬</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <p><b>Same data meta-analysis, enter the multiverse…</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Thomas Nichols, Maumet Camille.<br>
-    <a href="https://neuroanatomy.github.io/cogbases-2023/" target="_blank">Cogbases 2023 conference</a><br>
-    <a href="https://inserm.hal.science/inserm-04222730" target="_blank">Lien HAL</a><br>
 
-    <p><b>Data sharing in Europe: reviewing current practices</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Maumet Camille.<br>
-    <a href="https://glimr.eu/" target="_blank">GlioMR Imaging 2.0 conference</a><br>
-    <a href="" target="_blank">Lien HAL</a><br>
 
- <h3>--2022</h3>
-     <p><b>Grey matter volume and CSF biomarkers predict neuropsychological subtypes of MCI</b><br>
-      <span style="text-decoration: underline;">Lefort-Besnard J</span>, Naveau, M, Delcroix, N, Decker L, Cignetti, F.<br>
-       <a href="  " target="_blank">OHBM 2022, Glasgow</a><br>
+<H2>Peer reviewed conference: Accepted talks</H2>
+  <table>
+      <tbody>
+            <tr>
+                <td><span class="blue-text">2023</span><br> 
+                    <b>OpenNeuroWorkshop</b> &middot; Talk <i>The Narps Open Pipeline Project</i> ICM, Paris
+                </td>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2023</span><br> 
+                    <b>GliMR 2.0</b> &middot; Talk <i>Data sharing in Europe: reviewing current practices</i> Porto, Portugal 🇵🇹
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-  <h3>2020</h3>
-  <p><b>Accurate machine learning prediction of sexual orientation</b><br>
-    <a href="conference_link_1" target="_blank">Présentation orale à la conférence IRTG2150, Aachen, Allemagne</a></p>
+<H2>Articles in prep</H2>
+  <table>
+      <tbody>
+            <tr>
+                <td><span class="blue-text">2024</span><br> <b>Lefort-Besnard J</b> and the GliMR WG2, <i>Sharing Neuroimaging Data in Compliance with GDPR: A Comprehensive Guide to Online Platforms and Procedures</i><br>
+            </tr>
+            <tr>
+                <td><span class="blue-text">2024</span><br> <b>Lefort-Besnard J</b>, Nichols T, Maumet C. <i>Systematic review and evaluation of meta-analysis methods for same data meta-analyses in a multiverse setting</i><br>
+            </tr>
 
-  <p><b>Hidden structure in the ADOS and ADI-R instruments</b><br>
-    <a href="conference_link_2" target="_blank">Présentation orale à la conférence IRTG2150, Aachen, Allemagne</a></p>
 
-  <h3>2019</h3>
-  <p><b>Improved Classification of Alzheimer Disease Using Resting State fMRI</b><br>
-    <a href="conference_link_3" target="_blank">Présentation d’un poster à la conférence IEEE, États-Unis</a></p>
-
-  <h3>2018</h3>
-  <p><b>Patterns of schizophrenia symptoms</b><br>
-    <a href="conference_link_4" target="_blank">Présentation d’un poster à la conférence OHBM2018, Singapour</a></p>
-
-  <h3>2017</h3>
-  <p><b>Underlying structure of the PANSS</b><br>
-    <a href="conference_link_5" target="_blank">Présentation orale à la conférence IRTG2150, UPENN, États-Unis</a></p>
+        </tbody>
+    </table>
 
 
 
