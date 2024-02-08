@@ -27,6 +27,38 @@
 zoom: 0.95; 
 -moz-transform: scale(0.95); 
 }
+
+  @media only screen and (min-width: 1800px) {
+    .blog {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+    img {
+      height: auto;
+      width: 80%;
+    }
+  }
+
+   #snakeboard {
+        position: absolute;
+        top: 250px;
+        left: 40%;
+
+      }
+
+  @media only screen and (max-width: 400px) {
+       #snakeboard {
+        position: absolute;
+        top: 400px;
+        left: 20%;
+
+      }
+
+}
+
+
+
+
    </style>
    <body>
     <p>
@@ -49,7 +81,7 @@ zoom: 0.95;
       <span id="boum">
       </span>
      </font>
-    </p>
+    </p><br>
     <p>
      <font color="red">
       <span id="crazy">
@@ -61,20 +93,11 @@ zoom: 0.95;
   <br/>
   <br/>
   <br/>
-  <canvas height="400" id="snakeboard" width="400">
-   Your browser does not support the HTML5 canvas tag.
-  </canvas>
-  <style>
-   #snakeboard {
+  <canvas id="snakeboard"></canvas>
 
-        position: absolute;
-        top: 65%;
-        left: 50%;
-
-      }
-  </style>
  </body>
  <script>
+
   const board_border = 'black';
     const board_background = "white";
     
@@ -123,8 +146,42 @@ zoom: 0.95;
     
     // Get the canvas element
     const snakeboard = document.getElementById("snakeboard");
+
+/*    function resizeCanvas() {
+        // Set canvas dimensions based on screen size
+        if (window.innerWidth > 400) {
+        snakeboard.width = 500;
+        snakeboard.height = 500;
+      } /*else {
+        snakeboard.width = 200;
+        snakeboard.height = 200;
+      }
+    }*/
+    console.log(window.innerWidth)
+    if (window.innerWidth > 400) {
+        snakeboard.width = 500;
+        snakeboard.height = 500;
+      } else {
+        snakeboard.width = 250;
+        snakeboard.height = 250;
+    }
+
+/*
+    snakeboard.width = 400;
+    snakeboard.height = 400;*/
     // Return a two dimensional drawing context
     const snakeboard_ctx = snakeboard.getContext("2d");
+
+    snakeboard_ctx.lineWidth = 2;
+    snakeboard_ctx.strokeStyle="black";
+
+
+
+
+
+
+
+
     // Start game
     main();
 

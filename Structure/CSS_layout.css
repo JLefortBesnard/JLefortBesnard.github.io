@@ -70,11 +70,37 @@ body {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
   background-color: white;
-  padding: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: justify;
   -moz-text-align-last: center;
   text-align-last: center;
 }
+
+  @media only screen and (min-width: 1800px) {
+    .blog {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+    img {
+      height: auto;
+      width: 80%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .blog {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    img {
+      height: auto;
+      width: 80%;
+    }
+  }
+
 
 
 
