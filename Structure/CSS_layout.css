@@ -112,14 +112,13 @@ a:hover {
     align: middle;
 }
 
-
 /* PHONE SIZE*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .blog {
     padding-left: 5%;
     padding-right: 5%;
   }
-  img {
+  .blog img {
     height: auto;
     width: 80%;
   }
@@ -130,6 +129,8 @@ a:hover {
     height: 70px;
     width: 40px;
   }
+}
+
 
 /* BIG SCREEN */
 @media only screen and (min-width: 1800px) {
