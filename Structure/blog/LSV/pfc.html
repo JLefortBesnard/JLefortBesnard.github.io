@@ -1,0 +1,54 @@
+
+<head>
+  <html lang="en">
+ <head>
+  <title>
+   Jeux secret
+  </title>
+</head>
+
+
+<body>
+<p style="text-align:center">
+<img align="center" id="logo" src="logo_lycée.png" width="20%"/>
+</p>
+<p id="game" align="center" style="display: none;">
+<button onClick="checker('pierre')">Pierre</button>
+<button onClick="checker('Feuille')">Feuille</button>
+<button onClick="checker('Ciseaux')">Ciseaux</button>
+<p align="center" id="résultat"></p>
+</p>
+
+<script>
+let choicesObject = {
+  'pierre': {'pierre': 'égalité', 'Ciseaux': 'gagne', 'Feuille': 'perdu'},
+  'Ciseaux': {'pierre': 'perdu', 'Ciseaux': 'égalité', 'Feuille': 'gagne'},
+  'Feuille': {'pierre': 'gagne', 'Ciseaux': 'perdu', 'Feuille': 'égalité'}
+}
+
+function checker(input) {
+  var choices = ['pierre', 'Feuille', 'Ciseaux'];
+  console.log(Math.random())
+  console.log(Math.floor(Math.random() * 3))
+  var num = Math.floor(Math.random() * 3);
+
+  let computerChoice = choices[num];
+  let résultat
+
+  switch (choicesObject[input][computerChoice]) {
+    case 'gagne':
+      résultat = 'Tu as gagné !';
+      break;
+    case 'perdu':
+      résultat = 'Tu as perdu !';
+      break;
+    default:
+      résultat = 'Egalité';
+      break;
+  }
+/*  console.log(résultat);*/
+  document.getElementById('résultat').textContent = résultat;
+}
+</script>
+
+</body>
