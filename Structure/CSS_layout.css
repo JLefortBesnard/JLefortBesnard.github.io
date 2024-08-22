@@ -66,16 +66,6 @@ a:hover {
   color: white;
 }
 
-
-/* Column container */
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 2px, 2px, 2px, 2px;
-}
-
 /* Par défaut, cacher le lien de téléchargement */
 .mobile-pdf-link {
     display: none;
@@ -83,27 +73,28 @@ a:hover {
 
 
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 10%; /* IE10 */
-  flex: 10%;
-  /* background-color: #f1f1f1; */
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: nowrap;
   padding: 2px;
-  margin-right: 10px;
-  /* border: 3px solid black; */
 }
 
 
+/* Sidebar/left column */
+.side {
+  flex: 1 1 10%;
+  padding: 2px;
+  margin-right: 10px;
+}
+
 /* Main column */
 .main {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
+  flex: 1 1 75%;
   background-color: white;
-  padding: 2px, 2px, 2px, 2px;
+  padding: 2px;
   margin-right: 10px;
-  margin-left: 10px;
-
+  margin-left: 0 10px;
 }
 
 
@@ -125,6 +116,9 @@ a:hover {
 
 /* PHONE SIZE*/
 @media only screen and (max-width: 900px) {
+  .row {
+    flex-wrap: wrap; /* Enable wrapping below 900px */
+  }
   .blog {
     padding-left: 5%;
     padding-right: 5%;
