@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-
+ 
 body {
   font-family: Times, serif;
   margin: 5;
@@ -14,6 +14,11 @@ body {
     font-style: italic;
   }
 
+/* Responsive iframe for PDF */
+iframe {
+    width: 100%;
+    height: 600px; /* Adjust this value as needed */
+}
 
 /* Style the top navigation bar */
 .navbar {
@@ -71,6 +76,10 @@ a:hover {
   padding: 2px, 2px, 2px, 2px;
 }
 
+/* Par défaut, cacher le lien de téléchargement */
+.mobile-pdf-link {
+    display: none;
+}
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -129,7 +138,26 @@ a:hover {
     height: 70px;
     width: 40px;
   }
+  .navbar a {
+    float: none; /* Stack navbar items vertically */
+    text-align: right;
+    padding: 10px;
+  }
+  iframe {
+        display: none;
+    }
+
+    .mobile-pdf-link {
+        display: block;
+    }
+  h1 {
+        font-size: 24px; /* Ajustez cette valeur selon vos besoins */
+        line-height: 1.2; /* Ajustez l'espacement entre les lignes */
+    }
 }
+
+
+
 
 
 /* BIG SCREEN */
@@ -149,6 +177,7 @@ a:hover {
     width: 50px;
   }
 }
+
 
 
 
