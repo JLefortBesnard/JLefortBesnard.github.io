@@ -4,6 +4,9 @@
   <title>
    Blog
   </title>
+  <!-- Inclure la bibliothèque MathJax pour latex math formules -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -38,6 +41,25 @@ En résumé, la diode de roue libre agit comme une protection en absorbant les s
     <img align="bottom" border="1" name="diode_libre" src="../../Images/images_blog/diode_roue_libre.png" width="50%"/>
    </p>
 
+<h2>Le transistor bipolaire (PNP ou NPN)</h2>
+
+<p>Le transistor est un composant électronique fondamental utilisé pour amplifier ou commuter des signaux.<br>
+
+Un transistor bipolaire se compose de trois couches de matériaux semi-conducteurs formant trois régions : l’émetteur, la base et le collecteur. Dans un transistor NPN (le plus souvent utilisé), la structure est composée de deux couches de matériau de type N (négatif) entourant une couche de type P (positif). Pour un transistor PNP, c’est l’inverse : deux couches de type P entourant une couche de type N (cf. dessin).<br>
+
+Dans un transistor NPN, le transistor est activé (en conduction) et le courant circule du collecteur vers l’émetteur lorsque la base est suffisamment polarisée positivement par rapport à l’émetteur. Le courant d'entrée (base-émetteur) commande le courant de sortie (collecteur-émetteur).<br>
+
+Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La base doit être négative par rapport à l’émetteur pour permettre la conduction. Sur le dessin ci dessous à droite, Le courant de collecteur (Ic) est proportionnel au courant de base (Ib), le gain en courant étant déterminé par le facteur \(\beta\) (bêta). Le facteur \(\beta\) est défini par :</p>
+    <p>
+        \[
+        \beta = \frac{I_C}{I_B}
+        \]
+    </p>
+
+
+    <p style="text-align:center">
+    <img align="bottom" border="1" name="transistor" src="../../Images/images_blog/transistor.png" width="50%"/>
+   </p>
 
 
 
