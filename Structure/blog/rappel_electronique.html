@@ -32,6 +32,7 @@
     <p><i>Sommaire :</i> 
         <a href="#diode_roue_libre"> Diode de roue libre</a>
         <a href="#transistor"> - Transistor</a>
+        <a href="#pont_diviseur"> - Pont diviseur de tension</a>
         <br></p>
 
 
@@ -68,7 +69,19 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
     <img align="bottom" border="1" name="transistor" src="../../Images/images_blog/transistor.png" width="50%"/>
    </p>
 
+<h2 id="pont_diviseur">Le pont diviseur de tension</h2>
 
+    <p>Un pont diviseur de tension est un montage électronique utilisé pour obtenir une fraction de la tension d'entrée. Il se compose de deux résistances (R1 et R2) montées en série.</p>
+    <p>La tension de sortie (<em>V<sub>out</sub></em>) est calculée avec la formule suivante :</p>
+    <p>U<sub>out</sub> = (R2 / (R1 + R2)) × U<sub>in</sub></p>
+    <p>Où <em>U<sub>in</sub></em> est la tension d'entrée.</p>
+    <p>Ce principe est très utilisé en électronique pour ajuster des niveaux de tension ou mesurer des signaux.</p>
+<p>Attention : Le courant de sortie (<em>I<sub>out</sub></em>) est très faible. Il est donc important de ne pas y brancher de charge nécessitant un courant élevé, car cela pourrait perturber la tension de sortie. Ce type de montage est principalement utilisé pour commander des charges à haute impédance.</p>
+    <p style="text-align:center">
+    <img align="bottom" border="1" name="diviseurtension" src="../../Images/images_blog/pontdiviseur.png" width="50%"/>
+   </p>
+
+    <p>
 
   </div>
  </body>
