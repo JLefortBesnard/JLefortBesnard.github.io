@@ -33,6 +33,7 @@
         <a href="#diode_roue_libre"> Diode de roue libre</a>
         <a href="#transistor"> - Transistor</a>
         <a href="#pont_diviseur"> - Pont diviseur de tension</a>
+        <a href="#condensateur"> - Condensateur</a>
         <br></p>
 
 
@@ -75,13 +76,54 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
     <p>La tension de sortie (<em>V<sub>out</sub></em>) est calculée avec la formule suivante :</p>
     <p>U<sub>out</sub> = (R2 / (R1 + R2)) × U<sub>in</sub></p>
     <p>Où <em>U<sub>in</sub></em> est la tension d'entrée.</p>
-    <p>Ce principe est très utilisé en électronique pour ajuster des niveaux de tension ou mesurer des signaux.</p>
+    <p>Ce principe est très utilisé en électronique pour ajuster des niveaux de tension ou mesurer des signaux (un ampère se sert de ce principe pour effectuer la mesure du courant).</p>
 <p>Attention : Le courant de sortie (<em>I<sub>out</sub></em>) est très faible. Il est donc important de ne pas y brancher de charge nécessitant un courant élevé, car cela pourrait perturber la tension de sortie. Ce type de montage est principalement utilisé pour commander des charges à haute impédance.</p>
     <p style="text-align:center">
     <img align="bottom" border="1" name="diviseurtension" src="../../Images/images_blog/pontdiviseur.png" width="50%"/>
    </p>
 
-    <p>
+<h2 id="condensateur">Le condensateur</h2>
+<p>Un condensateur est un composant électronique passif qui stocke de l'énergie sous forme de champ électrique. Il est constitué de deux conducteurs (appelés armatures) séparés par un isolant (appelé diélectrique). Les condensateurs sont utilisés dans une variété de circuits pour filtrer les signaux, stabiliser les tensions, et stocker l'énergie.</p>
+
+        <p>La capacité (<strong>C</strong>) d'un condensateur est une mesure de la quantité de charge qu'il peut stocker par unité de tension. Elle est exprimée en farads (F).</p>
+ <p>
+            C = \(\frac{Q}{V}\)
+        </p>
+        <p>où <strong>Q</strong> est la charge en coulombs (C) et <strong>V</strong> est la tension en volts (V).</p>
+
+
+        <p>L'énergie (<strong>W</strong>) stockée dans un condensateur est donnée par la formule suivante :</p>
+<p>
+            W = \(\frac{1}{2} C V^2\)
+        </p>
+        <p>Cette formule montre que l'énergie est proportionnelle à la capacité du condensateur et au carré de la tension à ses bornes.</p>
+
+        <p>strong>Condensateurs en Série :</strong> Lorsque des condensateurs sont connectés en série, la capacité équivalente (<strong>C_eq</strong>) est donnée par :</p>
+ <p>
+            \(\frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}\)
+        </p>
+
+        <p>strong>Condensateurs en Parallèle :</strong> Lorsque des condensateurs sont connectés en parallèle, la capacité équivalente (<strong>C_eq</strong>) est la somme des capacités individuelles :</p>
+<p>
+            \(C_{eq} = C_1 + C_2 + \cdots + C_n\)
+        </p>
+                <p>La tension aux bornes d'un condensateur lors de la charge ou de la décharge peut être calculée avec la formule suivante :</p>
+<p>
+            \( U(t) = U_f + (U_0 - U_f) \cdot e^{-\frac{t}{\tau}} \)
+</p>
+        <p>où :
+            <strong>U(t)</strong> : Tension aux bornes du condensateur à l'instant t
+            ,<strong>U_0</strong> : Tension initiale aux bornes du condensateur
+            ,<strong>U_f</strong> : Tension finale aux bornes du condensateur
+            ,<strong>\(\tau\)</strong> : Constante de temps, égale à \( R \times C \) (résistance multipliée par la capacité)
+            ,<strong>t</strong> : Temps écoulé
+            ,<strong>e</strong> : Base du logarithme naturel (environ 2,718)
+        </p>
+    </div>
+
+    <p style="text-align:center">
+    <img align="bottom" border="1" name="condensateur" src="../../Images/images_blog/condensateur.png" width="50%"/>
+   </p>
 
   </div>
  </body>
