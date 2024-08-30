@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Blog
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+    <style>
+        .canvas-container {
+            position: fixed;
+            top: 100px;
+            left: 10%;
+/*            transform: translate(-50%, -50%);*/
+            width: 50vw; /* Adjust as needed */
+            height: 50vw; /* Ensure the canvas is square */
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            width: 75%;
+            height: 75%;
+            border: 1px solid #000;
+        }
+        #boidInfo {
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            position: relative;
+            bottom: 10px;
+            width: 50vw; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+
+   <div class="navbar">
+   <a class="left" float="left" href="../../index.html">
+    🌿 Home
+   </a>
+   <a href="../blog.html">
+    Blog
+   </a>
+  </div>
+  <div class="blog">
+
+    <div class="canvas-container">
+        <canvas id="boidCanvas"></canvas>
+        <div id="boidInfo">Loading...</div>
+    </div>
+
+    <script>
+        class Boid {
+            constructor(x, y) {
+                this.position = { x: x, y: y };
+                let angle = Math.random() * 2 * Math.PI;
+                this.velocity = { x: Math.cos(angle), y: Math.sin(angle) };
+                this.acceleration = { x: Math.random() * (0.001 - -0.001) + -0.001, y: Math.random() * (0.001 - -0.001) + -0.001 };
+                this.maxSpeed = 2;
+                this.maxForce = 0.03;
+                this.selected = false; // Property to track selection
+            }
+
+            update() {
+                // Add a small constant force to ensure continuous movement
+                this.velocity.x += this.acceleration.x;
+                this.velocity.y += this.acceleration.y;
+
+                // Ensure velocity is not between -0.01 and 0.01
+                if (Math.abs(this.velocity.x) < 0.3) {
+                    this.velocity.x = this.velocity.x >= 0 ? 0.3 : -0.3;
+                }
+                if (Math.abs(this.velocity.y) < 0.3) {
+                    this.velocity.y = this.velocity.y >= 0 ? 0.3 : -0.3;
+                }
+
+                let speed = Math.sqrt(this.velocity.x ** 2 + this.velocity.y ** 2);
+                if (speed > this.maxSpeed) {
+                    this.velocity.x = (this.velocity.x / speed) * this.maxSpeed;
+                    this.velocity.y = (this.velocity.y / speed) * this.maxSpeed;
+                }
+
+                this.position.x += this.velocity.x;
+                this.position.y += this.velocity.y;
+                // Reset acceleration to 0 after each update
+                this.acceleration.x = Math.random() * (0.3 - -0.3) + -0.3;
+                this.acceleration.y = Math.random() * (0.3 - -0.3) + -0.3;
+            }
+
+            applyForce(force) {
+                this.acceleration.x += force.x;
+                this.acceleration.y += force.y;
+            }
+
+            flock(boids) {
+                let alignment = this.align(boids);
+                let cohesion = this.cohere(boids);
+                let separation = this.separate(boids);
+
+                this.applyForce(alignment);
+                this.applyForce(cohesion);
+                this.applyForce(separation);
+
+                // Apply a small random force to keep movement even if isolated
+                this.applyForce({
+                    x: (Math.random() * 2 - 1) * this.maxForce * 0.5,
+                    y: (Math.random() * 2 - 1) * this.maxForce * 0.5
+                });
+            }
+
+            align(boids) {
+                let perceptionRadius = 50;
+                let steering = { x: 0, y: 0 };
+                let total = 0;
+
+                for (let boid of boids) {
+                    let distance = this.distance(this.position, boid.position);
+                    if (boid !== this && distance < perceptionRadius) {
+                        steering.x += boid.velocity.x;
+                        steering.y += boid.velocity.y;
+                        total++;
+                    }
+                }
+
+                if (total > 0) {
+                    steering.x /= total;
+                    steering.y /= total;
+
+                    let magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                    if (magnitude > 0) {
+                        steering.x = (steering.x / magnitude) * this.maxSpeed;
+                        steering.y = (steering.y / magnitude) * this.maxSpeed;
+                    }
+
+                    steering.x -= this.velocity.x;
+                    steering.y -= this.velocity.y;
+
+                    let steerMag = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                    if (steerMag > this.maxForce) {
+                        steering.x = (steering.x / steerMag) * this.maxForce;
+                        steering.y = (steering.y / steerMag) * this.maxForce;
+                    }
+                }
+                return steering;
+            }
+
+            cohere(boids) {
+                let perceptionRadius = 50;
+                let steering = { x: 0, y: 0 };
+                let total = 0;
+
+                for (let boid of boids) {
+                    let distance = this.distance(this.position, boid.position);
+                    if (boid !== this && distance < perceptionRadius) {
+                        steering.x += boid.position.x;
+                        steering.y += boid.position.y;
+                        total++;
+                    }
+                }
+
+                if (total > 0) {
+                    steering.x /= total;
+                    steering.y /= total;
+                    steering.x -= this.position.x;
+                    steering.y -= this.position.y;
+
+                    let magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                    if (magnitude > 0) {
+                        steering.x = (steering.x / magnitude) * this.maxSpeed;
+                        steering.y = (steering.y / magnitude) * this.maxSpeed;
+                    }
+
+                    steering.x -= this.velocity.x;
+                    steering.y -= this.velocity.y;
+
+                    let steerMag = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                    if (steerMag > this.maxForce) {
+                        steering.x = (steering.x / steerMag) * this.maxForce;
+                        steering.y = (steering.y / steerMag) * this.maxForce;
+                    }
+                }
+                return steering;
+            }
+
+            separate(boids) {
+                let perceptionRadius = 25;
+                let steering = { x: 0, y: 0 };
+                let total = 0;
+
+                for (let boid of boids) {
+                    let distance = this.distance(this.position, boid.position);
+                    if (boid !== this && distance < perceptionRadius) {
+                        let diff = {
+                            x: this.position.x - boid.position.x,
+                            y: this.position.y - boid.position.y
+                        };
+
+                        if (distance > 0) {
+                            diff.x /= distance;
+                            diff.y /= distance;
+                        }
+
+                        steering.x += diff.x;
+                        steering.y += diff.y;
+                        total++;
+                    }
+                }
+
+                if (total > 0) {
+                    steering.x /= total;
+                    steering.y /= total;
+                }
+
+                let magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                if (magnitude > 0) {
+                    steering.x = (steering.x / magnitude) * this.maxSpeed;
+                    steering.y = (steering.y / magnitude) * this.maxSpeed;
+                }
+
+                steering.x -= this.velocity.x;
+                steering.y -= this.velocity.y;
+
+                let steerMag = Math.sqrt(steering.x ** 2 + steering.y ** 2);
+                if (steerMag > this.maxForce) {
+                    steering.x = (steering.x / steerMag) * this.maxForce;
+                    steering.y = (steering.y / steerMag) * this.maxForce;
+                }
+
+                return steering;
+            }
+
+            distance(pos1, pos2) {
+                return Math.sqrt((pos2.x - pos1.x) ** 2 + (pos2.y - pos1.y) ** 2);
+            }
+
+            draw(ctx) {
+                const angle = Math.atan2(this.velocity.y, this.velocity.x);
+
+                ctx.save();
+                ctx.translate(this.position.x, this.position.y);
+                ctx.rotate(angle);
+
+                // Set color based on whether the boid is selected
+                ctx.strokeStyle = this.selected ? 'blue' : '#61c4be';
+                ctx.fillStyle = this.selected ? 'blue' : '#61c4be';
+
+                // Draw the boid as a line
+                ctx.beginPath();
+                ctx.moveTo(-5, 0); // Start of the line (tail)
+                ctx.lineTo(5, 0);  // End of the line (head)
+                ctx.lineWidth = 1; // Thickness of the line
+                ctx.stroke();
+
+                // Draw the head as a thicker line or circle
+                ctx.beginPath();
+                ctx.arc(5, 0, 3, 0, Math.PI * 2); // Small circle at the head
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function handleBorderCollision(boid, width, height) {
+            if (boid.position.x <= 0 || boid.position.x >= width) {
+                boid.velocity.x *= -1;
+            }
+
+            if (boid.position.y <= 0 || boid.position.y >= height) {
+                boid.velocity.y *= -1;
+            }
+
+            boid.position.x = Math.max(0, Math.min(boid.position.x, width));
+            boid.position.y = Math.max(0, Math.min(boid.position.y, height));
+        }
+
+        function updateBoidInfo(selectedBoid) {
+            const info = document.getElementById('boidInfo');
+            if (selectedBoid) {
+                info.innerHTML = `
+                    Position: (${selectedBoid.position.x.toFixed(2)}, ${selectedBoid.position.y.toFixed(2)})<br>
+                    Velocity: (${selectedBoid.velocity.x.toFixed(2)}, ${selectedBoid.velocity.y.toFixed(2)})<br>
+                `;
+            } else {
+                info.innerHTML = "No boid selected.";
+            }
+        }
+
+        function main() {
+            const canvas = document.getElementById('boidCanvas');
+            const ctx = canvas.getContext('2d');
+
+            function resizeCanvas() {
+                const size = Math.min(window.innerWidth * 0.5, window.innerHeight * 0.5);
+                canvas.width = size;
+                canvas.height = size;
+                ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+            }
+
+            // Set initial size and listen for resize events
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            let boids = [];
+            for (let i = 0; i < 60; i++) {
+                boids.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height));
+            }
+
+            // Select a random boid
+            const randomIndex = Math.floor(Math.random() * boids.length);
+            const selectedBoid = boids[randomIndex];
+            selectedBoid.selected = true; // Mark it as selected
+
+            function animate() {
+                ctx.fillStyle = 'black';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Update all boids
+                for (let boid of boids) {
+                    boid.flock(boids);
+                    boid.update();
+                    handleBorderCollision(boid, canvas.width, canvas.height);
+                    boid.draw(ctx);
+                }
+
+                updateBoidInfo(selectedBoid); // Update boid info at each frame
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        }
+
+        main();
+    </script>
+</body>
+</html>
