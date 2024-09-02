@@ -52,6 +52,8 @@
     </div>
 
     <script>
+
+
         class Boid {
             constructor(x, y) {
                 this.position = { x: x, y: y };
@@ -235,31 +237,54 @@
                 return Math.sqrt((pos2.x - pos1.x) ** 2 + (pos2.y - pos1.y) ** 2);
             }
 
-            draw(ctx) {
+
+
+             draw(ctx, i) {
+                // Define an array of colors
+                const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff']; // Add more colors if needed
+
                 const angle = Math.atan2(this.velocity.y, this.velocity.x);
 
                 ctx.save();
                 ctx.translate(this.position.x, this.position.y);
                 ctx.rotate(angle);
 
-                // Set color based on whether the boid is selected
-                ctx.strokeStyle = this.selected ? 'blue' : '#61c4be';
-                ctx.fillStyle = this.selected ? 'blue' : '#61c4be';
+                // Select color based on the index 'i'
+                const color = colors[i % colors.length]; // Ensure the color index wraps around
 
-                // Draw the boid as a line
+                // Set color based on whether the boid is selected
+                ctx.strokeStyle = this.selected ? 'black' : 'black';
+/*                ctx.fillStyle = this.selected ? '#fb8f77' : '#f9a390';*/
+                ctx.fillStyle = this.selected ? '#fb8f77' : color; // Use the color based on index
+
+
+                // Draw the fish body
                 ctx.beginPath();
-                ctx.moveTo(-5, 0); // Start of the line (tail)
-                ctx.lineTo(5, 0);  // End of the line (head)
-                ctx.lineWidth = 1; // Thickness of the line
+                ctx.ellipse(0, 0, 10, 5, 0, 0, Math.PI * 2); // Ellipse for the body
+                ctx.fill();
                 ctx.stroke();
 
-                // Draw the head as a thicker line or circle
+                // Draw the fish tail
                 ctx.beginPath();
-                ctx.arc(5, 0, 3, 0, Math.PI * 2); // Small circle at the head
+                ctx.moveTo(-7, 0); // Starting point of the tail
+                ctx.lineTo(-15, -10); // Upper point of the tail
+                ctx.lineTo(-15, 10);  // Lower point of the tail
+                ctx.closePath(); // Close the tail shape
                 ctx.fill();
+                ctx.stroke();
+
+                // Draw the fish eye
+                // Draw the fish eye
+                ctx.beginPath();
+                ctx.fillStyle = 'black'; // Set color of the eye
+                ctx.arc(7, 0, 1, 0, Math.PI * 2); // Small circle for the eye
+                ctx.fill();
+
                 ctx.restore();
             }
+
         }
+
 
         function handleBorderCollision(boid, width, height) {
             if (boid.position.x <= 0 || boid.position.x >= width) {
@@ -302,7 +327,7 @@
             window.addEventListener('resize', resizeCanvas);
 
             let boids = [];
-            for (let i = 0; i < 60; i++) {
+            for (let i = 0; i < 30; i++) {
                 boids.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height));
             }
 
@@ -312,15 +337,21 @@
             selectedBoid.selected = true; // Mark it as selected
 
             function animate() {
-                ctx.fillStyle = 'black';
+                // Create a linear gradient
+                const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                gradient.addColorStop(0, 'blue');        // Start color
+                gradient.addColorStop(1, 'lightblue');  // End color
+
+                ctx.fillStyle = gradient;
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
                 // Update all boids
-                for (let boid of boids) {
+                for (let i = 0; i < boids.length; i++) {
+                    let boid = boids[i];
                     boid.flock(boids);
                     boid.update();
                     handleBorderCollision(boid, canvas.width, canvas.height);
-                    boid.draw(ctx);
+                    boid.draw(ctx, i);
                 }
 
                 updateBoidInfo(selectedBoid); // Update boid info at each frame
