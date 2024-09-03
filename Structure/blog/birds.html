@@ -249,6 +249,8 @@
                 ctx.translate(this.position.x, this.position.y);
                 ctx.rotate(angle);
 
+
+
                 // Select color based on the index 'i'
                 const color = colors[i % colors.length]; // Ensure the color index wraps around
 
@@ -257,6 +259,7 @@
                 // Set color based on whether the boid is selected
                 /*ctx.fillStyle = this.selected ? '#fb8f77' : '#f9a390';*/
                 ctx.fillStyle = color; // Use the color based on index
+
 
 
                 // Draw the fish body

@@ -34,6 +34,8 @@
         <a href="#transistor"> - Transistor</a>
         <a href="#pont_diviseur"> - Pont diviseur de tension</a>
         <a href="#condensateur"> - Condensateur</a>
+        <a href="#pont_diviseur_courant"> - Pont diviseur de courant</a>
+        
         <br></p>
 
 
@@ -136,6 +138,35 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
     <p style="text-align:center">
     <img align="bottom" border="1" name="condensateur" src="../../Images/images_blog/condensateur.png" width="25%"/>
    </p>
+
+
+```html
+<h2 id="pont_diviseur_courant">Le diviseur de courant</h2>
+
+<p>Un diviseur de courant est un circuit utilisé pour répartir le courant entrant entre plusieurs branches parallèles. Ce montage est particulièrement utile lorsqu'on souhaite connaître ou ajuster le courant passant dans une branche spécifique d'un circuit.</p>
+
+<p>Le courant dans chaque branche est déterminé en fonction de la résistance de chaque branche. Le courant dans une branche (<em>I<sub>x</sub></em>) est calculé avec la formule suivante :</p>
+
+<p>I<sub>x</sub> = (R<sub>total</sub> / R<sub>x</sub>) × I<sub>in</sub></p>
+
+<p>Où <em>I<sub>in</sub></em> est le courant total entrant dans le circuit, <em>R<sub>x</sub></em> est la résistance de la branche dans laquelle on souhaite connaître le courant, et <em>R<sub>total</sub></em> est la résistance équivalente du circuit, c'est-à-dire l'inverse de la somme des inverses des résistances de chaque branche parallèle.</p>
+
+<p>La résistance équivalente (<em>R<sub>eq</sub></em>) pour des résistances en parallèle est donnée par la formule suivante :</p>
+
+<p>
+    <em>R<sub>eq</sub></em> = 
+    <em>1 / (1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>)</em>
+</p>
+
+
+<p>Ce principe est fréquemment utilisé en électronique pour diviser un courant dans des circuits avec plusieurs composants, chacun ayant des besoins en courant spécifiques. Par exemple, un diviseur de courant permet de contrôler la distribution de courant vers différents composants sans perturber le reste du circuit.</p>
+
+<p>Attention : La résistance totale du circuit est toujours inférieure à la plus petite résistance individuelle. Il est donc important de bien choisir les résistances pour éviter un courant trop faible dans une branche ou un courant trop élevé qui pourrait endommager un composant.</p>
+
+<p style="text-align:center">
+    <img align="bottom" border="1" name="diviseurcourant" src="../../Images/images_blog/diviseurcourant.png" width="50%"/>
+</p>
+
 
   </div>
  </body>
