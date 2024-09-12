@@ -11,6 +11,14 @@
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <link href="../CSS_layout.css" media="screen" rel="stylesheet" type="text/css"/>
   <style>
+        /* Style pour ajouter l'effet de zoom */
+    .zoom {
+      transition: transform 0.3s ease; /* Animation de zoom */
+    }
+    
+    .zoom:hover {
+      transform: scale(1.5); /* Zoom à 150% lors du survol */
+    }
   </style>
  </head>
  <body>
@@ -37,7 +45,7 @@
         <a href="#pont_diviseur_courant"> - Pont diviseur de courant</a>
         <a href="#diodes"> - Les diodes</a>
         <a href="#ampli_op"> - L'amplificateur opérationnel</a>
-        
+        <a href="#Projet1"> - Fin du projet 1</a>
         <br></p>
 
 
@@ -51,7 +59,7 @@ En résumé, la diode de roue libre agit comme une protection en absorbant les s
 </p>
 
     <p style="text-align:center">
-    <img align="bottom" border="1" name="diode_libre" src="../../Images/images_blog/diode_roue_libre.png" width="50%"/>
+    <img class="zoom" align="bottom" border="1" name="diode_libre" src="../../Images/images_blog/diode_roue_libre.png" width="50%"/>
    </p>
 
 <h2 id="transistor">Le transistor bipolaire (PNP ou NPN)</h2>
@@ -71,7 +79,7 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
 
 
     <p style="text-align:center">
-    <img align="bottom" border="1" name="transistor" src="../../Images/images_blog/transistor.png" width="50%"/>
+    <img class="zoom" align="bottom" border="1" name="transistor" src="../../Images/images_blog/transistor.png" width="50%"/>
    </p>
 
 <h2 id="pont_diviseur">Le pont diviseur de tension</h2>
@@ -83,7 +91,7 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
     <p>Ce principe est très utilisé en électronique pour ajuster des niveaux de tension ou mesurer des signaux (un ampère se sert de ce principe pour effectuer la mesure du courant).</p>
 <p>Attention : Le courant de sortie (<em>I<sub>out</sub></em>) est très faible. Il est donc important de ne pas y brancher de charge nécessitant un courant élevé, car cela pourrait perturber la tension de sortie. Ce type de montage est principalement utilisé pour commander des charges à haute impédance.</p>
     <p style="text-align:center">
-    <img align="bottom" border="1" name="diviseurtension" src="../../Images/images_blog/pontdiviseur.png" width="50%"/>
+    <img class="zoom" align="bottom" border="1" name="diviseurtension" src="../../Images/images_blog/pontdiviseur.png" width="50%"/>
    </p>
 
 <h2 id="condensateur">Le condensateur</h2>
@@ -138,7 +146,7 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
 </p>
 
     <p style="text-align:center">
-    <img align="bottom" border="1" name="condensateur" src="../../Images/images_blog/condensateur.png" width="25%"/>
+    <img class="zoom" align="bottom" border="1" name="condensateur" src="../../Images/images_blog/condensateur.png" width="25%"/>
    </p>
 
 
@@ -165,7 +173,7 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
 <p>Attention : La résistance totale du circuit est toujours inférieure à la plus petite résistance individuelle. Il est donc important de bien choisir les résistances pour éviter un courant trop faible dans une branche ou un courant trop élevé qui pourrait endommager un composant.</p>
 
 <p style="text-align:center">
-    <img align="bottom" border="1" name="diviseurcourant" src="../../Images/images_blog/diviseurcourant.png" width="50%"/>
+    <img class="zoom" align="bottom" border="1" name="diviseurcourant" src="../../Images/images_blog/diviseurcourant.png" width="50%"/>
 </p>
 
 <h2 id="diodes">Les différentes diodes</h2> 
@@ -180,7 +188,7 @@ Le fonctionnement du transistor PNP est similaire mais inversé (cf. dessin). La
 <p><strong>La diode varicap</strong>, ou diode à capacité variable, fonctionne comme un condensateur dont la capacité varie en fonction de la tension appliquée. Elle est principalement utilisée dans les circuits d'accord pour la modulation de fréquence ou les oscillateurs.</p> 
 <p>Chaque type de diode joue un rôle essentiel en fonction des besoins du circuit. Qu'il s'agisse de redresser, réguler, émettre de la lumière ou gérer des fréquences, les diodes sont des composants incontournables en électronique moderne.</p> 
 
-<p style="text-align:center"> <img align="bottom" border="1" name="types-diodes" src="../../Images/images_blog/diodes.png" width="50%"/> </p>
+<p style="text-align:center"> <img class="zoom" align="bottom" border="1" name="types-diodes" src="../../Images/images_blog/diodes.png" width="50%"/> </p>
 
 
 <h2 id="ampli_op">L'amplificateur opérationnel (ampli-op)</h2>
@@ -200,10 +208,21 @@ L'ampli-op est un composant clé dans de nombreux systèmes électroniques, car 
 </p>
 
 <p style="text-align:center">
-    <img align="bottom" border="1" name="ampli_op" src="../../Images/images_blog/ampli_op.png" width="50%"/>
+    <img class="zoom" align="bottom" border="1" name="ampli_op" src="../../Images/images_blog/ampli_op.png" width="50%"/>
 </p>
 
 
+<h2 id="Projet1">Projet 1 : activer un ventilateur en fonction de la qualité de l'air ambiant</h2>
+
+<p>Pour ce projet, il s'agit d'activer automatiquement un ventilateur en fonction de la qualité de l'air ambiant. Dans le schéma ci-dessous, le capteur de qualité de l'air n'est pas représenté, car le point qui nous intéresse ici est de concevoir une alimentation capable de fournir du 5V pour l'Arduino et du 12V pour le ventilateur, à partir d'un adaptateur secteur (220V-18V).</p>
+
+<p>Sur le schéma, on voit l'Arduino UNO, un convertisseur DC-DC step-down (18V vers 12V), une <a href="#diode_roue_libre">diode de roue libre</a> en parallèle avec un ventilateur, ainsi qu'un transistor Darlington. </p>
+
+<p>Le transistor est commandé en tout ou rien par l'Arduino (5V ou 0V). La tension U<sub>CE</sub> est de 12V lorsque le transistor est bloqué entre l'émetteur et le collecteur, et de 0,5V lorsqu'il est saturé. Le transistor présente une chute de tension de 1,2V au maximum, et il est nécessaire de fournir au moins 160mA pour alimenter le ventilateur. Il s'agit donc de calculer la valeur de la résistance entre l'Arduino et le transistor afin d'assurer cette alimentation minimale, sachant que le courant I<sub>C</sub> est égal à \( H_{FE} \times I_{B} \) (où \( H_{FE} \) est le <a href="#transistor">gain en courant du transistor</a>, également noté \( \beta \)). Le transistor a un \( \beta \) minimal de 10 et un maximum de 60. Puisque l'utilisateur n'est pas certain du \( \beta \) exact (ce paramètre dépend de la fabrication du transistor et le fabricant fournit donc une plage de valeurs), le circuit est dimensionné en prenant la valeur la plus défavorable, soit 10. Dans ce cas, avec une résistance de 220 ohms, la chute de tension dans le transistor est bien de 1,2V, et on obtient un courant de base I<sub>B</sub> de 16mA, donnant ainsi un courant I<sub>C</sub> de \( 16\text{mA} \times 10 \), soit 160mA. Problème résolu !</p>
+
+<p style="text-align:center">
+    <img class="zoom" align="bottom" border="1" name="projet1" src="../../Images/images_blog/projet1.png" width="50%"/>
+</p>
 
 
 
