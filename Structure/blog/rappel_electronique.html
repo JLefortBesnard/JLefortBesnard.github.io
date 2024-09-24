@@ -47,6 +47,7 @@
         <a href="#ampli_op"> - L'amplificateur opérationnel</a>
         <a href="#Projet1"> - Fin du projet 1</a>
         <a href="#thevenin"> - Le modèle équivalent de Thévenin</a>
+        <a href="#superposition"> - Le principe de superposition</a>
         <br></p>
 
 
@@ -237,6 +238,16 @@ Voici un exemple de blog post sur le modèle équivalent de Thévenin, au même 
 
 <p style="text-align:center">
     <img class="zoom" align="bottom" border="1" name="thevenin" src="../../Images/images_blog/thevenin.jpeg" width="50%"/>
+</p>
+
+<h2 id="superposition">Le principe de superposition</h2>
+
+<p>Le principe de superposition est une méthode clé dans l'analyse des circuits linéaires, qui permet de simplifier l'étude des circuits contenant plusieurs sources (tensions ou courants). Ce théorème stipule que, dans un circuit linéaire, la réponse (courant ou tension) à une combinaison de plusieurs sources est égale à la somme des réponses dues à chaque source prise isolément, toutes les autres sources étant remplacées par leurs impédances internes.</p>
+
+<p>Dans le schéma ci-dessous, nous observons un circuit comportant plusieurs générateurs. En appliquant le principe de superposition, nous analysons d'abord l'effet de chaque source séparément, en annulant les autres (les sources de tension sont remplacées par des courts-circuits (un fil, on enlève le cercle du générateur parfait), et les sources de courant par des circuits ouverts), puis nous additionnons les résultats pour obtenir la solution finale.</p>
+
+<p style="text-align:center">
+    <img class="zoom" align="bottom" border="1" name="superposition" src="../../Images/images_blog/superposition.png" width="50%"/>
 </p>
 
 

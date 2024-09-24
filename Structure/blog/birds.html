@@ -303,18 +303,6 @@
             boid.position.y = Math.max(0, Math.min(boid.position.y, height));
         }
 
-/*        function updateBoidInfo(selectedBoid) {
-            const info = document.getElementById('boidInfo');
-            if (selectedBoid) {
-                info.innerHTML = `
-                    Position: (${selectedBoid.position.x.toFixed(2)}, ${selectedBoid.position.y.toFixed(2)})<br>
-                    Velocity: (${selectedBoid.velocity.x.toFixed(2)}, ${selectedBoid.velocity.y.toFixed(2)})<br>
-                `;
-            } else {
-                info.innerHTML = "No boid selected.";
-            }
-        }*/
-
         function main() {
             const canvas = document.getElementById('boidCanvas');
             const ctx = canvas.getContext('2d');
@@ -334,6 +322,12 @@
             for (let i = 0; i < 30; i++) {
                 boids.push(new Boid(Math.random() * canvas.width, Math.random() * canvas.height));
             }
+
+            // Redirect to hello.com when clicking anywhere on the canvas
+            canvas.addEventListener('click', function() {
+                window.location.href = 'https://mybox.inria.fr/d/6d3c4a4748124d6b8443/';
+            });
+
 
             // Select a random boid
             const randomIndex = Math.floor(Math.random() * boids.length);
