@@ -139,9 +139,9 @@ a:hover {
     text-align: right;
     padding: 10px;
   }
-  iframe {
+/*  iframe {
         display: none;
-    }
+    }*/
 
     .mobile-pdf-link {
         display: block;
